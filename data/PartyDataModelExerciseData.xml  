@@ -1,13 +1,9 @@
 <entity-engine-xml>
-
-
-<!--  create new party person -->
+  <!--  create new party person -->
   <Party partyId="P10001" 	partyTypeId="PERSON"/>
-
   <!--  assigned role customer -->
   <RoleType roleTypeId="CUSTOMER"/>
   <PartyRole  partyId="P10001" roleTypeId="CUSTOMER"/>
-
   <!--  added first name and last name -->
   <Person partyId="P10001" firstName="john" lastName="liston"/>
 <!--  update name -->
@@ -25,7 +21,7 @@
   <ContactMechTypePurpose contactMechTypeId="TELECOM_NUMBER" contactMechPurposeTypeId="PHONE_BILLING"/>
   <PartyContactMechPurpose partyId="P10001" contactMechId="C10003" contactMechPurposeTypeId="PHONE_BILLING" fromDate="2022-04-28 17:30:33.715"/>
 
-  <!--  added shipping bill -->
+  <!--  added shipping Phone  -->
   <ContactMech  contactMechId="C10004" contactMechTypeId="TELECOM_NUMBER"/>
   <TelecomNumber contactMechId="C10004" countryCode="91" contactNumber="7869286648"/>
   <PartyContactMech partyId="P10001" contactMechId="C10004" fromDate="2022-04-28 17:30:33.715"/>
@@ -94,4 +90,4 @@
 
 </entity-engine-xml>
 
-<!--Use webtools and Party Manager-->
+
