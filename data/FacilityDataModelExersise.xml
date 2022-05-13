@@ -1,0 +1,28 @@
+<entity-engine-xml>
+    <!--Facility data -->
+    <Facility facilityId="DemoWarehouse" facilityTypeId="WAREHOUSE" ownerPartyId="Company"
+              defaultInventoryItemTypeId="NON_SERIAL_INV_ITEM" facilityName="Demo Store Warehouse"
+              defaultDaysToShip="20"/>
+    <!--    Assigned roles to party in facility -->
+    <FacilityParty facilityId="DemoWarehouse" partyId="10000" roleTypeId="MANAGER" fromDate="2022-05-12 13:16:42.0"/>
+    <FacilityParty facilityId="DemoWarehouse" partyId="10060" roleTypeId="WORKER" fromDate="2022-05-12 13:16:42.0"/>
+
+    <!--Contact detalil-->
+    <!-- for shipping phone -->
+    <ContactMech contactMechId="C10004" contactMechTypeId="TELECOM_NUMBER"/>
+    <TelecomNumber contactMechId="C10004" countryCode="91" contactNumber="7869286648"/>
+    <FacilityContactMech facilityId="DemoWarehouse" contactMechId="C10004" fromDate="2022-05-12 13:16:42.0"/>
+    <FacilityContactMechPurpose facilityId="DemoWarehouse" contactMechId="C10004"
+                                contactMechPurposeTypeId="PHONE_SHIPPING" fromDate="2022-05-12 13:16:42.0"/>
+    <!-- for shipping address-->
+    <ContactMech contactMechId="C10005" contactMechTypeId="POSTAL_ADDRESS"/>
+    <PostalAddress contactMechId="C10005" toName="Raja" attnName="Raja " address1=" vijay nagar" city="Indore"
+                   postalCode="452021" countryGeoId="IND" stateProvinceGeoId="IN-MP"/>
+    <FacilityContactMech facilityId="DemoWarehouse" contactMechId="C10005" fromDate="2022-05-12 13:16:42.0"/>
+    <FacilityContactMechPurpose facilityId="DemoWarehouse" contactMechId="C10005"
+                                contactMechPurposeTypeId="SHIPPING_LOCATION" fromDate="2022-05-12 13:16:42.0"/>
+    <!--Location-->
+    <FacilityLocation facilityId="DemoWarehouse" locationSeqId="TLTLTLLL01" locationTypeEnumId="FLT_PICKLOC" areaId="TL"
+                      aisleId="TL" sectionId="TL" levelId="LL" positionId="01"/>
+
+</entity-engine-xml>
