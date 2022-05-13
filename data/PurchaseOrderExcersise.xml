@@ -22,3 +22,13 @@
     <ItemIssuance itemIssuanceId="9003" orderId="10022" orderItemSeqId="00001" shipGroupSeqId="00001" shipmentId="SI1001" shipmentItemSeqId="00001" issuedDateTime="2022-05-11 17:46:29.603" quantity="5"/>
 
 </entity-engine-xml>
+
+<!--changed status from created to Approve-->
+<entity-engine-xml>
+
+    <OrderHeader orderId="10022" orderTypeId="PURCHASE_ORDER" orderName="Demo Purchase Order" salesChannelEnumId="UNKNWN_SALES_CHANNEL" orderDate="2022-05-11 13:27:07.024" entryDate="2022-05-11 13:27:07.024" visitId="10000" statusId="ORDER_APPROVED" createdBy="admin" currencyUom="USD" productStoreId="9000" remainingSubTotal="102.50" grandTotal="102.50" webSiteId="WebStore"/>
+    <OrderStatus orderStatusId="OS1006" statusId="ITEM_APPROVED" orderId="10022" orderItemSeqId="00001" statusDatetime="2022-05-12 17:46:15.144" statusUserLogin="admin"/>
+    <OrderStatus orderStatusId="OS1005" statusId="ORDER_APPROVED" orderId="10022" statusDatetime="2022-05-12 17:46:15.206" statusUserLogin="admin"/>
+
+</entity-engine-xml>
+
