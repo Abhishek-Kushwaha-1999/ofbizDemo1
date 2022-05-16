@@ -17,10 +17,7 @@
 <!--Create contact information for Shipping-->
     <OrderContactMech orderId="10022" contactMechPurposeTypeId="SHIPPING_LOCATION" contactMechId="9200"/>
 
-    <Shipment shipmentId="SI1001" shipmentTypeId="PURCHASE_SHIPMENT" statusId="PURCH_SHIP_CREATED" primaryOrderId="10022" primaryShipGroupSeqId="00001" createdDate="2022-05-11 12:59:26.8"/>
-    <ShipmentItem shipmentId="SI1001" shipmentItemSeqId="00001" productId="GZ-2644" quantity="5"/>
-    <ItemIssuance itemIssuanceId="9003" orderId="10022" orderItemSeqId="00001" shipGroupSeqId="00001" shipmentId="SI1001" shipmentItemSeqId="00001" issuedDateTime="2022-05-11 17:46:29.603" quantity="5"/>
-
+   
 </entity-engine-xml>
 
 <!--changed status from created to Approve-->

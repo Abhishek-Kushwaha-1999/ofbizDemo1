@@ -1,55 +1,58 @@
 <entity-engine-xml>
     <!--created party for first data-->
-    <Party partyId="Supplier1001" partyTypeId="PARTY_GROUP"/>
+    <Party partyId="SUPPLYSPACE" partyTypeId="PARTY_GROUP"/>
+<!--    Created party group -->
+    <PartyGroup partyid="SUPPLYSPACE" groupName="Supplyspace Gloable"/>
     <!--Assigned role supplier-->
-    <PartyRole partyId="Supplier1001" roleTypeId="SUPPLIER"/>
+    <PartyRole partyId="SUPPLYSPACE" roleTypeId="SUPPLIER"/>
     <!--PRIMERY EMAIL ADDRESS-->
-    <ContactMech contactMechId="SUPER1001" contactMechTypeId="EMAIL_ADDRESS" infoString="super@gmail.com"/>
-    <PartyContactMech partyId="Supplier1001" contactMechId="SUPER1001" fromDate="2022-04-28 17:30:33.715"/>
-    <ContactMechTypePurpose contactMechTypeId="EMAIL_ADDRESS" contactMechPurposeTypeId="PRIMARY_EMAIL"/>
-    <PartyContactMechPurpose partyId="Supplier1001" contactMechId="SUPER1001" contactMechPurposeTypeId="PRIMARY_EMAIL"
+    <ContactMech contactMechId="SUPPLY_CONTACT_1001" contactMechTypeId="EMAIL_ADDRESS" infoString="super@gmail.com"/>
+    <PartyContactMech partyId="SUPPLYSPACE" contactMechId="SUPPLY_CONTACT_1001" fromDate="2022-04-28 17:30:33.715"/>
+     <PartyContactMechPurpose partyId="SUPPLYSPACE" contactMechId="SUPPLY_CONTACT_1001" contactMechPurposeTypeId="PRIMARY_EMAIL"
                              fromDate="2022-04-28 17:30:33.715"/>
     <!--PRIMARY ADDRESS-->
-    <ContactMech contactMechId="SUPER1002" contactMechTypeId="POSTAL_ADDRESS"/>
-    <PostalAddress contactMechId="SUPER1002" address1="LG- 2, LABH SHREE COMPLEX , NEAR NEW SIYAGANJ , MALL GODAM ROAD"
+    <ContactMech contactMechId="SUPPLY_CONTACT_1002" contactMechTypeId="POSTAL_ADDRESS"/>
+    <PostalAddress contactMechId="SUPPLY_CONTACT_1002" address1="LG- 2, LABH SHREE COMPLEX , NEAR NEW SIYAGANJ , MALL GODAM ROAD"
                    city="Indore" postalCode="452020" countryGeoId="IND" stateProvinceGeoId="IN-MP"/>
-    <PartyContactMech partyId="Supplier1001" contactMechId="SUPER1002" fromDate="2022-04-28 17:30:33.715"/>
-    <ContactMechTypePurpose contactMechTypeId="POSTAL_ADDRESS" contactMechPurposeTypeId="PRIMARY_LOCATION"/>
-    <PartyContactMechPurpose partyId="Supplier1001" contactMechId="SUPER1002"
+    <PartyContactMech partyId="SUPPLYSPACE" contactMechId="SUPPLY_CONTACT_1002" fromDate="2022-04-28 17:30:33.715"/>
+   <PartyContactMechPurpose partyId="SUPPLYSPACE" contactMechId="SUPPLY_CONTACT_1002"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
     <!--PRIMERY PHONE-->
-    <ContactMech contactMechId="SUPER1003" contactMechTypeId="TELECOM_NUMBER"/>
-    <TelecomNumber contactMechId="SUPER1003" countryCode="91" contactNumber="7869286644"/>
-    <PartyContactMech partyId="Supplier1001" contactMechId="SUPER1003" fromDate="2022-04-28 17:30:33.715"/>
+    <ContactMech contactMechId="SUPPLY_CONTACT_1003" contactMechTypeId="TELECOM_NUMBER"/>
+    <TelecomNumber contactMechId="SUPPLY_CONTACT_1003" countryCode="91" contactNumber="7869286644"/>
+    <PartyContactMech partyId="SUPPLYSPACE" contactMechId="SUPPLY_CONTACT_1003" fromDate="2022-04-28 17:30:33.715"/>
     <ContactMechTypePurpose contactMechTypeId="TELECOM_NUMBER" contactMechPurposeTypeId="PRIMARY_PHONE"/>
-    <PartyContactMechPurpose partyId="Supplier1001" contactMechId="SUPER1003" contactMechPurposeTypeId="PRIMARY_PHONE"
+    <PartyContactMechPurpose partyId="SUPPLYSPACE" contactMechId="SUPPLY_CONTACT_1003" contactMechPurposeTypeId="PRIMARY_PHONE"
                              fromDate="2022-04-28 17:30:33.715"/>
-
+    <!--Relationship between supplier and company -->
+    <PartyRelationship partyIdFrom="DemoScrumCompany" partyIdTo="SUPPLYSPACE" roleTypeIdFrom="ORGANIZATION_ROLE" roleTypeIdTo="SUPPLIER" fromDate="2022-04-28 17:30:33.715" partyRelationshipTypeId="SUPPLIER_REL"/>
 
     <!--created party for second data -->
-    <Party partyId="Standard1001" partyTypeId="PARTY_GROUP"/>
-    <!--Assigned role supplier-->a
-    <PartyRole partyId="Standard1001" roleTypeId="SUPPLIER"/>
+    <Party partyId="STANDARD" partyTypeId="PARTY_GROUP"/>
+    <!--Assigned role supplier-->
+    <PartyRole partyId="STANDARD" roleTypeId="SUPPLIER"/>
+    <!--    Created party group -->
+    <PartyGroup partyid="STANDARD" groupName="Standard Supplier"/>
     <!--PRIMERY EMAIL ADDRESS-->
-    <ContactMech contactMechId="STANDARD1001" contactMechTypeId="EMAIL_ADDRESS"
+    <ContactMech contactMechId="SUPPLY_CONT_1001" contactMechTypeId="EMAIL_ADDRESS"
                  infoString="standaredgenaral@gmail.com"/>
-    <PartyContactMech partyId="Standard1001" contactMechId="STANDARD1001" fromDate="2022-04-28 17:30:33.715"/>
-    <ContactMechTypePurpose contactMechTypeId="EMAIL_ADDRESS" contactMechPurposeTypeId="PRIMARY_EMAIL"/>
-    <PartyContactMechPurpose partyId="Standard1001" contactMechId="STANDARD1001"
+    <PartyContactMech partyId="STANDARD" contactMechId="SUPPLY_CONT_1001" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="STANDARD" contactMechId="SUPPLY_CONT_1001"
                              contactMechPurposeTypeId="PRIMARY_EMAIL" fromDate="2022-04-28 17:30:33.715"/>
     <!--PRIMARY ADDRESS-->
-    <ContactMech contactMechId="STANDARD1002" contactMechTypeId="POSTAL_ADDRESS"/>
-    <PostalAddress contactMechId="STANDARD1002" address1="60, Siyaganj Main Rd, Siyaganj" city="Indore"
+    <ContactMech contactMechId="SUPPLY_CONT_1002" contactMechTypeId="POSTAL_ADDRESS"/>
+    <PostalAddress contactMechId="SUPPLY_CONT_1002" address1="60, Siyaganj Main Rd, Siyaganj" city="Indore"
                    postalCode="452020" countryGeoId="IND" stateProvinceGeoId="IN-MP"/>
-    <PartyContactMech partyId="Standard1001" contactMechId="STANDARD1002" fromDate="2022-04-28 17:30:33.715"/>
-    <ContactMechTypePurpose contactMechTypeId="POSTAL_ADDRESS" contactMechPurposeTypeId="PRIMARY_LOCATION"/>
-    <PartyContactMechPurpose partyId="Standard1001" contactMechId="STANDARD1002"
+    <PartyContactMech partyId="STANDARD" contactMechId="SUPPLY_CONT_1002" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="STANDARD" contactMechId="SUPPLY_CONT_1002"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
     <!--PRIMERY PHONE-->
-    <ContactMech contactMechId="STANDARD1003" contactMechTypeId="TELECOM_NUMBER"/>
-    <TelecomNumber contactMechId="STANDARD1003" countryCode="91" contactNumber=" 098272 45815"/>
-    <PartyContactMech partyId="Standard1001" contactMechId="STANDARD1003" fromDate="2022-04-28 17:30:33.715"/>
-    <ContactMechTypePurpose contactMechTypeId="TELECOM_NUMBER" contactMechPurposeTypeId="PRIMARY_PHONE"/>
-    <PartyContactMechPurpose partyId="Standard1001" contactMechId="STANDARD1003"
+    <ContactMech contactMechId="SUPPLY_CONT_1003" contactMechTypeId="TELECOM_NUMBER"/>
+    <TelecomNumber contactMechId="SUPPLY_CONT_1003" countryCode="91" contactNumber=" 098272 45815"/>
+    <PartyContactMech partyId="STANDARD" contactMechId="SUPPLY_CONT_1003" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="STANDARD" contactMechId="SUPPLY_CONT_1003"
                              contactMechPurposeTypeId="PRIMARY_PHONE" fromDate="2022-04-28 17:30:33.715"/>
+    <!--Relationship between supplier and company -->
+    <PartyRelationship partyIdFrom="DemoScrumCompany" partyIdTo="STANDARD" roleTypeIdFrom="ORGANIZATION_ROLE" roleTypeIdTo="SUPPLIER" fromDate="2022-04-28 17:30:33.715" partyRelationshipTypeId="SUPPLIER_REL"/>
+
 </entity-engine-xml>
