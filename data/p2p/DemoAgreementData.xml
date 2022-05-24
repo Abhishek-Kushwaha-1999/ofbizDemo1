@@ -1,6 +1,6 @@
 <entity-engine-xml>
     <!--Agreement for first data -->
-    <Agreement agreementId="A1003" partyIdFrom="Company" partyIdTo="Supplier1001" roleTypeIdTo="SUPPLIER"
+    <Agreement agreementId="A1003" partyIdFrom="Company" partyIdTo="STANDARD" roleTypeIdTo="SUPPLIER"
                agreementTypeId="PURCHASE_AGREEMENT" agreementDate="2022-05-02 15:24:43.0"
                fromDate="2022-05-02 15:23:36.0" thruDate="2022-10-31 00:00:00.0"/>
     <AgreementTerm AgreementTerm="AT10003" termTypeId="FIN_PAY_NETDAYS_2" agreementId="A1003"
@@ -8,7 +8,7 @@
                    thruDate="2022-10-31 00:00:00.0"/>
 
     <!--Agreement for SECOND data -->
-    <Agreement agreementId="A1004" partyIdFrom="Company" partyIdTo="Standard1001" roleTypeIdTo="SUPPLIER"
+    <Agreement agreementId="A1004" partyIdFrom="Company" partyIdTo="SUPPLYSPACE" roleTypeIdTo="SUPPLIER"
                agreementTypeId="PURCHASE_AGREEMENT" agreementDate="2022-05-02 15:24:43.0"
                fromDate="2022-05-02 15:23:36.0" thruDate="2022-10-31 00:00:00.0"/>
     <AgreementTerm AgreementTerm="AT10004" termTypeId="FIN_PAY_NETDAYS_3" agreementId="A1004"

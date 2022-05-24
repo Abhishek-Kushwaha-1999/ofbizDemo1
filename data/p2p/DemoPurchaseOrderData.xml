@@ -1,31 +1,48 @@
 <entity-engine-xml>
-<!--    create order hader -->
-    <OrderHeader orderId="10022" orderTypeId="PURCHASE_ORDER" orderName="Demo Purchase Order" salesChannelEnumId="UNKNWN_SALES_CHANNEL" orderDate="2022-05-11 13:27:07.024" entryDate="2022-05-11 13:27:07.024" visitId="10000" statusId="ORDER_CREATED" createdBy="admin" currencyUom="USD" productStoreId="9000" remainingSubTotal="102.50" grandTotal="102.50" webSiteId="WebStore"/>
-<!--    create order item -->
-    <OrderItem orderId="10022" orderItemSeqId="00001" orderItemTypeId="PRODUCT_ORDER_ITEM" productId="GZ-2644" prodCatalogId="DemoCatalog" isPromo="N" quantity="5.0" selectedAmount="0.0" unitPrice="20.50" unitListPrice="0.0" isModifiedPrice="N" itemDescription="GZ-2644-5 Round Gizmo" statusId="ITEM_CREATED"/><OrderItemPriceInfo orderItemPriceInfoId="OP10001" orderId="10022" orderItemSeqId="00001" description="SupplierProduct [minimumOrderQuantity:10.0, lastPrice: 25.00]"/>
-<!--    define order role -->
+    <!--    create order hader -->
+    <OrderHeader orderId="10022" orderTypeId="PURCHASE_ORDER" orderName="Demo Purchase Order"
+                 salesChannelEnumId="UNKNWN_SALES_CHANNEL" orderDate="2022-05-11 13:27:07.024"
+                 entryDate="2022-05-11 13:27:07.024" visitId="10000" statusId="ORDER_CREATED" createdBy="admin"
+                 currencyUom="USD" productStoreId="9000" remainingSubTotal="102.50" grandTotal="102.50"
+                 webSiteId="WebStore"/>
+    <!--    create order item -->
+    <OrderItem orderId="10022" orderItemSeqId="00001" orderItemTypeId="PRODUCT_ORDER_ITEM" productId="GZ-2644"
+               prodCatalogId="DemoCatalog" isPromo="N" quantity="5.0" selectedAmount="0.0" unitPrice="20.50"
+               unitListPrice="0.0" isModifiedPrice="N" itemDescription="GZ-2644-5 Round Gizmo" statusId="ITEM_CREATED"/>
+    <OrderItemPriceInfo orderItemPriceInfoId="OP10001" orderId="10022" orderItemSeqId="00001"
+                        description="SupplierProduct [minimumOrderQuantity:10.0, lastPrice: 25.00]"/>
+    <!--    define order role -->
     <OrderRole orderId="10022" partyId="Company" roleTypeId="BILL_TO_CUSTOMER"/>
     <OrderRole orderId="10022" partyId="DemoSupplier" roleTypeId="BILL_FROM_VENDOR"/>
     <OrderRole orderId="10022" partyId="DemoSupplier" roleTypeId="SHIP_FROM_VENDOR"/>
     <OrderRole orderId="10022" partyId="DemoSupplier" roleTypeId="SUPPLIER_AGENT"/>
-<!--    create shipping group -->
-    <OrderItemShipGroup orderId="10022" shipGroupSeqId="00001" shipmentMethodTypeId="NO_SHIPPING" carrierPartyId="_NA_" carrierRoleTypeId="CARRIER" contactMechId="9200" maySplit="N" isGift="N"/>
+    <!--    create shipping group -->
+    <OrderItemShipGroup orderId="10022" shipGroupSeqId="00001" shipmentMethodTypeId="NO_SHIPPING" carrierPartyId="_NA_"
+                        carrierRoleTypeId="CARRIER" contactMechId="9200" maySplit="N" isGift="N"/>
     <OrderItemShipGroupAssoc orderId="10022" orderItemSeqId="00001" shipGroupSeqId="00001" quantity="10.0"/>
-<!--Assigne ordert status -->
-    <OrderStatus orderStatusId="OS1001" statusId="ORDER_CREATED" orderId="10022" statusDatetime="2022-05-11 13:27:07.024" statusUserLogin="admin"/>
-    <OrderStatus orderStatusId="OS1002" statusId="ITEM_CREATED" orderId="10022" orderItemSeqId="00001" statusDatetime="2022-05-11 13:27:07.024" statusUserLogin="admin"/>
-<!--Create contact information for Shipping-->
+    <!--Assigne ordert status -->
+    <OrderStatus orderStatusId="OS1001" statusId="ORDER_CREATED" orderId="10022"
+                 statusDatetime="2022-05-11 13:27:07.024" statusUserLogin="admin"/>
+    <OrderStatus orderStatusId="OS1002" statusId="ITEM_CREATED" orderId="10022" orderItemSeqId="00001"
+                 statusDatetime="2022-05-11 13:27:07.024" statusUserLogin="admin"/>
+    <!--Create contact information for Shipping-->
     <OrderContactMech orderId="10022" contactMechPurposeTypeId="SHIPPING_LOCATION" contactMechId="9200"/>
 
-   
+
 </entity-engine-xml>
 
-<!--changed status from created to Approve-->
+        <!--changed status from created to Approve-->
 <entity-engine-xml>
 
-    <OrderHeader orderId="10022" orderTypeId="PURCHASE_ORDER" orderName="Demo Purchase Order" salesChannelEnumId="UNKNWN_SALES_CHANNEL" orderDate="2022-05-11 13:27:07.024" entryDate="2022-05-11 13:27:07.024" visitId="10000" statusId="ORDER_APPROVED" createdBy="admin" currencyUom="USD" productStoreId="9000" remainingSubTotal="102.50" grandTotal="102.50" webSiteId="WebStore"/>
-    <OrderStatus orderStatusId="OS1006" statusId="ITEM_APPROVED" orderId="10022" orderItemSeqId="00001" statusDatetime="2022-05-12 17:46:15.144" statusUserLogin="admin"/>
-    <OrderStatus orderStatusId="OS1005" statusId="ORDER_APPROVED" orderId="10022" statusDatetime="2022-05-12 17:46:15.206" statusUserLogin="admin"/>
+<OrderHeader orderId="10022" orderTypeId="PURCHASE_ORDER" orderName="Demo Purchase Order"
+             salesChannelEnumId="UNKNWN_SALES_CHANNEL" orderDate="2022-05-11 13:27:07.024"
+             entryDate="2022-05-11 13:27:07.024" visitId="10000" statusId="ORDER_APPROVED" createdBy="admin"
+             currencyUom="USD" productStoreId="9000" remainingSubTotal="102.50" grandTotal="102.50"
+             webSiteId="WebStore"/>
+<OrderStatus orderStatusId="OS1006" statusId="ITEM_APPROVED" orderId="10022" orderItemSeqId="00001"
+             statusDatetime="2022-05-12 17:46:15.144" statusUserLogin="admin"/>
+<OrderStatus orderStatusId="OS1005" statusId="ORDER_APPROVED" orderId="10022" statusDatetime="2022-05-12 17:46:15.206"
+             statusUserLogin="admin"/>
 
 </entity-engine-xml>
 

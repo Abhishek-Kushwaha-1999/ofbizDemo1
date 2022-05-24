@@ -4,7 +4,6 @@
     <Product productId="PRODUCT_1001" productTypeId="FINISHED_GOOD" productName="Demo Product 1" />
     <SupplierProduct productId="PRODUCT_1001" partyId="SUPPLYSPACE" availableFromDate="2022-05-16 00:00:00.0" supplierPrefOrderId="10_MAIN_SUPPL" minimumOrderQuantity="100.00" lastPrice="10.00" currencyUomId="USD"/>
 <!--    Alternate supplier-->
-    <Product productId="PRODUCT_1001" productTypeId="FINISHED_GOOD" productName="Demo Product 1" />
     <SupplierProduct productId="PRODUCT_1001" partyId="STANDARD" availableFromDate="2022-05-16 00:00:00.0" supplierPrefOrderId="90_ALT_SUPPL" minimumOrderQuantity="500.00" lastPrice="15.00" currencyUomId="USD"/>
 
 <!--    Product two -->
@@ -12,7 +11,6 @@
     <Product productId="PRODUCT_1002" productTypeId="FINISHED_GOOD" productName="Demo Product 2" />
     <SupplierProduct productId="PRODUCT_1001" partyId="SUPPLYSPACE" availableFromDate="2022-05-16 00:00:00.0" supplierPrefOrderId="90_ALT_SUPPL" minimumOrderQuantity="1000.00" lastPrice="11.00" currencyUomId="USD"/>
 <!--    Alternate supplier-->
-    <Product productId="PRODUCT_1002" productTypeId="FINISHED_GOOD" productName="Demo Product 2" />
     <SupplierProduct productId="PRODUCT_1001" partyId="STANDARD" availableFromDate="2022-05-16 00:00:00.0" supplierPrefOrderId="10_MAIN_SUPPL" minimumOrderQuantity="500.00" lastPrice="25.00" currencyUomId="USD"/>
 
 </entity-engine-xml>

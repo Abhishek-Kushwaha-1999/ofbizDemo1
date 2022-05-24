@@ -5,6 +5,9 @@
     <PartyGroup partyid="SUPPLYSPACE" groupName="Supplyspace Gloable"/>
     <!--Assigned role supplier-->
     <PartyRole partyId="SUPPLYSPACE" roleTypeId="SUPPLIER"/>
+    <!--Relationship between supplier and company -->
+    <PartyRelationship partyIdFrom="Company" partyIdTo="SUPPLYSPACE" roleTypeIdFrom="INTERNAL_ORGANIZATIO" roleTypeIdTo="SUPPLIER"  partyRelationshipTypeId="SUPPLIER_REL"  fromDate="2022-05-02 00:00:00.000/>
+
     <!--PRIMERY EMAIL ADDRESS-->
     <ContactMech contactMechId="SUPPLY_CONTACT_1001" contactMechTypeId="EMAIL_ADDRESS" infoString="super@gmail.com"/>
     <PartyContactMech partyId="SUPPLYSPACE" contactMechId="SUPPLY_CONTACT_1001" fromDate="2022-04-28 17:30:33.715"/>
@@ -24,15 +27,17 @@
     <ContactMechTypePurpose contactMechTypeId="TELECOM_NUMBER" contactMechPurposeTypeId="PRIMARY_PHONE"/>
     <PartyContactMechPurpose partyId="SUPPLYSPACE" contactMechId="SUPPLY_CONTACT_1003" contactMechPurposeTypeId="PRIMARY_PHONE"
                              fromDate="2022-04-28 17:30:33.715"/>
-    <!--Relationship between supplier and company -->
-    <PartyRelationship partyIdFrom="DemoScrumCompany" partyIdTo="SUPPLYSPACE" roleTypeIdFrom="ORGANIZATION_ROLE" roleTypeIdTo="SUPPLIER" fromDate="2022-04-28 17:30:33.715" partyRelationshipTypeId="SUPPLIER_REL"/>
 
     <!--created party for second data -->
     <Party partyId="STANDARD" partyTypeId="PARTY_GROUP"/>
-    <!--Assigned role supplier-->
-    <PartyRole partyId="STANDARD" roleTypeId="SUPPLIER"/>
     <!--    Created party group -->
     <PartyGroup partyid="STANDARD" groupName="Standard Supplier"/>
+    <!--Relationship between supplier and company -->
+    <!--Assigned role supplier-->
+    <PartyRole partyId="STANDARD" roleTypeId="SUPPLIER"/>
+
+    <PartyRelationship partyIdFrom="Company" partyIdTo="STANDARD" roleTypeIdFrom="INTERNAL_ORGANIZATIO" roleTypeIdTo="SUPPLIER" partyRelationshipTypeId="SUPPLIER_REL"  fromDate="2022-05-02 00:00:00.000/>
+
     <!--PRIMERY EMAIL ADDRESS-->
     <ContactMech contactMechId="SUPPLY_CONT_1001" contactMechTypeId="EMAIL_ADDRESS"
                  infoString="standaredgenaral@gmail.com"/>
@@ -52,7 +57,5 @@
     <PartyContactMech partyId="STANDARD" contactMechId="SUPPLY_CONT_1003" fromDate="2022-04-28 17:30:33.715"/>
     <PartyContactMechPurpose partyId="STANDARD" contactMechId="SUPPLY_CONT_1003"
                              contactMechPurposeTypeId="PRIMARY_PHONE" fromDate="2022-04-28 17:30:33.715"/>
-    <!--Relationship between supplier and company -->
-    <PartyRelationship partyIdFrom="DemoScrumCompany" partyIdTo="STANDARD" roleTypeIdFrom="ORGANIZATION_ROLE" roleTypeIdTo="SUPPLIER" fromDate="2022-04-28 17:30:33.715" partyRelationshipTypeId="SUPPLIER_REL"/>
 
 </entity-engine-xml>
