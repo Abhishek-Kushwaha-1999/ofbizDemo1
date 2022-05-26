@@ -1,0 +1,26 @@
+<entity-engine-xml>
+<!--    create catalog -->
+    <ProdCatalog prodCatalogId="DEMO_CATELOG_1002" catalogName="Demo catalog 1002" />
+    <ProductStoreCatalog productStoreId="9000" prodCatalogId="DEMO_CATELOG_1002" fromDate="2022-05-24 12:00:00.0" />
+<!--create Browse Product category -->
+    <ProductCategory productCategoryId="DEMO_CATALOG_BR_02" productCategoryTypeId="CATALOG_CATEGORY" categoryName="Demo Catalog Browse Root"/>
+    <!-- create product catalog category -->
+    <ProdCatalogCategory prodCatalogId="DEMO_CATELOG_1002" productCategoryId="DEMO_CATALOG_BR_02" fromDate="2022-05-24 12:00:00.0" prodCatalogCategoryTypeId="PCCT_BROWSE_ROOT"/>
+<!--    create product categories -->
+    <ProductCategory productCategoryId="CLOTHES" productCategoryTypeId="CATALOG_CATEGORY" categoryName="CLOTHES" />
+    <ProductCategory productCategoryId="TOPS" productCategoryTypeId="CATALOG_CATEGORY" categoryName="Tops" />
+    <ProductCategory productCategoryId="BOTTOMS" productCategoryTypeId="CATALOG_CATEGORY" categoryName="Bottoms" />
+    <ProductCategory productCategoryId="T-SHIRTS" productCategoryTypeId="CATALOG_CATEGORY" categoryName="T-Shirts" />
+    <ProductCategory productCategoryId="SHIRTS" productCategoryTypeId="CATALOG_CATEGORY" categoryName="Shirts" />
+    <ProductCategory productCategoryId="SHORTS" productCategoryTypeId="CATALOG_CATEGORY"  categoryName="Shorts" />
+    <ProductCategory productCategoryId="JEANS" productCategoryTypeId="CATALOG_CATEGORY"  categoryName="Jeans" />
+<!--    Associate categories with parent categories -->
+    <ProductCategoryRollup productCategoryId="TOPS" parentProductCategoryId="CLOTHES" fromDate="2022-05-24 15:20:46.0"/>
+    <ProductCategoryRollup productCategoryId="CLOTHES" parentProductCategoryId="DEMO_CATALOG_BR_02" fromDate="2022-05-24 15:20:46.0"/>
+    <ProductCategoryRollup productCategoryId="BOTTOMS" parentProductCategoryId="CLOTHES" fromDate="2022-05-24 15:20:46.0"/>
+    <ProductCategoryRollup productCategoryId="T-SHIRTS" parentProductCategoryId="TOPS" fromDate="2022-05-24 15:20:46.0"/>
+    <ProductCategoryRollup productCategoryId="SHIRTS" parentProductCategoryId="TOPS" fromDate="2022-05-24 15:20:46.0"/>
+    <ProductCategoryRollup productCategoryId="SHORTS" parentProductCategoryId="BOTTOMS" fromDate="2022-05-24 15:20:46.0"/>
+    <ProductCategoryRollup productCategoryId="JEANS" parentProductCategoryId="BOTTOMS" fromDate="2022-05-24 15:20:46.0"/>
+
+</entity-engine-xml>
