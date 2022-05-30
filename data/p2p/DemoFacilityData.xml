@@ -12,8 +12,7 @@
     <ContactMech contactMechId="PERSON_CONTACT_10002" contactMechTypeId="TELECOM_NUMBER"/>
     <TelecomNumber contactMechId="PERSON_CONTACT_10002" countryCode="91" contactNumber="78692887944"/>
     <PartyContactMech partyId="PERSON_10001" contactMechId="PERSON_CONTACT_10002" fromDate="2022-04-28 17:30:33.715"/>
-    <PartyContactMechPurpose partyId="PERSON_10001" contactMechId="PERSON_CONTACT_10002"
-                             contactMechPurposeTypeId="PRIMARY_PHONE" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="PERSON_10001" contactMechId="PERSON_CONTACT_10002" contactMechPurposeTypeId="PRIMARY_PHONE" fromDate="2022-04-28 17:30:33.715"/>
     <!--person 1 address-->
     <ContactMech contactMechId="PERSON_CONTACT_10003" contactMechTypeId="POSTAL_ADDRESS"/>
     <PostalAddress contactMechId="PERSON_CONTACT_10003" toName="RAJA" attnName="RAJA pawar" address1=" vijay nagar"
@@ -22,8 +21,7 @@
     <PartyContactMechPurpose partyId="PERSON_10001" contactMechId="PERSON_CONTACT_10003"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
     <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10001" roleTypeId="MANAGER"
-                   fromDate="2022-05-12 13:16:42.0"/>
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10001" roleTypeId="MANAGER" fromDate="2022-05-12 13:16:42.0"/>
     <!--  person 2 -->
     <Party partyId="PERSON_10002" partyTypeId="PERSON"/>
     <PartyRole partyId="PERSON_10002" roleTypeId="RECEIVER"/>
@@ -172,14 +170,14 @@
     <PartyContactMech partyId="PERSON_10007" contactMechId="PERSON_CONTACT_10020" fromDate="2022-04-28 17:30:33.715"/>
     <PartyContactMechPurpose partyId="PERSON_10007" contactMechId="PERSON_CONTACT_10020"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
-    <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10007" roleTypeId="PACKER"
-                   fromDate="2022-05-12 13:16:42.0"/>
+
     <!--Facility data -->
     <Facility facilityId="DEMO_WAREEHOUSE_1001" facilityTypeId="WAREHOUSE" ownerPartyId="Company"
               defaultInventoryItemTypeId="NON_SERIAL_INV_ITEM" facilityName="Demo Store Warehouse 1"
               defaultDaysToShip="20"/>
-
+    <!--    Assigned roles to party in facility -->
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10007" roleTypeId="PACKER"
+                   fromDate="2022-05-12 13:16:42.0"/>
 
     <!--Contact detalil-->
     <!-- facility Primery phone -->
@@ -410,14 +408,14 @@
     <PartyContactMech partyId="PERSON_10014" contactMechId="PERSON_CONTACT_10020" fromDate="2022-04-28 17:30:33.715"/>
     <PartyContactMechPurpose partyId="PERSON_10014" contactMechId="PERSON_CONTACT_10020"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
-    <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10014" roleTypeId="PACKER"
-                   fromDate="2022-05-12 13:16:42.0"/>
-
     <!--Facility data -->
     <Facility facilityId="DEMO_WAREEHOUSE_1002" facilityTypeId="WAREHOUSE" ownerPartyId="Company"
               defaultInventoryItemTypeId="NON_SERIAL_INV_ITEM" facilityName="Demo Store Warehouse 2"
               defaultDaysToShip="20"/>
+    <!--    Assigned roles to party in facility -->
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10014" roleTypeId="PACKER"
+                   fromDate="2022-05-12 13:16:42.0"/>
+
 
     <!--Contact detalil-->
     <!-- facility Primery phone -->

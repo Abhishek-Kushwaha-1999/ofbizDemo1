@@ -97,4 +97,11 @@
     <ProductFeatureAppl productId="JEANS_O4_BLUE_L" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
     <ProductFeatureAppl productId="JEANS_O4_BLUE_L" productFeatureId="SIZE_L" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
 
+    <ProductFeatureAppl productId="SCARF" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="SCARF" productFeatureId="COLOR_RED" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="SCARF_BLUE" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="SCARF_RED" productFeatureId="COLOR_RED" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+
+    <ProductFeatureAppl productId="SCARF_BLUE" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="SCARF_RED" productFeatureId="COLOR_RED" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
 </entity-engine-xml>

@@ -6,9 +6,11 @@
     <!--Assigned role supplier-->
     <PartyRole partyId="SUPPLYSPACE" roleTypeId="SUPPLIER"/>
     <!--Relationship between supplier and company -->
-    <PartyRelationship partyIdFrom="Company" partyIdTo="SUPPLYSPACE" roleTypeIdFrom="INTERNAL_ORGANIZATIO" roleTypeIdTo="SUPPLIER"  partyRelationshipTypeId="SUPPLIER_REL"  fromDate="2022-05-02 00:00:00.000/>
+    <PartyRelationship partyIdFrom="Company" partyIdTo="SUPPLYSPACE" roleTypeIdFrom="INTERNAL_ORGANIZATIO" roleTypeIdTo="SUPPLIER"  partyRelationshipTypeId="SUPPLIER_REL"  fromDate="2022-05-02 00:00:00.000"/>
 
-    <!--PRIMERY EMAIL ADDRESS-->
+
+<!-- PRIMERY EMAIL ADDRESS-->
+
     <ContactMech contactMechId="SUPPLY_CONTACT_1001" contactMechTypeId="EMAIL_ADDRESS" infoString="super@gmail.com"/>
     <PartyContactMech partyId="SUPPLYSPACE" contactMechId="SUPPLY_CONTACT_1001" fromDate="2022-04-28 17:30:33.715"/>
      <PartyContactMechPurpose partyId="SUPPLYSPACE" contactMechId="SUPPLY_CONTACT_1001" contactMechPurposeTypeId="PRIMARY_EMAIL"
@@ -36,7 +38,7 @@
     <!--Assigned role supplier-->
     <PartyRole partyId="STANDARD" roleTypeId="SUPPLIER"/>
 
-    <PartyRelationship partyIdFrom="Company" partyIdTo="STANDARD" roleTypeIdFrom="INTERNAL_ORGANIZATIO" roleTypeIdTo="SUPPLIER" partyRelationshipTypeId="SUPPLIER_REL"  fromDate="2022-05-02 00:00:00.000/>
+    <PartyRelationship partyIdFrom="Company" partyIdTo="STANDARD" roleTypeIdFrom="INTERNAL_ORGANIZATIO" roleTypeIdTo="SUPPLIER" partyRelationshipTypeId="SUPPLIER_REL"  fromDate="2022-05-02 00:00:00.000"/>
 
     <!--PRIMERY EMAIL ADDRESS-->
     <ContactMech contactMechId="SUPPLY_CONT_1001" contactMechTypeId="EMAIL_ADDRESS"

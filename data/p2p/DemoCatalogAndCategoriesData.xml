@@ -10,6 +10,7 @@
     <ProductCategory productCategoryId="CLOTHES" productCategoryTypeId="CATALOG_CATEGORY" categoryName="CLOTHES" />
     <ProductCategory productCategoryId="TOPS" productCategoryTypeId="CATALOG_CATEGORY" categoryName="Tops" />
     <ProductCategory productCategoryId="BOTTOMS" productCategoryTypeId="CATALOG_CATEGORY" categoryName="Bottoms" />
+    <ProductCategory productCategoryId="ACCESSORIES" productCategoryTypeId="CATALOG_CATEGORY" categoryName="Accessories" />
     <ProductCategory productCategoryId="T-SHIRTS" productCategoryTypeId="CATALOG_CATEGORY" categoryName="T-Shirts" />
     <ProductCategory productCategoryId="SHIRTS" productCategoryTypeId="CATALOG_CATEGORY" categoryName="Shirts" />
     <ProductCategory productCategoryId="SHORTS" productCategoryTypeId="CATALOG_CATEGORY"  categoryName="Shorts" />
@@ -18,6 +19,7 @@
     <ProductCategoryRollup productCategoryId="TOPS" parentProductCategoryId="CLOTHES" fromDate="2022-05-24 15:20:46.0"/>
     <ProductCategoryRollup productCategoryId="CLOTHES" parentProductCategoryId="DEMO_CATALOG_BR_02" fromDate="2022-05-24 15:20:46.0"/>
     <ProductCategoryRollup productCategoryId="BOTTOMS" parentProductCategoryId="CLOTHES" fromDate="2022-05-24 15:20:46.0"/>
+    <ProductCategoryRollup productCategoryId="ACCESSORIES" parentProductCategoryId="CLOTHES" fromDate="2022-05-24 15:20:46.0"/>
     <ProductCategoryRollup productCategoryId="T-SHIRTS" parentProductCategoryId="TOPS" fromDate="2022-05-24 15:20:46.0"/>
     <ProductCategoryRollup productCategoryId="SHIRTS" parentProductCategoryId="TOPS" fromDate="2022-05-24 15:20:46.0"/>
     <ProductCategoryRollup productCategoryId="SHORTS" parentProductCategoryId="BOTTOMS" fromDate="2022-05-24 15:20:46.0"/>

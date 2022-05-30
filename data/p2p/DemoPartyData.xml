@@ -78,10 +78,10 @@
     <PartyContactMech partyId="P10001" contactMechId="C10009" fromDate="2022-04-28 17:30:33.715"/>
      <PartyContactMechPurpose partyId="P10001" contactMechId="C10009" contactMechPurposeTypeId="SHIPPING_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
 
-</entity-engine-xml>
+
 
 <!--party data Model exercise 2-->
-<entity-engine-xml>
+
     <!--created party for first data-->
     <Party partyId="COUCH" partyTypeId="PARTY_GROUP"/>
     <!--Assigned role supplier-->
@@ -140,10 +140,10 @@
 
     <!--Agreement for first data -->
     <Agreement agreementId="A1003" partyIdFrom="Company" partyIdTo="COUCH" roleTypeIdTo="SUPPLIER"
-               agreementTypeId="PURCHASE_AGREEMENT" agreementDate="2022-05-02 15:24:43.0" fromDate="2022-05-02 15:23:36.0"
-               thruDate="2022-10-31 00:00:00.0"/>
-    <AgreementTerm AgreementTerm="AT10003" termTypeId="FIN_PAY_NETDAYS_2" agreementId="A1003" invoiceItemTypeId="PAYROL_DD_REPAY" fromDate="2022-05-02 15:25:56.0"
-                   thruDate="2022-10-31 00:00:00.0"/>
+               agreementTypeId="PURCHASE_AGREEMENT" agreementDate="2022-04-28 17:30:33.715" fromDate="2022-04-28 17:30:33.715"
+               thruDate="2022-10-31 00:00:00.000"/>
+    <AgreementTerm AgreementTerm="AT10003" termTypeId="FIN_PAY_NETDAYS_2" agreementId="A1003" invoiceItemTypeId="PAYROL_DD_REPAY" fromDate="2022-04-28 17:30:33.715"
+                   thruDate="2022-10-31 00:00:00.000"/>
 
     <!--Agreement for SECOND data -->
     <Agreement agreementId="A1004" partyIdFrom="Company" partyIdTo="CHARTER" roleTypeIdTo="SUPPLIER" agreementTypeId="PURCHASE_AGREEMENT" agreementDate="2022-05-02 15:24:43.0" fromDate="2022-05-02 15:23:36.0"
