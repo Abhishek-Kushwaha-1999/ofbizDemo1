@@ -1,0 +1,65 @@
+<entity-engine-xml>
+<!--        order created -->
+    <OrderHeader orderid="DEMO_10001" orderTypeid="SALES_ORDER" orderName="Demo sales order" salesChannekEnumId="WEB_SALES_CHANNEL" orderDate="2022-05-27 17:23:49.475" priority="2" entryDate="2022-05-27 17:23:49.475" statusId="ORDER_CREATED" createdBy="admin" currencyUom="USD" ProductStoreId="9000" remainingSubTotal="350.00" grandTotal="350.00"/>
+    <OrderItem orderId="DEMO_10001" orderItemSeqId="00001" orderItemTypeId="PRODUCT_ORDER_ITEM" productId="PROD_SHIRT_O4_BLUE_L" prodCatalogId="DEMO_CATELOG_1002"  isPromo="N" quantity="2.000000" selectedAmount="0.000000" unitPrice="900.00" unitListPrice="950.00" isModifiedPrice="N" itemDescription="Blue shirt" statusId="ITEM_CREATED"/>
+    <OrderItem orderId="DEMO_10001" orderItemSeqId="00002" orderItemTypeId="PRODUCT_ORDER_ITEM" productId="JEANS_04_BLUE_M" prodCatalogId="DEMO_CATELOG_1002" isPromo="N" quantity="2.000000" selectedAmount="0.000000" unitPrice="90.00" unitListPrice="95.00" isModifiedPrice="N" itemDescription="Blue jeans" statusId="ITEM_CREATED"/>
+
+    <PartyRole partyId="P10001" roleTypeId="END_USER_CUSTOMER"/>
+    <PartyRole partyId="P10001" roleTypeId="SHIP_TO_CUSTOMER"/>
+    <PartyRole partyId="P10001" roleTypeId="PLACING_CUSTOMER"/>
+<!--Contact details -->
+    <OrderContactMech orderId="DEMO_10001" contactMechPurposeTypeId="BILLING_LOCATION" contactMechId="C10002"/>
+    <OrderContactMech orderId="DEMO_10001" contactMechPurposeTypeId="PHONE_SHIPPING" contactMechId="C10004"/>
+    <OrderContactMech orderId="DEMO_10001" contactMechPurposeTypeId="SHIPPING_LOCATION" contactMechId="C10005"/>
+<!--Ship group datails-->
+    <OrderItemShipGroup orderId="DEMO_10001" shipGroupSeqId="00001" shipmentMethodTypeId="NEXT_DAY" carrierPartyId="UPS" carrierRoleTypeId="CARRIER" contactMechId="9015" maySplit="N" isGift="N"/>
+    <OrderItemShipGroupAssoc orderId="DEMO_10001" orderItemSeqId="00001" shipGroupSeqId="00001" quantity="2.00"/>
+    <OrderItemShipGroupAssoc orderId="DEMO_10001" orderItemSeqId="00002" shipGroupSeqId="00001" quantity="2.00"/>
+<!--order payment preference -->
+    <OrderPaymentPreference orderPaymentPreferenceId="ORD_PYM_PREF_1001" orderId="DEMO_10001" paymentMethodTypeId="EXT_COD" paymentMethodId="PETTY_CASH" presentFlag="N" swipedFlag="N" overflowFlag="N" maxAmount="300.00" processAttempt="1" statusId="PAYMENT_NOT_RECEIVED" needsNsfRetry="N" createdDate="2022-05-27 17:23:49.475"/>
+<!--Order in status created status -->
+    <OrderStatus orderStatusId="ORD_1001" statusId="ORDER_CREATED" orderId="DEMO_10001" statusDatetime="2022-05-27 17:23:49.475" statusUserLogin="admin"/>
+    <OrderStatus orderStatusId="ORD_1002" statusId="ITEM_CREATED" orderId="DEMO_10001" orderItemSeqId="00001" statusDatetime="2022-05-27 17:23:49.475" statusUserLogin="admin"/>
+    <OrderStatus orderStatusId="ORD_1003" statusId="ITEM_CREATED" orderId="DEMO_10001" orderItemSeqId="00002" statusDatetime="2022-05-27 17:23:49.475" statusUserLogin="admin"/>
+    <OrderStatus orderStatusId="ORD_1004" statusId="PAYMENT_NOT_AUTH" orderId="DEMO_10001" orderPaymentPreferenceId="ORD_PYM_PREF_1001" statusDatetime="2022-05-27 17:23:49.475" statusUserLogin="admin"/>
+    <OrderStatus orderStatusId="ORD_1005" statusId="PAYMENT_NOT_AUTH" orderId="DEMO_10001" orderPaymentPreferenceId="ORD_PYM_PREF_1001" statusDatetime="2022-05-27 17:23:49.475" statusUserLogin="admin"/>
+    <OrderStatus orderStatusId="ORD_1006" statusId="PAYMENT_AUTHORIZED" orderId="DEMO_10001" orderPaymentPreferenceId="ORD_PYM_PREF_1001" statusDatetime="2022-05-27 17:23:49.475" statusUserLogin="admin"/>
+
+<!--    order approved -->
+    <OrderStatus orderStatusId="ORD_1007" statusId="ORDER_APPROVED" orderId="DEMO_10001" statusDatetime="2022-05-27 17:23:49.475" statusUserLogin="admin"/>
+    <OrderStatus orderStatusId="ORD_1008" statusId="ITEM_APPROVED" orderId="DEMO_10001" orderItemSeqId="00001" statusDatetime="2022-05-27 17:23:49.475" statusUserLogin="admin"/>
+    <OrderStatus orderStatusId="ORD_1009" statusId="ITEM_APPROVED" orderId="DEMO_10001" orderItemSeqId="00002" statusDatetime="2022-05-27 17:23:49.475" statusUserLogin="admin"/>
+
+<!-- shipment for order DEMO_1001-->
+    <Shipment shipmentId="SHIP_1001" shipmentTypeId="SALES_SHIPMENT" statusId="SHIPMENT_SHIPPED" primaryOrderId="DEMO_10001" primaryShipGroupSeqId="00001" estimatedShipCost="50.00" originFacilityId="WebStoreWarehouse" originContactMechId="9200" originTelecomNumberId="9201" destinationContactMechId="9015" destinationTelecomNumberId="9025" partyIdTo="P10001" partyIdFrom="Company" createdDate="2009-08-17 14:56:57.553"/>
+    <ShipmentItem shipmentId="SHIP_1001" shipmentItemSeqId="00001" productId="PROD_SHIRT_O4_BLUE_L" quantity="2.00"/>
+    <ShipmentItem shipmentId="SHIP_1001" shipmentItemSeqId="00002" productId="JEANS_04_BLUE_M" quantity="2.00"/>
+    <ShipmentRouteSegment shipmentId="SHIP_1001" shipmentRouteSegmentId="00001" originFacilityId="WebStoreWarehouse" originContactMechId="9200" originTelecomNumberId="9201" destContactMechId="C10005" destTelecomNumberId="C10004" carrierPartyId="UPS" shipmentMethodTypeId="NEXT_DAY" carrierServiceStatusId="SHRSCS_NOT_STARTED"/>
+    <ShipmentPackage shipmentId="SHIP_1001" shipmentPackageSeqId="00001" dateCreated="2022-05-28 17:23:49.475"/>
+    <ShipmentPackageContent shipmentId="SHIP_1001" shipmentPackageSeqId="00001" shipmentItemSeqId="00001" quantity="2.00"/>
+    <ShipmentPackageContent shipmentId="SHIP_1001" shipmentPackageSeqId="00001" shipmentItemSeqId="00002" quantity="2.00"/>
+    <ShipmentPackageRouteSeg shipmentId="SHIP_1001" shipmentPackageSeqId="00001" shipmentRouteSegmentId="00001"/>
+    <ShipmentStatus statusId="SHIPMENT_INPUT" shipmentId="SHIP_1001" statusDate="2022-05-27 17:23:49.475"/>
+    <ShipmentStatus statusId="SHIPMENT_PACKED" shipmentId="SHIP_1001" statusDate="2022-05-27 17:23:49.475"/>
+    <ShipmentStatus statusId="SHIPMENT_SHIPPED" shipmentId="SHIP_1001" statusDate="2022-05-27 18:23:49.475"/>
+<!--Order issue -->
+    <ItemIssuance itemIssuanceId="ITEM_ISSU_1001" orderId="DEMO_10001" orderItemSeqId="00001" shipGroupSeqId="00001" inventoryItemId="10003" shipmentId="SHIP_1001" shipmentItemSeqId="00001" issuedDateTime="2022-05-27 17:23:49.475" issuedByUserLoginId="admin" quantity="2.00"/>
+    <ItemIssuance itemIssuanceId="ITEM_ISSU_1002" orderId="DEMO_10001" orderItemSeqId="00002" shipGroupSeqId="00001" inventoryItemId="10004" shipmentId="SHIP_1001" shipmentItemSeqId="00001" issuedDateTime="2022-05-27 17:23:49.475" issuedByUserLoginId="admin" quantity="2.00"/>
+<!--order in complete status -->
+    <OrderStatus orderStatusId="ORD_1010" statusId="ITEM_COMPLETED" orderId="DEMO_10001" orderItemSeqId="00001" statusDatetime="2022-05-27 18:23:49.475" statusUserLogin="admin"/>
+    <OrderStatus orderStatusId="ORD_1011" statusId="ITEM_COMPLETED" orderId="DEMO_10001" orderItemSeqId="00004" statusDatetime="2022-05-27 18:23:49.475" statusUserLogin="admin"/>
+    <OrderStatus orderStatusId="ORD_1012" statusId="ORDER_COMPLETED" orderId="DEMO_10001" statusDatetime="2022-05-27 18:23:49.475" statusUserLogin="admin"/>
+<!-- invoice for order -->
+    <Invoice invoiceId="INV_1001" invoiceTypeId="SALES_INVOICE" partyIdFrom="Company" partyId="P10001" statusId="INVOICE_PAID" invoiceDate="2022-05-27 18:23:49.475" paidDate="2022-05-27 20:23:49.475" currencyUomId="USD"/>
+    <InvoiceItem invoiceId="INV_1001" invoiceItemSeqId="00001" invoiceItemTypeId="INV_FPROD_ITEM" overrideGlAccountId="224153" productId="PROD_SHIRT_O4_BLUE_L" parentInvoiceId="INV_1001" parentInvoiceItemSeqId="00001" quantity="2.00" amount="120.00" description="Blue Shirt"/>
+    <InvoiceItem invoiceId="INV_1001" invoiceItemSeqId="00002" invoiceItemTypeId="INV_FPROD_ITEM" overrideGlAccountId="224153" productId="JEANS_04_BLUE_M" parentInvoiceId="INV_1001" parentInvoiceItemSeqId="00001" quantity="2.00" amount="180.00" description=" lue Jeans" />
+    <InvoiceItem invoiceId="INV_1001" invoiceItemSeqId="00003" invoiceItemTypeId="ITM_SHIPPING_CHARGES" quantity="4.00" amount="50.00"/>
+<!--order item billing and shipment item billing -->
+    <ShipmentItemBilling shipmentId="SHIP_1001" shipmentItemSeqId="00001" invoiceId="INV_1001" invoiceItemSeqId="00001"/>
+    <OrderItemBilling orderId="DEMO_10001" orderItemSeqId="00001" invoiceId="INV_1001" invoiceItemSeqId="00001" itemIssuanceId="9001" quantity="2.00" amount="120.00"/>
+    <OrderItemBilling orderId="DEMO_10001" orderItemSeqId="00002" invoiceId="INV_1001" invoiceItemSeqId="00002" itemIssuanceId="9002" quantity="2.00" amount="180.00"/>
+<!--cash on delivery payment for order -->
+    <Payment paymentId="PAYMENT_1001" paymentTypeId="CUSTOMER_PAYMENT" paymentMethodTypeId="EXT_COD" paymentMethodId="PETTY_CASH"  paymentPreferenceId="ORD_PYM_PREF_1001" partyIdFrom="P10001" partyIdTo="Company" statusId="PMNT_RECEIVED" effectiveDate="2022-05-27 17:23:49.475" amount="350.00" currencyUomId="USD"/>
+    <PaymentApplication paymentApplicationId="PYM_APP_1001" paymentId="PAYMENT_1001" invoiceId="INV_1001" amountApplied="350.00"/>
+
+</entity-engine-xml>
