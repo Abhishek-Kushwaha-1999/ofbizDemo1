@@ -1,21 +1,29 @@
 <entity-engine-xm>
     <!--    create order hader -->
-    <OrderHeader orderId="DEMO_1003" orderTypeId="PURCHASE_ORDER" orderName="Demo Purchase Order" salesChannelEnumId="UNKNWN_SALES_CHANNEL" orderDate="2022-05-11 13:27:07.024" entryDate="2022-05-11 13:27:07.024" statusId="ORDER_CREATED" createdBy="admin" currencyUom="USD" productStoreId="9000" remainingSubTotal="15000.00" grandTotal="15000.00" />
+    <OrderHeader orderId="DEMO_1003" orderTypeId="PURCHASE_ORDER" orderName="Demo Purchase Order" orderDate="2022-05-11 13:27:07.024" entryDate="2022-05-11 13:27:07.024" statusId="ORDER_CREATED" createdBy="admin" currencyUom="USD"  remainingSubTotal="15000.00" grandTotal="15000.00" />
     <!--    create order item -->
-    <OrderItem orderId="DEMO_1003" orderItemSeqId="00001" orderItemTypeId="PRODUCT_ORDER_ITEM" productId="PROD_SHIRT_O4_BLUE_L" prodCatalogId="DEMO_CATELOG_1002"  isPromo="N" quantity="10.000000"  unitPrice="750.00" unitListPrice="800.00" isModifiedPrice="N" itemDescription="Blue shirt" statusId="ITEM_CREATED"/>
-    <OrderItem orderId="DEMO_1003" orderItemSeqId="00002" orderItemTypeId="PRODUCT_ORDER_ITEM" productId="JEANS_04_BLUE_M" prodCatalogId="DEMO_CATELOG_1002" isPromo="N" quantity="10.000000" unitPrice="750.00" unitListPrice="800.00" isModifiedPrice="N" itemDescription="Blue jeans" statusId="ITEM_CREATED"/>
+    <OrderItem orderId="DEMO_1003" orderItemSeqId="00001" orderItemTypeId="PRODUCT_ORDER_ITEM" productId="PROD_SHIRT_O4_BLUE_L"   isPromo="N" quantity="10.000000" isModifiedPrice="N" itemDescription="Blue shirt" statusId="ITEM_CREATED"/>
+    <OrderItem orderId="DEMO_1003" orderItemSeqId="00002" orderItemTypeId="PRODUCT_ORDER_ITEM" productId="JEANS_04_BLUE_M" isPromo="N" quantity="10.000000"  isModifiedPrice="N" itemDescription="Blue jeans" statusId="ITEM_CREATED"/>
     <OrderItemPriceInfo orderItemPriceInfoId="OP10001" orderId="DEMO_1003" orderItemSeqId="00001" description="SupplierProduct [minimumOrderQuantity:10.0, lastUnitPrice: 750.00]"/>
     <OrderItemPriceInfo orderItemPriceInfoId="OP10002" orderId="DEMO_1003" orderItemSeqId="00002" description="SupplierProduct [minimumOrderQuantity:10.0, lastUnitPrice: 750.00]"/>
+
+    <PartyRole partyId="SUPPLYSPACE" roleTypeId="BILL_FROM_VENDOR"/>
+    <PartyRole partyId="SUPPLYSPACE" roleTypeId="SHIP_FROM_VENDOR"/>
+    <PartyRole partyId="SUPPLYSPACE" roleTypeId="SUPPLIER_AGENT"/>
 
     <!--    define order role -->
     <OrderRole orderId="DEMO_1003" partyId="Company" roleTypeId="BILL_TO_CUSTOMER"/>
     <OrderRole orderId="DEMO_1003" partyId="SUPPLYSPACE" roleTypeId="BILL_FROM_VENDOR"/>
     <OrderRole orderId="DEMO_1003" partyId="SUPPLYSPACE" roleTypeId="SHIP_FROM_VENDOR"/>
     <OrderRole orderId="DEMO_1003" partyId="SUPPLYSPACE" roleTypeId="SUPPLIER_AGENT"/>
+<!--    Order contact -->
+    <OrderContactMech orderId="DEMO_1003" contactMechPurposeTypeId="BILLING_LOCATION" contactMechId="9000"/>
+    <OrderContactMech orderId="DEMO_1003" contactMechPurposeTypeId="SHIPPING_LOCATION" contactMechId="9000"/>
+
     <!--    create shipping group -->
     <OrderItemShipGroup orderId="DEMO_1003" shipGroupSeqId="00001" shipmentMethodTypeId="NO_SHIPPING" carrierPartyId="_NA_" carrierRoleTypeId="CARRIER" contactMechId="9200" maySplit="N" isGift="N"/>
     <OrderItemShipGroupAssoc orderId="DEMO_1003" orderItemSeqId="00001" shipGroupSeqId="00001" quantity="10.0"/>
-    <OrderItemShipGroupAssoc orderId="DEMO_1003" orderItemSeqId="00002" shipGroupSeqId="00002" quantity="10.0"/>
+    <OrderItemShipGroupAssoc orderId="DEMO_1003" orderItemSeqId="00002" shipGroupSeqId="00001" quantity="10.0"/>
 
     <!--Assigne ordert status -->
     <OrderStatus orderStatusId="ORD_1015" statusId="ORDER_CREATED" orderId="DEMO_1003" statusDatetime="2022-05-11 13:27:07.024" statusUserLogin="admin"/>
@@ -31,9 +39,10 @@
     <OrderStatus orderStatusId="ORD_1019" statusId="ITEM_APPROVED" orderId="DEMO_1003" orderItemSeqId="00002" statusDatetime="2022-05-12 17:46:15.144" statusUserLogin="admin"/>
     <OrderStatus orderStatusId="OED_1020" statusId="ORDER_APPROVED" orderId="DEMO_1003" statusDatetime="2022-05-12 17:46:15.206" statusUserLogin="admin"/>
 <!--create shipment -->
-    <Shipment shipmentId="SHIP_1002" shipmentTypeId="PURCHASE_SHIPMENT" statusId="PURCH_SHIP_CREATED"  primaryOrderId="DEMO_10003" primaryShipGroupSeqId="00001" estimatedShipCost="500.00"  originContactMechId="SUPPLY_CONTACT_1001" destinationFacilityId="WebStoreWarehouse" destinationContactMechId="9200" destinationTelecomNumberId="9201" partyIdTo="Company" partyIdFrom="SUPPLYSPACE" createdDate="2022-05-11 13:27:07.024"/>
-    <Shipment shipmentId="SHIP_1002" shipmentTypeId="PURCHASE_SHIPMENT" statusId="PURCH_SHIP_RECEIVED" primaryOrderId="DEMO_10003" primaryShipGroupSeqId="00001" estimatedShipCost="500.00"  originContactMechId="SUPPLY_CONTACT_1001" destinationFacilityId="WebStoreWarehouse" destinationContactMechId="9200" destinationTelecomNumberId="9201" partyIdTo="Company" partyIdFrom="SUPPLYSPACE" createdDate="2022-05-11 13:27:07.024"/>
-    <Shipment shipmentId="SHIP_1002" shipmentTypeId="PURCHASE_SHIPMENT" statusId="PURCH_SHIP_SHIPPED"  primaryOrderId="DEMO_10003" primaryShipGroupSeqId="00001" estimatedShipCost="500.00"  originContactMechId="SUPPLY_CONTACT_1001" destinationFacilityId="WebStoreWarehouse" destinationContactMechId="9200" destinationTelecomNumberId="9201" partyIdTo="Company" partyIdFrom="SUPPLYSPACE" createdDate="2022-05-11 13:27:07.024"/>
+
+    <Shipment shipmentId="SHIP_1002" shipmentTypeId="PURCHASE_SHIPMENT" statusId="PURCH_SHIP_CREATED"  primaryOrderId="DEMO_1003" primaryShipGroupSeqId="00001" estimatedShipCost="500.00"  originContactMechId="SUPPLY_CONTACT_1002" destinationFacilityId="WebStoreWarehouse" destinationContactMechId="9200" destinationTelecomNumberId="9201" partyIdTo="Company" partyIdFrom="SUPPLYSPACE" createdDate="2022-05-11 13:27:07.024"/>
+    <Shipment shipmentId="SHIP_1002" shipmentTypeId="PURCHASE_SHIPMENT" statusId="PURCH_SHIP_SHIPPED"  primaryOrderId="DEMO_1003" primaryShipGroupSeqId="00001" estimatedShipCost="500.00"  originContactMechId="SUPPLY_CONTACT_1002" destinationFacilityId="WebStoreWarehouse" destinationContactMechId="9200" destinationTelecomNumberId="9201" partyIdTo="Company" partyIdFrom="SUPPLYSPACE" createdDate="2022-05-11 13:27:07.024"/>
+    <Shipment shipmentId="SHIP_1002" shipmentTypeId="PURCHASE_SHIPMENT" statusId="PURCH_SHIP_RECEIVED" primaryOrderId="DEMO_1003" primaryShipGroupSeqId="00001" estimatedShipCost="500.00"  originContactMechId="SUPPLY_CONTACT_1002" destinationFacilityId="WebStoreWarehouse" destinationContactMechId="9200" destinationTelecomNumberId="9201" partyIdTo="Company" partyIdFrom="SUPPLYSPACE" createdDate="2022-05-11 13:27:07.024"/>
     <ShipmentItem shipmentId="SHIP_1002" shipmentItemSeqId="00001" productId="PROD_SHIRT_O4_BLUE_L" quantity="10.00"/>
     <ShipmentItem shipmentId="SHIP_1002" shipmentItemSeqId="00002" productId="JEANS_04_BLUE_M" quantity="10.00"/>
     <ShipmentStatus statusId="PURCH_SHIP_CREATED" shipmentId="SHIP_1002" statusDate="2022-05-11 13:27:07.024"/>
@@ -42,15 +51,12 @@
 <!--create inventory -->
     <InventoryItem inventoryItemId="INV_1001" inventoryItemTypeId="NON_SERIAL_INV_ITEM" productId="PROD_SHIRT_O4_BLUE_L" ownerPartyId="Company" datetimeReceived="2022-05-11 13:27:07.024" facilityId="WebStoreWarehouse" quantityOnHandTotal="10.00" availableToPromiseTotal="10.00" accountingQuantityTotal="10.00" currencyUomId="USD"/>
     <InventoryItem inventoryItemId="INV_1002" inventoryItemTypeId="NON_SERIAL_INV_ITEM" productId="JEANS_04_BLUE_M" ownerPartyId="Company" datetimeReceived="2022-05-11 13:27:07.024" facilityId="WebStoreWarehouse" quantityOnHandTotal="10.00" availableToPromiseTotal="10.00" accountingQuantityTotal="10.00" currencyUomId="USD"/>
-<!--create item issuance -->
-    <ItemIssuance itemIssuanceId="ITEM_ISSU_1003" orderId="DEMO_1003" orderItemSeqId="00001" shipGroupSeqId="00001" inventoryItemId="INV_1001" shipmentId="SHIP_1002" shipmentItemSeqId="00001" issuedDateTime="2022-05-27 17:23:49.475" issuedByUserLoginId="admin" quantity="10.00"/>
-    <ItemIssuance itemIssuanceId="ITEM_ISSU_1004" orderId="DEMO_1003" orderItemSeqId="00002" shipGroupSeqId="00001" inventoryItemId="INV_1002" shipmentId="SHIP_1002" shipmentItemSeqId="00002" issuedDateTime="2022-05-27 17:23:49.475" issuedByUserLoginId="admin" quantity="10.00"/>
 <!--create order shipment -->
     <OrderShipment orderId="DEMO_1003" orderItemSeqId="00001" shipmentId="SHIP_1002" shipmentItemSeqId="00001" quantity="10.00" shipGroupSeqId="00001"/>
     <OrderShipment orderId="DEMO_1003" orderItemSeqId="00002" shipmentId="SHIP_1002" shipmentItemSeqId="00002" quantity="10.00" shipGroupSeqId="00001"/>
 <!--create hipment receipt -->
-    <ShipmentReceipt receiptId="RECEIPT_1002" inventoryItemId="INV_1001" productId="PROD_SHIRT_O4_BLUE_L" shipmentId="SHIP_1002" shipmentItemSeqId="00001" orderId="DEMO_10003" orderItemSeqId="00001" quantityAccepted="10.00" datetimeReceived="2022-05-11 13:27:07.024"/>
-    <ShipmentReceipt receiptId="RECEIPT_1003" inventoryItemId="INV_1002" productId="JEANS_04_BLUE_M" shipmentId="SHIP_1002" shipmentItemSeqId="00001" orderId="DEMO_10003" orderItemSeqId="00002" quantityAccepted="10.00" datetimeReceived="2022-05-11 13:27:07.024"/>
+    <ShipmentReceipt receiptId="RECEIPT_1002" inventoryItemId="INV_1001" productId="PROD_SHIRT_O4_BLUE_L" shipmentId="SHIP_1002" shipmentItemSeqId="00001" orderId="DEMO_1003" orderItemSeqId="00001" quantityAccepted="10.00" datetimeReceived="2022-05-11 13:27:07.024"/>
+    <ShipmentReceipt receiptId="RECEIPT_1003" inventoryItemId="INV_1002" productId="JEANS_04_BLUE_M" shipmentId="SHIP_1002" shipmentItemSeqId="00001" orderId="DEMO_1003" orderItemSeqId="00002" quantityAccepted="10.00" datetimeReceived="2022-05-11 13:27:07.024"/>
 <!--change status approved to complete -->
     <OrderHeader orderId="DEMO_1003" orderTypeId="PURCHASE_ORDER" orderName="Demo Purchase Order" salesChannelEnumId="UNKNWN_SALES_CHANNEL" orderDate="2022-05-11 13:27:07.024" entryDate="2022-05-11 13:27:07.024" statusId="ORDER_COMPLETED" createdBy="admin" currencyUom="USD" productStoreId="9000" remainingSubTotal="102.50" grandTotal="102.50" />
     <OrderItem orderId="DEMO_1003" orderItemSeqId="00001" orderItemTypeId="PRODUCT_ORDER_ITEM" productId="PROD_SHIRT_O4_BLUE_L" prodCatalogId="DEMO_CATELOG_1002"  isPromo="N" quantity="10.000000"  unitPrice="750.00" unitListPrice="800.00" isModifiedPrice="N" itemDescription="Blue shirt" statusId="ITEM_COMPLETED"/>

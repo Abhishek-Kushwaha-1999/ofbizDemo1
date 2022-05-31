@@ -8,6 +8,7 @@
     <Product productId="PRODUCT_SHORTS_02" productTypeId="FINISHED_GOOD" productName="Demo Shorts" internalName="Shorts 04" inventoryItemTypeId="NON_SERIAL_INV_ITEM" description="It is comfort and low price Short" isVirtual="N" isVariant="N"/>
     <Product productId="PRODUCT_JEANS_01" productTypeId="FINISHED_GOOD" productName="Demo Jeans" internalName="JEANS 03" inventoryItemTypeId="NON_SERIAL_INV_ITEM" description="It is comfort and flexible Jeans " isVirtual="N" isVariant="N"/>
     <Product productId="PRODUCT_JEANS_02" productTypeId="FINISHED_GOOD" productName="Demo Jeans" internalName="JEANS 04" inventoryItemTypeId="NON_SERIAL_INV_ITEM" description="It is comfort and low price jeans" isVirtual="N" isVariant="N"/>
+    <Product productId="WALLET" productTypeId="FINISHED_GOOD" productName="Demo wallet" internalName="Wallet" inventoryItemTypeId="NON_SERIAL_INV_ITEM" description="WILDHORN RFID Protected Leather Men's Wallet" isVirtual="N" isVariant="N"/>
 
     <Product productId="PROD_SHIRT_04" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
              description="casual shirt" isVirtual="Y" isVariant="N" />
@@ -92,7 +93,9 @@
     <Product productId="SCARF_BLUE" productTypeId="FINISHED_GOOD" productName="Demo scarf" internalName="Demo scarf"
              description="blue scarf" isVirtual="N" isVariant="Y" />
 
-    <!--product price -->
+<!--product price -->
+    <ProductPrice productId="WALLET" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="420" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="WALLET" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="500" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
     <ProductPrice productId="PRODUCT_T-SHIRT_01" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="400" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
     <ProductPrice productId="PRODUCT_T-SHIRT_01" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="450" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
     <ProductPrice productId="PRODUCT_T-SHIRT_02" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="450" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
@@ -222,7 +225,7 @@
         <ProductAssoc productId="PROD_JEANS_04" productIdTo="JEANS_04_BLUE_M" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
         <ProductAssoc productId="PROD_JEANS_04" productIdTo="JEANS_O4_BLUE_L" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
 
-          <ProductAssoc productId="SCARF" productIdTo="SCARF_RED" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+         <ProductAssoc productId="SCARF" productIdTo="SCARF_RED" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
          <ProductAssoc productId="SCARF" productIdTo="SCARF_BLUE" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
 
     <!--create product category membar    -->
@@ -240,5 +243,6 @@
         <ProductCategoryMember productCategoryId="SHORTS" productId="PROD_SHORTS_04" fromDate="2022-05-24 12:00:00.0"/>
         <ProductCategoryMember productCategoryId="JEANS" productId="PROD_JEANS_04" fromDate="2022-05-24 12:00:00.0"/>
         <ProductCategoryMember productCategoryId="ACCESSORIES" productId="SCARF" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="ACCESSORIES" productId="WALLET" fromDate="2022-05-24 12:00:00.0"/>
 
 </entity-engine-xml>
