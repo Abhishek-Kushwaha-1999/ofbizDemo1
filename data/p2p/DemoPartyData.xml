@@ -86,6 +86,8 @@
     <Party partyId="COUCH" partyTypeId="PARTY_GROUP"/>
     <!--Assigned role supplier-->
     <PartyRole partyId="COUCH" roleTypeId="SUPPLIER"/>
+    <PartyRole partyId="Company" roleTypeId="ORGANIZATION_ROLE"/>
+
     <!--PRIMERY EMAIL ADDRESS-->
     <ContactMech contactMechId="COUCH_CONTACT_1001" contactMechTypeId="EMAIL_ADDRESS" infoString="super@gmail.com"/>
     <PartyContactMech partyId="COUCH" contactMechId="COUCH_CONTACT_1001" fromDate="2022-04-28 17:30:33.715"/>
@@ -113,41 +115,30 @@
     <!--created party for second data -->
     <Party partyId="CHARTER" partyTypeId="PARTY_GROUP"/>
     <!--    created party group-->
-    <PartyGroup partyid="CHARTER" groupName="Charter Supply"/>
+    <PartyGroup partyId="CHARTER" groupName="Charter Supply"/>
     <!--Assigned role supplier-->
     <PartyRole partyId="CHARTER" roleTypeId="SUPPLIER"/>
+    <PartyRole partyId="Company" roleTypeId="ORGANIZATION_ROLE"/>
     <!--PRIMERY EMAIL ADDRESS-->
-    <ContactMech contactMechId="CHARTER" contactMechTypeId="EMAIL_ADDRESS" infoString="standaredgenaral@gmail.com"/>
-    <PartyContactMech partyId="CHARTER" contactMechId="STANDARD" fromDate="2022-04-28 17:30:33.715"/>
-     <PartyContactMechPurpose partyId="CHARTER" contactMechId="STANDARD" contactMechPurposeTypeId="PRIMARY_EMAIL"
+    <ContactMech contactMechId="CHARTER_CONT_1001" contactMechTypeId="EMAIL_ADDRESS" infoString="standaredgenaral@gmail.com"/>
+    <PartyContactMech partyId="CHARTER" contactMechId="CHARTER_CONT_1001" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="CHARTER" contactMechId="CHARTER_CONT_1001" contactMechPurposeTypeId="PRIMARY_EMAIL"
                              fromDate="2022-04-28 17:30:33.715"/>
+
     <!--PRIMARY ADDRESS-->
-    <ContactMech contactMechId="CHARTER002" contactMechTypeId="POSTAL_ADDRESS"/>
-    <PostalAddress contactMechId="CHARTER1002" address1="60, Siyaganj Main Rd, Siyaganj" city="Indore"
+    <ContactMech contactMechId="CHARTER_CONT_1002" contactMechTypeId="POSTAL_ADDRESS"/>
+    <PostalAddress contactMechId="CHARTER_CONT_1002" address1="60, Siyaganj Main Rd, Siyaganj" city="Indore"
                    postalCode="452020"
                    countryGeoId="IND" stateProvinceGeoId="IN-MP"/>
-    <PartyContactMech partyId="CHARTER" contactMechId="CHARTER1002" fromDate="2022-04-28 17:30:33.715"/>
-      <PartyContactMechPurpose partyId="CHARTER" contactMechId="CHARTER1002" contactMechPurposeTypeId="PRIMARY_LOCATION"
+    <PartyContactMech partyId="CHARTER" contactMechId="CHARTER_CONT_1002" fromDate="2022-04-28 17:30:33.715"/>
+      <PartyContactMechPurpose partyId="CHARTER" contactMechId="CHARTER_CONT_1002" contactMechPurposeTypeId="PRIMARY_LOCATION"
                              fromDate="2022-04-28 17:30:33.715"/>
     <!--PRIMERY PHONE-->
-    <ContactMech contactMechId="CHARTER1003" contactMechTypeId="TELECOM_NUMBER"/>
-    <TelecomNumber contactMechId="CHARTER1003" countryCode="91" contactNumber=" 098272 45815"/>
-    <PartyContactMech partyId="CHARTER" contactMechId="CHARTER1003" fromDate="2022-04-28 17:30:33.715"/>
-    <PartyContactMechPurpose partyId="CHARTER" contactMechId="CHARTER1003" contactMechPurposeTypeId="PRIMARY_PHONE"
+    <ContactMech contactMechId="CHARTER_CONT_1003" contactMechTypeId="TELECOM_NUMBER"/>
+    <TelecomNumber contactMechId="CHARTER_CONT_1003" countryCode="91" contactNumber=" 098272 45815"/>
+    <PartyContactMech partyId="CHARTER" contactMechId="CHARTER_CONT_1003" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="CHARTER" contactMechId="CHARTER_CONT_1003" contactMechPurposeTypeId="PRIMARY_PHONE"
                              fromDate="2022-04-28 17:30:33.715"/>
     <!--Relationship between supplier and company -->
     <PartyRelationship partyIdFrom="CHARTER" partyIdTo="Company" roleTypeIdFrom="SUPPLIER" roleTypeIdTo="ORGANIZATION_ROLE" fromDate="2022-04-28 17:30:33.715" partyRelationshipTypeId="SUPPLIER_REL"/>
-
-    <!--Agreement for first data -->
-    <Agreement agreementId="A1003" partyIdFrom="Company" partyIdTo="COUCH" roleTypeIdTo="SUPPLIER"
-               agreementTypeId="PURCHASE_AGREEMENT" agreementDate="2022-04-28 17:30:33.715" fromDate="2022-04-28 17:30:33.715"
-               thruDate="2022-10-31 00:00:00.000"/>
-    <AgreementTerm AgreementTerm="AT10003" termTypeId="FIN_PAY_NETDAYS_2" agreementId="A1003" invoiceItemTypeId="PAYROL_DD_REPAY" fromDate="2022-04-28 17:30:33.715"
-                   thruDate="2022-10-31 00:00:00.000"/>
-
-    <!--Agreement for SECOND data -->
-    <Agreement agreementId="A1004" partyIdFrom="Company" partyIdTo="CHARTER" roleTypeIdTo="SUPPLIER" agreementTypeId="PURCHASE_AGREEMENT" agreementDate="2022-05-02 15:24:43.0" fromDate="2022-05-02 15:23:36.0"
-               thruDate="2022-10-31 00:00:00.0"/>
-    <AgreementTerm AgreementTerm="AT10004" termTypeId="FIN_PAY_NETDAYS_3" agreementId="A1004" invoiceItemTypeId="PAYROL_DD_REPAY" fromDate="2022-05-02 15:25:56.0"
-                   thruDate="2022-10-31 00:00:00.0" termDays="10" />
 </entity-engine-xml>

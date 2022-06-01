@@ -1,4 +1,4 @@
-<entity-engine-xm>
+<entity-engine-xml>
     <!--    create order hader -->
     <OrderHeader orderId="DEMO_1003" orderTypeId="PURCHASE_ORDER" orderName="Demo Purchase Order" orderDate="2022-05-11 13:27:07.024" entryDate="2022-05-11 13:27:07.024" statusId="ORDER_CREATED" createdBy="admin" currencyUom="USD"  remainingSubTotal="15000.00" grandTotal="15000.00" />
     <!--    create order item -->
@@ -18,10 +18,11 @@
     <OrderRole orderId="DEMO_1003" partyId="SUPPLYSPACE" roleTypeId="SUPPLIER_AGENT"/>
 <!--    Order contact -->
     <OrderContactMech orderId="DEMO_1003" contactMechPurposeTypeId="BILLING_LOCATION" contactMechId="9000"/>
-    <OrderContactMech orderId="DEMO_1003" contactMechPurposeTypeId="SHIPPING_LOCATION" contactMechId="9000"/>
+    <OrderContactMech orderId="DEMO_1003" contactMechPurposeTypeId="SHIPPING_LOCATION" contactMechId="FACILITY_CONT_1009"/>
+    <OrderContactMech orderId="DEMO_1003" contactMechPurposeTypeId="PUR_RET_LOCATION" contactMechId="SUPPLY_CONTACT_1005"/>
 
     <!--    create shipping group -->
-    <OrderItemShipGroup orderId="DEMO_1003" shipGroupSeqId="00001" shipmentMethodTypeId="NO_SHIPPING" carrierPartyId="_NA_" carrierRoleTypeId="CARRIER" contactMechId="9200" maySplit="N" isGift="N"/>
+    <OrderItemShipGroup orderId="DEMO_1003" shipGroupSeqId="00001" carrierPartyId="_NA_" carrierRoleTypeId="CARRIER" contactMechId="9200" maySplit="N" isGift="N"/>
     <OrderItemShipGroupAssoc orderId="DEMO_1003" orderItemSeqId="00001" shipGroupSeqId="00001" quantity="10.0"/>
     <OrderItemShipGroupAssoc orderId="DEMO_1003" orderItemSeqId="00002" shipGroupSeqId="00001" quantity="10.0"/>
 
@@ -40,9 +41,9 @@
     <OrderStatus orderStatusId="OED_1020" statusId="ORDER_APPROVED" orderId="DEMO_1003" statusDatetime="2022-05-12 17:46:15.206" statusUserLogin="admin"/>
 <!--create shipment -->
 
-    <Shipment shipmentId="SHIP_1002" shipmentTypeId="PURCHASE_SHIPMENT" statusId="PURCH_SHIP_CREATED"  primaryOrderId="DEMO_1003" primaryShipGroupSeqId="00001" estimatedShipCost="500.00"  originContactMechId="SUPPLY_CONTACT_1002" destinationFacilityId="WebStoreWarehouse" destinationContactMechId="9200" destinationTelecomNumberId="9201" partyIdTo="Company" partyIdFrom="SUPPLYSPACE" createdDate="2022-05-11 13:27:07.024"/>
-    <Shipment shipmentId="SHIP_1002" shipmentTypeId="PURCHASE_SHIPMENT" statusId="PURCH_SHIP_SHIPPED"  primaryOrderId="DEMO_1003" primaryShipGroupSeqId="00001" estimatedShipCost="500.00"  originContactMechId="SUPPLY_CONTACT_1002" destinationFacilityId="WebStoreWarehouse" destinationContactMechId="9200" destinationTelecomNumberId="9201" partyIdTo="Company" partyIdFrom="SUPPLYSPACE" createdDate="2022-05-11 13:27:07.024"/>
-    <Shipment shipmentId="SHIP_1002" shipmentTypeId="PURCHASE_SHIPMENT" statusId="PURCH_SHIP_RECEIVED" primaryOrderId="DEMO_1003" primaryShipGroupSeqId="00001" estimatedShipCost="500.00"  originContactMechId="SUPPLY_CONTACT_1002" destinationFacilityId="WebStoreWarehouse" destinationContactMechId="9200" destinationTelecomNumberId="9201" partyIdTo="Company" partyIdFrom="SUPPLYSPACE" createdDate="2022-05-11 13:27:07.024"/>
+    <Shipment shipmentId="SHIP_1002" shipmentTypeId="PURCHASE_SHIPMENT" statusId="PURCH_SHIP_CREATED"  primaryOrderId="DEMO_1003" primaryShipGroupSeqId="00001" estimatedShipCost="500.00"  originContactMechId="SUPPLY_CONTACT_1002" originFacilityId="DEMO_WAREEHOUSE_1001" destinationFacilityId="WebStoreWarehouse" destinationContactMechId="9200" destinationTelecomNumberId="9201" partyIdTo="Company" partyIdFrom="SUPPLYSPACE" createdDate="2022-05-11 13:27:07.024"/>
+    <Shipment shipmentId="SHIP_1002" shipmentTypeId="PURCHASE_SHIPMENT" statusId="PURCH_SHIP_SHIPPED"  primaryOrderId="DEMO_1003" primaryShipGroupSeqId="00001" estimatedShipCost="500.00"  originContactMechId="SUPPLY_CONTACT_1002" originFacilityId="DEMO_WAREEHOUSE_1001" destinationFacilityId="WebStoreWarehouse" destinationContactMechId="9200" destinationTelecomNumberId="9201" partyIdTo="Company" partyIdFrom="SUPPLYSPACE" createdDate="2022-05-11 13:27:07.024"/>
+    <Shipment shipmentId="SHIP_1002" shipmentTypeId="PURCHASE_SHIPMENT" statusId="PURCH_SHIP_RECEIVED" primaryOrderId="DEMO_1003" primaryShipGroupSeqId="00001" estimatedShipCost="500.00"  originContactMechId="SUPPLY_CONTACT_1002" originFacilityId="DEMO_WAREEHOUSE_1001"  destinationFacilityId="WebStoreWarehouse" destinationContactMechId="9200" destinationTelecomNumberId="9201" partyIdTo="Company" partyIdFrom="SUPPLYSPACE" createdDate="2022-05-11 13:27:07.024"/>
     <ShipmentItem shipmentId="SHIP_1002" shipmentItemSeqId="00001" productId="PROD_SHIRT_O4_BLUE_L" quantity="10.00"/>
     <ShipmentItem shipmentId="SHIP_1002" shipmentItemSeqId="00002" productId="JEANS_04_BLUE_M" quantity="10.00"/>
     <ShipmentStatus statusId="PURCH_SHIP_CREATED" shipmentId="SHIP_1002" statusDate="2022-05-11 13:27:07.024"/>
@@ -71,11 +72,10 @@
     <InventoryItemDetail inventoryItemId="INV_1002" inventoryItemDetailSeqId="INV_DETAIL_1002" effectiveDate="2022-05-11 13:27:07.024" quantityOnHandDiff="00.00" availableToPromiseDiff="00.00" accountingQuantityDiff="10.00" />
 <!--create invoice -->
     <Invoice invoiceId="INV_1002" invoiceTypeId="PURCHASE_INVOICE" partyIdFrom="" partyId="Company" statusId="INVOICE_PAID" invoiceDate="2022-05-27 18:23:49.475" paidDate="2022-05-27 20:23:49.475" currencyUomId="USD"/>
-    <InvoiceItem invoiceId="INV_1002" invoiceItemSeqId="00001" invoiceItemTypeId="INV_FPROD_ITEM" overrideGlAccountId="224153" productId="PROD_SHIRT_O4_BLUE_L" parentInvoiceId="INV_1001" parentInvoiceItemSeqId="00001" quantity="10.00" amount="7500.00" description="Blue Shirt"/>
-    <InvoiceItem invoiceId="INV_1002" invoiceItemSeqId="00002" invoiceItemTypeId="INV_FPROD_ITEM" overrideGlAccountId="224153" productId="JEANS_04_BLUE_M" parentInvoiceId="INV_1001" parentInvoiceItemSeqId="00001" quantity="10.00" amount="7500.00" description=" Blue Jeans" />
+    <InvoiceItem invoiceId="INV_1002" invoiceItemSeqId="00001" invoiceItemTypeId="INV_FPROD_ITEM" overrideGlAccountId="224153" productId="PROD_SHIRT_O4_BLUE_L" parentInvoiceId="INV_1002" parentInvoiceItemSeqId="00001" quantity="10.00" amount="7500.00" description="Blue Shirt"/>
+    <InvoiceItem invoiceId="INV_1002" invoiceItemSeqId="00002" invoiceItemTypeId="INV_FPROD_ITEM" overrideGlAccountId="224153" productId="JEANS_04_BLUE_M" parentInvoiceId="INV_1002" parentInvoiceItemSeqId="00001" quantity="10.00" amount="7500.00" description=" Blue Jeans" />
 <!--create order item billing -->
     <OrderItemBilling orderId="DEMO_1003" orderItemSeqId="00001" invoiceId="INV_1002" invoiceItemSeqId="00001" itemIssuanceId="" shipmentReceiptId="RECEIPT_1002" quantity="10.00" amount="7500.00" />
     <OrderItemBilling orderId="DEMO_1003" orderItemSeqId="00002" invoiceId="INV_1002" invoiceItemSeqId="00002" itemIssuanceId="" shipmentReceiptId="RECEIPT_1003" quantity="10.00" amount="7500.00" />
-
-</entity-engine-xm>
+</entity-engine-xml>
 

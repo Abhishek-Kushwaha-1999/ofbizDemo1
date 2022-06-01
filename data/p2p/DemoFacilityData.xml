@@ -20,9 +20,7 @@
     <PartyContactMech partyId="PERSON_10001" contactMechId="PERSON_CONTACT_10003" fromDate="2022-04-28 17:30:33.715"/>
     <PartyContactMechPurpose partyId="PERSON_10001" contactMechId="PERSON_CONTACT_10003"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
-    <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10001" roleTypeId="MANAGER" fromDate="2022-05-12 13:16:42.0"/>
-    <!--  person 2 -->
+      <!--  person 2 -->
     <Party partyId="PERSON_10002" partyTypeId="PERSON"/>
     <PartyRole partyId="PERSON_10002" roleTypeId="RECEIVER"/>
     <Person partyId="PERSON_10002" firstName="cdf" lastName="pqr"/>
@@ -44,9 +42,6 @@
     <PartyContactMech partyId="PERSON_10002" contactMechId="PERSON_CONTACT_10006" fromDate="2022-04-28 17:30:33.715"/>
     <PartyContactMechPurpose partyId="PERSON_10002" contactMechId="PERSON_CONTACT_10006"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
-    <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10002" roleTypeId="RECEIVER"
-                   fromDate="2022-05-12 13:16:42.0"/>
     <!--  person 3 -->
     <Party partyId="PERSON_10003" partyTypeId="PERSON"/>
     <PartyRole partyId="PERSON_10003" roleTypeId="RECEIVER"/>
@@ -69,9 +64,6 @@
     <PartyContactMech partyId="PERSON_10003" contactMechId="PERSON_CONTACT_10009" fromDate="2022-04-28 17:30:33.715"/>
     <PartyContactMechPurpose partyId="PERSON_10003" contactMechId="PERSON_CONTACT_10009"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
-    <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10003" roleTypeId="RECEIVER"
-                   fromDate="2022-05-12 13:16:42.0"/>
 
     <!--  person 4 -->
     <Party partyId="PERSON_10004" partyTypeId="PERSON"/>
@@ -95,10 +87,7 @@
     <PartyContactMech partyId="PERSON_10004" contactMechId="PERSON_CONTACT_10012" fromDate="2022-04-28 17:30:33.715"/>
     <PartyContactMechPurpose partyId="PERSON_10004" contactMechId="PERSON_CONTACT_10012"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
-    <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10004" roleTypeId="PICKER"
-                   fromDate="2022-05-12 13:16:42.0"/>
-    <!--  person 5-->
+     <!--  person 5-->
     <Party partyId="PERSON_10005" partyTypeId="PERSON"/>
     <PartyRole partyId="PERSON_10005" roleTypeId="PICKER"/>
     <Person partyId="PERSON_10005" firstName="cdf" lastName="wxy"/>
@@ -120,10 +109,7 @@
     <PartyContactMech partyId="PERSON_10005" contactMechId="PERSON_CONTACT_10015" fromDate="2022-04-28 17:30:33.715"/>
     <PartyContactMechPurpose partyId="PERSON_10005" contactMechId="PERSON_CONTACT_10015"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
-    <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10005" roleTypeId="PICKER"
-                   fromDate="2022-05-12 13:16:42.0"/>
-    <!--  person 6-->
+     <!--  person 6-->
     <Party partyId="PERSON_10006" partyTypeId="PERSON"/>
     <PartyRole partyId="PERSON_10006" roleTypeId="PACKER"/>
     <Person partyId="PERSON_10006" firstName="yur" lastName="uuu"/>
@@ -145,10 +131,7 @@
     <PartyContactMech partyId="PERSON_10006" contactMechId="PERSON_CONTACT_10018" fromDate="2022-04-28 17:30:33.715"/>
     <PartyContactMechPurpose partyId="PERSON_10006" contactMechId="PERSON_CONTACT_10018"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
-    <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10006" roleTypeId="PACKER"
-                   fromDate="2022-05-12 13:16:42.0"/>
-    <!--  person 7-->
+     <!--  person 7-->
     <Party partyId="PERSON_10007" partyTypeId="PERSON"/>
     <PartyRole partyId="PERSON_10007" roleTypeId="PACKER"/>
     <Person partyId="PERSON_10007" firstName="adc" lastName="asx"/>
@@ -177,6 +160,24 @@
               defaultDaysToShip="20"/>
     <!--    Assigned roles to party in facility -->
     <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10007" roleTypeId="PACKER"
+                   fromDate="2022-05-12 13:16:42.0"/>
+    <!--    Assigned roles to party in facility -->
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10001" roleTypeId="MANAGER" fromDate="2022-05-12 13:16:42.0"/>
+
+    <!--    Assigned roles to party in facility -->
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10002" roleTypeId="RECEIVER"
+                   fromDate="2022-05-12 13:16:42.0"/>
+    <!--    Assigned roles to party in facility -->
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10003" roleTypeId="RECEIVER"
+                   fromDate="2022-05-12 13:16:42.0"/>
+    <!--    Assigned roles to party in facility -->
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10004" roleTypeId="PICKER"
+                   fromDate="2022-05-12 13:16:42.0"/>
+    <!--    Assigned roles to party in facility -->
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10005" roleTypeId="PICKER"
+                   fromDate="2022-05-12 13:16:42.0"/>
+    <!--    Assigned roles to party in facility -->
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1001" partyId="PERSON_10006" roleTypeId="PACKER"
                    fromDate="2022-05-12 13:16:42.0"/>
 
     <!--Contact detalil-->
@@ -251,9 +252,6 @@
     <PartyContactMech partyId="PERSON_10008" contactMechId="PERSON_CONTACT_10025" fromDate="2022-04-28 17:30:33.715"/>
     <PartyContactMechPurpose partyId="PERSON_10008" contactMechId="PERSON_CONTACT_10025"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
-    <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10008" roleTypeId="MANAGER"
-                   fromDate="2022-05-12 13:16:42.0"/>
 
     <!--  person 2 -->
     <Party partyId="PERSON_10009" partyTypeId="PERSON"/>
@@ -278,8 +276,6 @@
     <PartyContactMechPurpose partyId="PERSON_10009" contactMechId="PERSON_CONTACT_10028"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
     <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10009" roleTypeId="RECEIVER"
-                   fromDate="2022-05-12 13:16:42.0"/>
 
     <!--  person 3 -->
     <Party partyId="PERSON_10010" partyTypeId="PERSON"/>
@@ -304,9 +300,6 @@
     <PartyContactMechPurpose partyId="PERSON_10010" contactMechId="PERSON_CONTACT_10031"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
 
-    <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10010" roleTypeId="RECEIVER"
-                   fromDate="2022-05-12 13:16:42.0"/>
 
     <!--  person 4 -->
     <Party partyId="PERSON_10011" partyTypeId="PERSON"/>
@@ -330,9 +323,6 @@
     <PartyContactMech partyId="PERSON_10011" contactMechId="PERSON_CONTACT_10034" fromDate="2022-04-28 17:30:33.715"/>
     <PartyContactMechPurpose partyId="PERSON_10011" contactMechId="PERSON_CONTACT_10034"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
-    <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10011" roleTypeId="PICKER"
-                   fromDate="2022-05-12 13:16:42.0"/>
 
     <!--  person 5-->
     <Party partyId="PERSON_10012" partyTypeId="PERSON"/>
@@ -357,9 +347,6 @@
     <PartyContactMechPurpose partyId="PERSON_10012" contactMechId="PERSON_CONTACT_10037"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
 
-    <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10012" roleTypeId="PICKER"
-                   fromDate="2022-05-12 13:16:42.0"/>
 
     <!--  person 6-->
     <Party partyId="PERSON_10013" partyTypeId="PERSON"/>
@@ -383,9 +370,6 @@
     <PartyContactMech partyId="PERSON_10013" contactMechId="PERSON_CONTACT_10018" fromDate="2022-04-28 17:30:33.715"/>
     <PartyContactMechPurpose partyId="PERSON_10013" contactMechId="PERSON_CONTACT_10018"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
-    <!--    Assigned roles to party in facility -->
-    <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10013" roleTypeId="PACKER"
-                   fromDate="2022-05-12 13:16:42.0"/>
     <!--  person 7-->
     <Party partyId="PERSON_10014" partyTypeId="PERSON"/>
     <PartyRole partyId="PERSON_10014" roleTypeId="PACKER"/>
@@ -415,7 +399,22 @@
     <!--    Assigned roles to party in facility -->
     <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10014" roleTypeId="PACKER"
                    fromDate="2022-05-12 13:16:42.0"/>
-
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10009" roleTypeId="RECEIVER"
+                   fromDate="2022-05-12 13:16:42.0"/>
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10008" roleTypeId="MANAGER"
+                   fromDate="2022-05-12 13:16:42.0"/>
+    <!--    Assigned roles to party in facility -->
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10010" roleTypeId="RECEIVER"
+                   fromDate="2022-05-12 13:16:42.0"/>
+    <!--    Assigned roles to party in facility -->
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10011" roleTypeId="PICKER"
+                   fromDate="2022-05-12 13:16:42.0"/>
+    <!--    Assigned roles to party in facility -->
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10012" roleTypeId="PICKER"
+                   fromDate="2022-05-12 13:16:42.0"/>
+    <!--    Assigned roles to party in facility -->
+    <FacilityParty facilityId="DEMO_WAREEHOUSE_1002" partyId="PERSON_10013" roleTypeId="PACKER"
+                   fromDate="2022-05-12 13:16:42.0"/>
 
     <!--Contact detalil-->
     <!-- facility Primery phone -->

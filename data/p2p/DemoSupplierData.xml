@@ -2,7 +2,7 @@
     <!--created party for first data-->
     <Party partyId="SUPPLYSPACE" partyTypeId="PARTY_GROUP"/>
 <!--    Created party group -->
-    <PartyGroup partyid="SUPPLYSPACE" groupName="Supplyspace Gloable"/>
+    <PartyGroup partyId="SUPPLYSPACE" groupName="Supplyspace Gloable"/>
     <!--Assigned role supplier-->
     <PartyRole partyId="SUPPLYSPACE" roleTypeId="SUPPLIER"/>
     <!--Relationship between supplier and company -->
@@ -22,6 +22,14 @@
     <PartyContactMech partyId="SUPPLYSPACE" contactMechId="SUPPLY_CONTACT_1002" fromDate="2022-04-28 17:30:33.715"/>
    <PartyContactMechPurpose partyId="SUPPLYSPACE" contactMechId="SUPPLY_CONTACT_1002"
                              contactMechPurposeTypeId="PRIMARY_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
+<!--   SHIPPING ADDRESS-->
+    <ContactMech contactMechId="SUPPLY_CONTACT_1005" contactMechTypeId="POSTAL_ADDRESS"/>
+    <PostalAddress contactMechId="SUPPLY_CONTACT_1005" address1="LG- 2, LABH SHREE COMPLEX , NEAR NEW SIYAGANJ , MALL GODAM ROAD"
+                   city="Indore" postalCode="452020" countryGeoId="IND" stateProvinceGeoId="IN-MP"/>
+    <PartyContactMech partyId="SUPPLYSPACE" contactMechId="SUPPLY_CONTACT_1005" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="SUPPLYSPACE" contactMechId="SUPPLY_CONTACT_1005"
+                             contactMechPurposeTypeId="PUR_RET_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
+
     <!--PRIMERY PHONE-->
     <ContactMech contactMechId="SUPPLY_CONTACT_1003" contactMechTypeId="TELECOM_NUMBER"/>
     <TelecomNumber contactMechId="SUPPLY_CONTACT_1003" countryCode="91" contactNumber="7869286644"/>
@@ -33,7 +41,7 @@
     <!--created party for second data -->
     <Party partyId="STANDARD" partyTypeId="PARTY_GROUP"/>
     <!--    Created party group -->
-    <PartyGroup partyid="STANDARD" groupName="Standard Supplier"/>
+    <PartyGroup partyId="STANDARD" groupName="Standard Supplier"/>
     <!--Relationship between supplier and company -->
     <!--Assigned role supplier-->
     <PartyRole partyId="STANDARD" roleTypeId="SUPPLIER"/>
