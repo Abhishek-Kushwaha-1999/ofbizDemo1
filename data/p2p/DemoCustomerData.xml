@@ -1,0 +1,34 @@
+<entity-engine-xml>
+    <!--  create new party person -->
+    <Party partyId="P1002" 	partyTypeId="PERSON"/>
+    <!--  assigned role customer -->
+    <PartyRole  partyId="P1002" roleTypeId="CUSTOMER"/>
+    <!--  added first name and last name -->
+    <Person partyId="P1002" firstName="James" lastName="Mary"/>
+    <!--  added email address-->
+    <ContactMech contactMechId="JAMES_C0NT_10001" contactMechTypeId="EMAIL_ADDRESS" infoString="jamesmary@gmail.com"/>
+    <PartyContactMech partyId="P1002" contactMechId="JAMES_C0NT_10001" fromDate="2022-05-28 17:30:33.715"/>
+    <!--Added billing phone -->
+    <ContactMech  contactMechId="JAMES_C0NT_10002" contactMechTypeId="TELECOM_NUMBER"/>
+    <TelecomNumber contactMechId="JAMES_C0NT_10002" countryCode="+1" contactNumber="7869286644"/>
+    <PartyContactMech partyId="P1002" contactMechId="JAMES_C0NT_10002" fromDate="2022-05-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="P1002" contactMechId="JAMES_C0NT_10002" contactMechPurposeTypeId="PHONE_BILLING" fromDate="2022-05-28 17:30:33.715"/>
+    <!--  added shipping Phone  -->
+    <ContactMech  contactMechId="JAMES_C0NT_10003" contactMechTypeId="TELECOM_NUMBER"/>
+    <TelecomNumber contactMechId="JAMES_C0NT_10003" countryCode="+1" contactNumber="7869286648"/>
+    <PartyContactMech partyId="P1002" contactMechId="JAMES_C0NT_10003" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="P1002" contactMechId="JAMES_C0NT_10003" contactMechPurposeTypeId="PHONE_SHIPPING" fromDate="2022-04-28 17:30:33.715"/>
+
+    <!--Billing address-->
+    <ContactMech contactMechId="JAMES_C0NT_10004" contactMechTypeId="POSTAL_ADDRESS" />
+    <PostalAddress contactMechId="JAMES_C0NT_10004" toName="James" attnName="james marey" address1="Center Street" city="Sheridan" postalCode="97378" countryGeoId="USA" stateProvinceGeoId="KS"/>
+    <PartyContactMech partyId="P10001" contactMechId="JAMES_C0NT_10004" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="P10001" contactMechId="JAMES_C0NT_10004" contactMechPurposeTypeId="SHIPPING_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="P10001" contactMechId="JAMES_C0NT_10004" contactMechPurposeTypeId="BILLING_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
+    <!-- Shipping address-->
+    <ContactMech contactMechId="JAMES_C0NT_10005" contactMechTypeId="POSTAL_ADDRESS" />
+    <PostalAddress contactMechId="JAMES_C0NT_10005" toName="James"  address1="2107 Wilson Blvd" city="Broadway" postalCode="222012" countryGeoId="USA" stateProvinceGeoId="KS"/>
+    <PartyContactMech partyId="P1002" contactMechId="JAMES_C0NT_10005" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="P1002" contactMechId="JAMES_C0NT_10005" contactMechPurposeTypeId="SHIPPING_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
+
+</entity-engine-xml>

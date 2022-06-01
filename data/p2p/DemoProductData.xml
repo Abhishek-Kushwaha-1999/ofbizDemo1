@@ -1,0 +1,248 @@
+<entity-engine-xml>
+    <!--    create product -->
+    <Product productId="PRODUCT_T-SHIRT_01" productTypeId="FINISHED_GOOD" productName="Demo T-Shirt" internalName="T-Shirt 03" inventoryItemTypeId="NON_SERIAL_INV_ITEM" description="It is comfort and low price T-Shirt" isVirtual="N" isVariant="N"/>
+    <Product productId="PRODUCT_T-SHIRT_02" productTypeId="FINISHED_GOOD" productName="Demo T-Shirt" internalName="T-Shirt 04" inventoryItemTypeId="NON_SERIAL_INV_ITEM" description="It is comfort with good quality T-Shirt" isVirtual="N" isVariant="N"/>
+    <Product productId="PRODUCT_SHIRT_01" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Shirt 03" inventoryItemTypeId="NON_SERIAL_INV_ITEM"  description="It is comfort and low price cotton Shirt" isVirtual="N" isVariant="N"/>
+    <Product productId="PRODUCT_SHIRT_02" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Shirt 04" inventoryItemTypeId="NON_SERIAL_INV_ITEM" description="It is formal Shirt" isVirtual="N" isVariant="N"/>
+    <Product productId="PRODUCT_SHORTS_01" productTypeId="FINISHED_GOOD" productName="Demo Shorts" internalName="Shorts 03" inventoryItemTypeId="NON_SERIAL_INV_ITEM" description="It is comfort and low price short" isVirtual="N" isVariant="N"/>
+    <Product productId="PRODUCT_SHORTS_02" productTypeId="FINISHED_GOOD" productName="Demo Shorts" internalName="Shorts 04" inventoryItemTypeId="NON_SERIAL_INV_ITEM" description="It is comfort and low price Short" isVirtual="N" isVariant="N"/>
+    <Product productId="PRODUCT_JEANS_01" productTypeId="FINISHED_GOOD" productName="Demo Jeans" internalName="JEANS 03" inventoryItemTypeId="NON_SERIAL_INV_ITEM" description="It is comfort and flexible Jeans " isVirtual="N" isVariant="N"/>
+    <Product productId="PRODUCT_JEANS_02" productTypeId="FINISHED_GOOD" productName="Demo Jeans" internalName="JEANS 04" inventoryItemTypeId="NON_SERIAL_INV_ITEM" description="It is comfort and low price jeans" isVirtual="N" isVariant="N"/>
+    <Product productId="WALLET" productTypeId="FINISHED_GOOD" productName="Demo wallet" internalName="Wallet" inventoryItemTypeId="NON_SERIAL_INV_ITEM" description="WILDHORN RFID Protected Leather Men's Wallet" isVirtual="N" isVariant="N"/>
+
+    <Product productId="PROD_SHIRT_04" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
+             description="casual shirt" isVirtual="Y" isVariant="N" />
+    <Product productId="PROD_SHIRT_04_RED_S" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
+             description="casual red shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="PROD_SHIRT_04_RED_M" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
+             description="casual red shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="PROD_SHIRT_04_RED_L" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
+             description="casual red shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="PROD_SHIRT_04_BLUE_S" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
+             description="casual black shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="PROD_SHIRT_04_BLUE_M" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
+             description="casual black shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="PROD_SHIRT_O4_BLUE_L" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
+             description="casual black shirt" isVirtual="N" isVariant="Y" />
+
+    <!--    PRODUCTS -->
+    <Product productId="PROD_SHIRT_05" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
+             description="formal shirt" isVirtual="Y" isVariant="N" />
+    <Product productId="PROD_SHIRT_05_RED_S" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
+             description="formal red shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="PROD_SHIRT_05_RED_M" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
+             description="formal red shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="PROD_SHIRT_05_RED_L" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
+             description="formal red shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="PROD_SHIRT_05_BLUE_S" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
+             description="formal black shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="PROD_SHIRT_05_BLUE_M" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
+             description="formal black shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="PROD_SHIRT_O5_BLUE_L" productTypeId="FINISHED_GOOD" productName="Demo Shirt" internalName="Demo Shirt"
+             description="formal black shirt" isVirtual="N" isVariant="Y" />
+
+    <Product productId="PROD_T-SHIRT_04" productTypeId="FINISHED_GOOD" productName="Demo T-Shirt" internalName="Demo T-Shirt"
+             description="Regular Fit Half t-shirt" isVirtual="Y" isVariant="N" />
+    <Product productId="T-SHIRT_04_RED_S" productTypeId="FINISHED_GOOD" productName="Demo T-Shirt" internalName="Demo T-Shirt"
+             description="Regular Fit Half red t-shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="T-SHIRT_04_RED_M" productTypeId="FINISHED_GOOD" productName="Demo T-Shirt" internalName="Demo T-Shirt"
+             description="Regular Fit Half red t-shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="T-SHIRT_04_RED_L" productTypeId="FINISHED_GOOD" productName="Demo T-Shirt" internalName="Demo T-Shirt"
+             description="casual red shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="T-SHIRT_04_BLUE_S" productTypeId="FINISHED_GOOD" productName="Demo T-Shirt" internalName="Demo T-Shirt"
+             description="Regular Fit Half black t-shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="T-SHIRT_04_BLUE_M" productTypeId="FINISHED_GOOD" productName="Demo T-Shirt" internalName="Demo T-Shirt"
+             description="casual black shirt" isVirtual="N" isVariant="Y" />
+    <Product productId="T-SHIRT_O4_BLUE_L" productTypeId="FINISHED_GOOD" productName="Demo T-Shirt" internalName="Demo T-Shirt"
+             description="Regular Fit Half black t-shirt" isVirtual="N" isVariant="Y" />
+
+    <Product productId="PROD_SHORTS_04" productTypeId="FINISHED_GOOD" productName="Demo Shorts" internalName="Demo Short"
+             description="Mid-Rise Shorts with Insert Pockets" isVirtual="Y" isVariant="N" />
+    <Product productId="SHORTS_04_RED_S" productTypeId="FINISHED_GOOD" productName="Demo Shorts" internalName="Demo Shorts"
+             description="Mid-Rise Shorts with Insert Pockets" isVirtual="N" isVariant="Y" />
+    <Product productId="SHORTS_04_RED_M" productTypeId="FINISHED_GOOD" productName="Demo shorts" internalName="Demo Shorts"
+             description="Mid-Rise Shorts with Insert Pockets" isVirtual="N" isVariant="Y" />
+    <Product productId="SHORTS_04_RED_L" productTypeId="FINISHED_GOOD" productName="Demo shorts" internalName="Demo Shorts"
+             description="Mid-Rise Shorts with Insert Pockets" isVirtual="N" isVariant="Y" />
+    <Product productId="SHORTS_04_BLUE_S" productTypeId="FINISHED_GOOD" productName="Demo shorts" internalName="Demo Shorts"
+             description="Mid-Rise Shorts with Insert Pockets" isVirtual="N" isVariant="Y" />
+    <Product productId="SHORTS_04_BLUE_M" productTypeId="FINISHED_GOOD" productName="Demo shorts" internalName="Demo Shorts"
+             description="Mid-Rise Shorts with Insert Pockets" isVirtual="N" isVariant="Y" />
+    <Product productId="SHORTS_O4_BLUE_L" productTypeId="FINISHED_GOOD" productName="Demo shorts" internalName="Demo Shorts"
+             description="Mid-Rise Shorts with Insert Pockets" isVirtual="N" isVariant="Y" />
+
+    <Product productId="PROD_JEANS_04" productTypeId="FINISHED_GOOD" productName="Demo jeans" internalName="Demo jeans"
+             description="Lightly Washed Slim Fit Jeans" isVirtual="Y" isVariant="N" />
+    <Product productId="JEANS_04_RED_S" productTypeId="FINISHED_GOOD" productName="Demo jeans" internalName="Demo jeans"
+             description="Lightly Washed Slim Fit Jeans" isVirtual="N" isVariant="Y" />
+    <Product productId="JEANS_04_RED_M" productTypeId="FINISHED_GOOD" productName="Demo jeans" internalName="Demo jeans"
+             description="Lightly Washed Slim Fit Jeans" isVirtual="N" isVariant="Y" />
+    <Product productId="JEANS_04_RED_L" productTypeId="FINISHED_GOOD" productName="Demo jeans" internalName="Demo jeans"
+             description="Lightly Washed Slim Fit Jeans" isVirtual="N" isVariant="Y" />
+    <Product productId="JEANS_04_BLUE_S" productTypeId="FINISHED_GOOD" productName="Demo jeans" internalName="Demo jeans"
+             description="Lightly Washed Slim Fit Jeans" isVirtual="N" isVariant="Y" />
+    <Product productId="JEANS_04_BLUE_M" productTypeId="FINISHED_GOOD" productName="Demo jeans" internalName="Demo jeans"
+             description="Lightly Washed Slim Fit Jeans" isVirtual="N" isVariant="Y" />
+    <Product productId="JEANS_O4_BLUE_L" productTypeId="FINISHED_GOOD" productName="Demo jeans" internalName="Demo jeans"
+             description="Lightly Washed Slim Fit Jeans" isVirtual="N" isVariant="Y" />
+
+    <Product productId="SCARF" productTypeId="FINISHED_GOOD" productName="Demo Scarf" internalName="Demo scarf"
+             description="long smooth scarf" isVirtual="Y" isVariant="N" />
+    <Product productId="SCARF_RED" productTypeId="FINISHED_GOOD" productName="Demo scarf" internalName="Demo scarf"
+             description="red scarf ultra smooth" isVirtual="N" isVariant="Y" />
+    <Product productId="SCARF_BLUE" productTypeId="FINISHED_GOOD" productName="Demo scarf" internalName="Demo scarf"
+             description="blue scarf" isVirtual="N" isVariant="Y" />
+
+<!--product price -->
+    <ProductPrice productId="WALLET" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="420" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="WALLET" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="500" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_T-SHIRT_01" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="400" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_T-SHIRT_01" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="450" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_T-SHIRT_02" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="450" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_T-SHIRT_02" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="460" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_SHIRT_01" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD"  price="500" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_SHIRT_01" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD"  price="550" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_SHIRT_02" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="600" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_SHIRT_02" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="650" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_SHORTS_01" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="700" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_SHORTS_01" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="750" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_SHORTS_02" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="710" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_SHORTS_02" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="760" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_JEANS_01" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="800" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_JEANS_01" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="850" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_JEANS_02" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PRODUCT_JEANS_02" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_04" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_04" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_04_RED_S" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1000" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_04_RED_S" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="960" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_04_RED_M" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1120" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_04_RED_M" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_04_RED_L" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1220" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_04_RED_L" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_04_BLUE_S" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="990" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_04_BLUE_S" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="800" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_04_BLUE_M" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_04_BLUE_M" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_O4_BLUE_L" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1000" productStoreGroupId="_NA_"    fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_O4_BLUE_L" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1000" productStoreGroupId="_NA_"    fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_05_RED_S" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_05_RED_S" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_05_RED_M" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_05_RED_M" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_05_RED_L" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_05_RED_L" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_05_BLUE_S" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_05_BLUE_S" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_05_BLUE_M" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_05_BLUE_M" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_O5_BLUE_L" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_O5_BLUE_L" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_05" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHIRT_05" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+
+    <ProductPrice productId="PROD_T-SHIRT_04" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_T-SHIRT_04" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="T-SHIRT_04_RED_S" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1000" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="T-SHIRT_04_RED_S" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="960" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="T-SHIRT_04_RED_M" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1120" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="T-SHIRT_04_RED_M" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="T-SHIRT_04_RED_L" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1220" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="T-SHIRT_04_RED_L" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="T-SHIRT_04_BLUE_S" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="990" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="T-SHIRT_04_BLUE_S" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="800" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="T-SHIRT_04_BLUE_M" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="T-SHIRT_04_BLUE_M" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="T-SHIRT_O4_BLUE_L" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1000" productStoreGroupId="_NA_"    fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="T-SHIRT_O4_BLUE_L" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHORTS_04" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_SHORTS_04" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SHORTS_04_RED_S" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1000" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SHORTS_04_RED_S" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="960" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SHORTS_04_RED_M" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1120" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SHORTS_04_RED_M" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SHORTS_04_RED_L" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1220" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SHORTS_04_RED_L" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SHORTS_04_BLUE_S" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="990" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SHORTS_04_BLUE_S" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="800" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SHORTS_04_BLUE_M" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SHORTS_04_BLUE_M" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SHORTS_O4_BLUE_L" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1000" productStoreGroupId="_NA_"    fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SHORTS_O4_BLUE_L" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_JEANS_04" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="PROD_JEANS_04" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="JEANS_04_RED_S" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1000" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="JEANS_04_RED_S" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="960" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="JEANS_04_RED_M" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1120" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="JEANS_04_RED_M" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="JEANS_04_RED_L" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1220" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="JEANS_04_RED_L" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="JEANS_04_BLUE_S" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="990" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="JEANS_04_BLUE_S" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="800" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="JEANS_04_BLUE_M" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="950" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="JEANS_04_BLUE_M" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="JEANS_O4_BLUE_L" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="1000" productStoreGroupId="_NA_"    fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="JEANS_O4_BLUE_L" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="900" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SCARF_RED" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="300" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SCARF_RED" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="400" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SCARF_BLUE" productPriceTypeId="DEFAULT_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="320" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+    <ProductPrice productId="SCARF_BLUE" productPriceTypeId="LIST_PRICE" productPricePurposeId="PURCHASE" currencyUomId="USD" price="420" productStoreGroupId="_NA_" fromDate="2022-05-24 00:00:00.0"/>
+
+
+    <!--PRODUCT ASSOCIATION -->
+        <ProductAssoc productId="PROD_SHIRT_05" productIdTo="PROD_SHIRT_05_RED_S" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHIRT_05" productIdTo="PROD_SHIRT_05_RED_M" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHIRT_05" productIdTo="PROD_SHIRT_05_RED_L" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHIRT_05" productIdTo="PROD_SHIRT_05_BLUE_S" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHIRT_05" productIdTo="PROD_SHIRT_05_BLUE_M" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHIRT_05" productIdTo="PROD_SHIRT_O5_BLUE_L" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+
+        <ProductAssoc productId="PROD_SHIRT_04" productIdTo="PROD_SHIRT_04_RED_S" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHIRT_04" productIdTo="PROD_SHIRT_04_RED_M" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHIRT_04" productIdTo="PROD_SHIRT_04_RED_L" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHIRT_04" productIdTo="PROD_SHIRT_04_BLUE_S" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHIRT_04" productIdTo="PROD_SHIRT_04_BLUE_M" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHIRT_04" productIdTo="PROD_SHIRT_O4_BLUE_L" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+
+        <ProductAssoc productId="PROD_T-SHIRT_04" productIdTo="T-SHIRT_04_RED_S" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_T-SHIRT_04" productIdTo="T-SHIRT_04_RED_M" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_T-SHIRT_04" productIdTo="T-SHIRT_04_RED_L" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_T-SHIRT_04" productIdTo="T-SHIRT_04_BLUE_S" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_T-SHIRT_04" productIdTo="T-SHIRT_04_BLUE_M" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_T-SHIRT_04" productIdTo="T-SHIRT_O4_BLUE_L" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+
+        <ProductAssoc productId="PROD_SHORTS_04" productIdTo="SHORTS_04_RED_S" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHORTS_04" productIdTo="SHORTS_04_RED_M" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHORTS_04" productIdTo="SHORTS_04_RED_L" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHORTS_04" productIdTo="SHORTS_04_BLUE_S" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHORTS_04" productIdTo="SHORTS_04_BLUE_M" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_SHORTS_04" productIdTo="SHORTS_O4_BLUE_L" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+
+        <ProductAssoc productId="PROD_JEANS_04" productIdTo="JEANS_04_RED_S" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_JEANS_04" productIdTo="JEANS_04_RED_M" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_JEANS_04" productIdTo="JEANS_04_RED_L" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_JEANS_04" productIdTo="JEANS_04_BLUE_S" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_JEANS_04" productIdTo="JEANS_04_BLUE_M" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+        <ProductAssoc productId="PROD_JEANS_04" productIdTo="JEANS_O4_BLUE_L" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+
+         <ProductAssoc productId="SCARF" productIdTo="SCARF_RED" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+         <ProductAssoc productId="SCARF" productIdTo="SCARF_BLUE" productAssocTypeId="PRODUCT_VARIANT" fromDate=" 2022-05-25 12:00:00.0"  quantity="5.0"/>
+
+    <!--create product category membar    -->
+        <ProductCategoryMember productCategoryId="T-SHIRTS" productId="PRODUCT_T-SHIRT_01" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="T-SHIRTS" productId="PRODUCT_T-SHIRT_02" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="SHIRTS" productId="PRODUCT_SHIRT_01" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="SHIRTS" productId="PRODUCT_SHIRT_02" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="SHORTS" productId="PRODUCT_SHORTS_01" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="SHORTS" productId="PRODUCT_SHORTS_02" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="JEANS" productId="PRODUCT_JEANS_01" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="JEANS" productId="PRODUCT_JEANS_02" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="SHIRTS" productId="PROD_SHIRT_05" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="SHIRTS" productId="PROD_SHIRT_04" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="T-SHIRTS" productId="PROD_T-SHIRT_04" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="SHORTS" productId="PROD_SHORTS_04" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="JEANS" productId="PROD_JEANS_04" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="ACCESSORIES" productId="SCARF" fromDate="2022-05-24 12:00:00.0"/>
+        <ProductCategoryMember productCategoryId="ACCESSORIES" productId="WALLET" fromDate="2022-05-24 12:00:00.0"/>
+
+</entity-engine-xml>

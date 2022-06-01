@@ -1,0 +1,144 @@
+<!--Party data model exercies 1-->
+<entity-engine-xml>
+    <!--  create new party person -->
+    <Party partyId="P10001" 	partyTypeId="PERSON"/>
+    <!--  assigned role customer -->
+    <PartyRole  partyId="P10001" roleTypeId="CUSTOMER"/>
+    <!--  added first name and last name -->
+    <Person partyId="P10001" firstName="john" lastName="liston"/>
+    <!--  update name -->
+    <Person partyId="P10001" firstName="john" middleName="D" lastName="liston" />
+    <!--  added email address-->
+    <ContactMech contactMechId="C10001" contactMechTypeId="EMAIL_ADDRESS" infoString="abhishek@gmail.com"/>
+    <PartyContactMech partyId="P10001" contactMechId="C10001" fromDate="2022-04-28 17:30:33.715"/>
+
+    <ContactMech contactMechId="C10011" contactMechTypeId="EMAIL_ADDRESS" infoString="abhishek@gmail.com"/>
+    <PartyContactMech partyId="P10001" contactMechId="C10011" fromDate="2022-04-28 17:30:33.715"/>
+    <!--Added billing phone -->
+    <ContactMech  contactMechId="C10003" contactMechTypeId="TELECOM_NUMBER"/>
+    <TelecomNumber contactMechId="C10003" countryCode="91" contactNumber="7869286644"/>
+    <PartyContactMech partyId="P10001" contactMechId="C10003" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="P10001" contactMechId="C10003" contactMechPurposeTypeId="PHONE_BILLING" fromDate="2022-04-28 17:30:33.715"/>
+
+    <!--  added shipping Phone  -->
+    <ContactMech  contactMechId="C10004" contactMechTypeId="TELECOM_NUMBER"/>
+    <TelecomNumber contactMechId="C10004" countryCode="91" contactNumber="7869286648"/>
+    <PartyContactMech partyId="P10001" contactMechId="C10004" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="P10001" contactMechId="C10004" contactMechPurposeTypeId="PHONE_SHIPPING" fromDate="2022-04-28 17:30:33.715"/>
+
+    <!--Billing address-->
+    <ContactMech contactMechId="C10002" contactMechTypeId="POSTAL_ADDRESS" />
+    <PostalAddress contactMechId="C10002" toName="Rohit" attnName="Rohit pawar" address1=" vijay nagar" city="Indore" postalCode="452020" countryGeoId="IND" stateProvinceGeoId="IN-MP"/>
+    <PartyContactMech partyId="P10001" contactMechId="C10002" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="P10001" contactMechId="C10002" contactMechPurposeTypeId="BILLING_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
+
+    <!-- Shipping address-->
+    <ContactMech contactMechId="C10005" contactMechTypeId="POSTAL_ADDRESS" />
+    <PostalAddress contactMechId="C10005" toName="Raja" attnName="Raja " address1=" vijay nagar" city="Indore" postalCode="452021" countryGeoId="IND" stateProvinceGeoId="IN-MP"/>
+    <PartyContactMech partyId="P10001" contactMechId="C10005" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="P10001" contactMechId="C10005" contactMechPurposeTypeId="SHIPPING_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
+
+    <!--  Billing and shipping address same -->
+    <ContactMech contactMechId="C10006" contactMechTypeId="POSTAL_ADDRESS" />
+    <PostalAddress contactMechId="C10006" toName="Abhishek" attnName="Abhishek Kushwaha" address1="dewas naka " city="Indore" postalCode="452022" countryGeoId="IND" stateProvinceGeoId="IN-MP"/>
+    <PartyContactMech partyId="P10001" contactMechId="C10006" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="P10001" contactMechId="C10006" contactMechPurposeTypeId="SHIPPING_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="P10001" contactMechId="C10006" contactMechPurposeTypeId="BILLING_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
+
+    <!-- changed purpose of billing address to General correspondence address-->
+    <PartyContactMechPurpose partyId="P10001" contactMechId="C10002" contactMechPurposeTypeId="GENERAL_LOCATION" fromDate="2022-04-26 17:30:33.715" thruDate="2022-04-27 17:30:33.715"/>
+    <ContactMechTypePurpose contactMechTypeId="POSTAL_ADDRESS" contactMechPurposeTypeId="GENERAL_LOCATION"/>
+    <PartyContactMechPurpose partyId="P10001" contactMechId="C10002" contactMechPurposeTypeId="GENERAL_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
+
+    <!--Delete (Expire) the email address and create a new one-->
+    <ContactMech contactMechId="C10001" contactMechTypeId="EMAIL_ADDRESS" infoString="abhishek@gmail.com"/>
+    <PartyContactMech partyId="P10001" contactMechId="C10001" fromDate="2022-04-28 17:30:33.715"  thruDate="2022-04-27 17:30:33.715" />
+    <ContactMech contactMechId="C10007" contactMechTypeId="EMAIL_ADDRESS" infoString="abhishekKushwaha@gmail.com"/>
+    <PartyContactMech partyId="P10001" contactMechId="C10007" fromDate="2022-04-28 17:30:33.715"   />
+
+    <!-- Delete (Expire) the billing address and add a new one -->
+    <ContactMech contactMechId="C10002" contactMechTypeId="POSTAL_ADDRESS" />
+    <PostalAddress contactMechId="C10002" toName="Rohit" attnName="Rohit pawar" address1=" vijay nagar" city="Indore" postalCode="452020" countryGeoId="IND" stateProvinceGeoId="IN-MP"/>
+    <PartyContactMech partyId="P10001" contactMechId="C10002"  fromDate="2022-04-28 17:30:33.715"  thruDate="2022-04-27 17:30:33.715" />
+    <PartyContactMechPurpose partyId="P10001" contactMechId="C10002" contactMechPurposeTypeId="BILLING_LOCATION"  fromDate="2022-04-28 17:30:33.715"  thruDate="2022-04-27 17:30:33.715" />
+
+    <ContactMech contactMechId="C10008" contactMechTypeId="POSTAL_ADDRESS" />
+    <PostalAddress contactMechId="C10008" toName="Raza" attnName="Raza khan" address1=" sataya sai square" city="Indore" postalCode="452020" countryGeoId="IND" stateProvinceGeoId="IN-MP"/>
+    <PartyContactMech partyId="P10001" contactMechId="C10008" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="P10001" contactMechId="C10008" contactMechPurposeTypeId="BILLING_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
+
+    <!--Delete (Expire) the shipping address and add a new one-->
+    <ContactMech contactMechId="C10005" contactMechTypeId="POSTAL_ADDRESS" />
+    <PostalAddress contactMechId="C10005" toName="Raja" attnName="Raja " address1=" vijay nagar" city="Indore" postalCode="452021" countryGeoId="IND" stateProvinceGeoId="IN-MP"/>
+    <PartyContactMech partyId="P10001" contactMechId="C10005" fromDate="2022-04-28 17:30:33.715"  thruDate="2022-04-27 17:30:33.715"/>
+     <PartyContactMechPurpose partyId="P10001" contactMechId="C10005" contactMechPurposeTypeId="SHIPPING_LOCATION" fromDate="2022-04-28 17:30:33.715"  thruDate="2022-04-27 17:30:33.715"/>
+
+    <ContactMech contactMechId="C10009" contactMechTypeId="POSTAL_ADDRESS" />
+    <PostalAddress contactMechId="C10009" toName="yash" attnName="Raja " address1=" vijay nagar" city="Indore" postalCode="452028" countryGeoId="IND" stateProvinceGeoId="IN-MP"/>
+    <PartyContactMech partyId="P10001" contactMechId="C10009" fromDate="2022-04-28 17:30:33.715"/>
+     <PartyContactMechPurpose partyId="P10001" contactMechId="C10009" contactMechPurposeTypeId="SHIPPING_LOCATION" fromDate="2022-04-28 17:30:33.715"/>
+
+
+
+<!--party data Model exercise 2-->
+
+    <!--created party for first data-->
+    <Party partyId="COUCH" partyTypeId="PARTY_GROUP"/>
+    <!--Assigned role supplier-->
+    <PartyRole partyId="COUCH" roleTypeId="SUPPLIER"/>
+    <PartyRole partyId="Company" roleTypeId="ORGANIZATION_ROLE"/>
+
+    <!--PRIMERY EMAIL ADDRESS-->
+    <ContactMech contactMechId="COUCH_CONTACT_1001" contactMechTypeId="EMAIL_ADDRESS" infoString="super@gmail.com"/>
+    <PartyContactMech partyId="COUCH" contactMechId="COUCH_CONTACT_1001" fromDate="2022-04-28 17:30:33.715"/>
+    <ContactMechTypePurpose contactMechTypeId="EMAIL_ADDRESS" contactMechPurposeTypeId="PRIMARY_EMAIL"/>
+    <PartyContactMechPurpose partyId="COUCH" contactMechId="COUCH_CONTACT_1001" contactMechPurposeTypeId="PRIMARY_EMAIL"
+                             fromDate="2022-04-28 17:30:33.715"/>
+    <!--PRIMARY ADDRESS-->
+    <ContactMech contactMechId="COUCH_CONTACT_1002" contactMechTypeId="POSTAL_ADDRESS"/>
+    <PostalAddress contactMechId="COUCH_CONTACT_1002" address1="LG- 2, LABH SHREE COMPLEX , NEAR NEW SIYAGANJ , MALL GODAM ROAD"
+                   city="Indore" postalCode="452020" countryGeoId="IND" stateProvinceGeoId="IN-MP"/>
+    <PartyContactMech partyId="COUCH" contactMechId="COUCH_CONTACT_1002" fromDate="2022-04-28 17:30:33.715"/>
+    <ContactMechTypePurpose contactMechTypeId="POSTAL_ADDRESS" contactMechPurposeTypeId="PRIMARY_LOCATION"/>
+    <PartyContactMechPurpose partyId="COUCH" contactMechId="COUCH_CONTACT_1002" contactMechPurposeTypeId="PRIMARY_LOCATION"
+                             fromDate="2022-04-28 17:30:33.715"/>
+    <!--PRIMERY PHONE-->
+    <ContactMech contactMechId="COUCH_CONTACT_1003" contactMechTypeId="TELECOM_NUMBER"/>
+    <TelecomNumber contactMechId="COUCH_CONTACT_1003" countryCode="91" contactNumber="7869286644"/>
+    <PartyContactMech partyId="COUCH" contactMechId="COUCH_CONTACT_1003" fromDate="2022-04-28 17:30:33.715"/>
+    <ContactMechTypePurpose contactMechTypeId="TELECOM_NUMBER" contactMechPurposeTypeId="PRIMARY_PHONE"/>
+    <PartyContactMechPurpose partyId="COUCH" contactMechId="COUCH_CONTACT_1003" contactMechPurposeTypeId="PRIMARY_PHONE"
+                             fromDate="2022-04-28 17:30:33.715"/>
+    <!--Relationship between supplier and company -->
+    <PartyRelationship partyIdFrom="COUCH" partyIdTo="Company" roleTypeIdFrom="SUPPLIER" roleTypeIdTo="ORGANIZATION_ROLE" fromDate="2022-04-28 17:30:33.715" partyRelationshipTypeId="SUPPLIER_REL"/>
+
+    <!--created party for second data -->
+    <Party partyId="CHARTER" partyTypeId="PARTY_GROUP"/>
+    <!--    created party group-->
+    <PartyGroup partyId="CHARTER" groupName="Charter Supply"/>
+    <!--Assigned role supplier-->
+    <PartyRole partyId="CHARTER" roleTypeId="SUPPLIER"/>
+    <PartyRole partyId="Company" roleTypeId="ORGANIZATION_ROLE"/>
+    <!--PRIMERY EMAIL ADDRESS-->
+    <ContactMech contactMechId="CHARTER_CONT_1001" contactMechTypeId="EMAIL_ADDRESS" infoString="standaredgenaral@gmail.com"/>
+    <PartyContactMech partyId="CHARTER" contactMechId="CHARTER_CONT_1001" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="CHARTER" contactMechId="CHARTER_CONT_1001" contactMechPurposeTypeId="PRIMARY_EMAIL"
+                             fromDate="2022-04-28 17:30:33.715"/>
+
+    <!--PRIMARY ADDRESS-->
+    <ContactMech contactMechId="CHARTER_CONT_1002" contactMechTypeId="POSTAL_ADDRESS"/>
+    <PostalAddress contactMechId="CHARTER_CONT_1002" address1="60, Siyaganj Main Rd, Siyaganj" city="Indore"
+                   postalCode="452020"
+                   countryGeoId="IND" stateProvinceGeoId="IN-MP"/>
+    <PartyContactMech partyId="CHARTER" contactMechId="CHARTER_CONT_1002" fromDate="2022-04-28 17:30:33.715"/>
+      <PartyContactMechPurpose partyId="CHARTER" contactMechId="CHARTER_CONT_1002" contactMechPurposeTypeId="PRIMARY_LOCATION"
+                             fromDate="2022-04-28 17:30:33.715"/>
+    <!--PRIMERY PHONE-->
+    <ContactMech contactMechId="CHARTER_CONT_1003" contactMechTypeId="TELECOM_NUMBER"/>
+    <TelecomNumber contactMechId="CHARTER_CONT_1003" countryCode="91" contactNumber=" 098272 45815"/>
+    <PartyContactMech partyId="CHARTER" contactMechId="CHARTER_CONT_1003" fromDate="2022-04-28 17:30:33.715"/>
+    <PartyContactMechPurpose partyId="CHARTER" contactMechId="CHARTER_CONT_1003" contactMechPurposeTypeId="PRIMARY_PHONE"
+                             fromDate="2022-04-28 17:30:33.715"/>
+    <!--Relationship between supplier and company -->
+    <PartyRelationship partyIdFrom="CHARTER" partyIdTo="Company" roleTypeIdFrom="SUPPLIER" roleTypeIdTo="ORGANIZATION_ROLE" fromDate="2022-04-28 17:30:33.715" partyRelationshipTypeId="SUPPLIER_REL"/>
+</entity-engine-xml>
