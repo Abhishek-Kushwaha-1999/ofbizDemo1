@@ -25,5 +25,18 @@ under the License.
         <menu-item name="findOfbizDemo" title="${uiLabelMap.OfbizDemoFind}"><link target="FindOfbizDemo"/></menu-item>
 
         <menu-item name="addOfbizDemoFtl" title="${uiLabelMap.OfbizDemoAddFtl}"><link target="AddOfbizDemoFtl"/></menu-item>
+        <menu-item name="CreateSupplier" title="${uiLabelMap.OfbizDemoSupplier}"><link target="CreateSupplier"/></menu-item>
+    </menu>
+    <menu name="mainSupplierMenu" menu-container-style="button-bar button-style-2" default-selected-style="selected">
+        <menu-item name="newSupplier" title="${uiLabelMap.newSupplier}">
+            <condition>
+                <or>
+                    <if-has-permission permission="OFBIZDEMO" action="_CREATE"/>
+                </or>
+            </condition>
+            <link target="createNewSupplier">
+            </link>
+        </menu-item>
+
     </menu>
 </menus>

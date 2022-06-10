@@ -1,0 +1,35 @@
+
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://ofbiz.apache.org/dtds/ofbiz-properties.xsd">
+
+    <property key="CreateNewSupplier">
+        <value xml:lang="en"> Create New Supplier</value>
+    </property>
+    <property key="Phone">
+        <value xml:lang="en">Phone</value>
+    </property>
+    <property key="MailingAddress">
+        <value xml:lang="en">Mailing Address</value>
+    </property>
+    <property key="RemitAdderess">
+        <value xml:lang="en">Remit-To Address</value>
+    </property>
+    <property key="StreetAddress">
+        <value xml:lang="en">Street Address</value>
+    </property>
+    <property key="SameAsMailingAddress">
+        <value xml:lang="en">Same As Mailing</value>
+    </property>
+    <property key="UseOtherAddress">
+        <value xml:lang="en">Use Other Address</value>
+    </property>
+    <property key="ContactDetails">
+        <value xml:lang="en">Contact Details</value>
+    </property>
+    <property key="BasicDetails">
+        <value xml:lang="en">  Basic Details</value>
+    </property>
+
+
+
+
+</resource>

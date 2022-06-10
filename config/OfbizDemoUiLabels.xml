@@ -42,6 +42,9 @@ under the License.
     <property key="OfbizDemoFind">
         <value xml:lang="en">Find</value>
     </property>
+    <property key="OfbizDemoSupplier">
+        <value xml:lang="en">Suppliers</value>
+    </property>
     <property key="OfbizDemoFirstName">
         <value xml:lang="en">First Name</value>
     </property>
@@ -51,4 +54,8 @@ under the License.
     <property key="OfbizDemoLastName">
         <value xml:lang="en">Last Name</value>
     </property>
+    <property key="supplierCompany">
+        <value xml:lang="en">Demo Supplier</value>
+    </property>
+
 </resource>
