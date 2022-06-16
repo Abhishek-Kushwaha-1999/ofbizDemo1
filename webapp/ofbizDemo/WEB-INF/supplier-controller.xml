@@ -1,0 +1,27 @@
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://ofbiz.apache.org/Site-Conf" xsi:schemaLocation="http://ofbiz.apache.org/Site-Conf http://ofbiz.apache.org/dtds/site-conf.xsd">
+
+
+    <request-map uri="FindSupplier">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="FindSupplier"/>
+    </request-map>
+
+    <request-map uri="createSupplierEvent">
+        <security https="true" auth="true"/>
+        <event type="java" path="com.companyname.ofbizdemo.supplier.SupplierEvent" invoke="createSupplierEvent"/>
+        <response name="success" type="view" value="FindSupplier"/>
+        <response name="error" type="view" value="FindSupplier"/>
+    </request-map>
+
+    <request-map uri="createSupplier">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="createSupplier"/>
+        <response name="success" type="view" value="FindSupplier"/>
+    </request-map>
+
+    <view-map name="FindSupplier" type="screen"  page="component://ofbizDemo/widget/SupplierScreens.xml#FindSupplier"/>
+    <view-map name="main" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#main"/>
+
+
+</site-conf>
