@@ -8,6 +8,8 @@
                 <set field="titleProperty" value="Suppliers "/>
                 <set field="headerItem" value="OfbizDemoSupplier"/>
                 <script location="component://ofbizDemo/groovyScripts/Supplier/GeoLocation.groovy"/>
+                <script location="component://ofbizDemo/groovyScripts/Supplier/SupplierList.groovy"/>
+
             </actions>
             <widgets>
                 <decorator-screen name="OfbizDemoCommonDecorator" location="${parameters.mainDecoratorLocation}">
@@ -21,4 +23,26 @@
         </section>
     </screen>
 
+    <screen name="SupplierOverView">
+        <section>
+            <actions>
+                <property-map resource="SupplierUiLabels" map-name="uiLabelMap" global="true"/>
+                <set field="titleProperty" value="Suppliers "/>
+                <set field="partyId" from-field="parameters.partyId"/>
+                <set field="headerItem" value="OfbizDemoSupplier"/>
+                <script location="component://ofbizDemo/groovyScripts/Supplier/SupplierOverView.groovy"/>
+
+            </actions>
+            <widgets>
+                <decorator-screen name="OfbizDemoCommonDecorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific>
+                            <html><html-template location="component://ofbizDemo/templet/supplier/SupplierOverView.ftl"/></html>
+                        </platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    
 </screens>

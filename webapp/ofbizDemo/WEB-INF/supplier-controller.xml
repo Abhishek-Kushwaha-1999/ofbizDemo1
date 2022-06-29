@@ -7,20 +7,30 @@
         <response name="success" type="view" value="FindSupplier"/>
     </request-map>
 
+    <request-map uri="SupplierOverView">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="SupplierOverView"/>
+    </request-map>
+
     <request-map uri="createSupplierEvent">
         <security https="true" auth="true"/>
         <event type="java" path="com.companyname.ofbizdemo.supplier.SupplierEvent" invoke="createSupplierEvent"/>
-        <response name="success" type="view" value="FindSupplier"/>
+        <response name="success" type="request-redirect" value="SupplierOverView">
+            <redirect-parameter name="partyId"/>
+        </response>
         <response name="error" type="view" value="FindSupplier"/>
     </request-map>
 
     <request-map uri="createSupplier">
         <security https="true" auth="true"/>
         <event type="service" invoke="createSupplier"/>
-        <response name="success" type="view" value="FindSupplier"/>
+        <response name="error" type="view" value="createSupplier"/>
+
     </request-map>
 
+
     <view-map name="FindSupplier" type="screen"  page="component://ofbizDemo/widget/SupplierScreens.xml#FindSupplier"/>
+    <view-map name="SupplierOverView" type="screen"  page="component://ofbizDemo/widget/SupplierScreens.xml#SupplierOverView"/>
     <view-map name="main" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#main"/>
 
 

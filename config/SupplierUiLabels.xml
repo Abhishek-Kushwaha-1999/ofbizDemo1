@@ -4,16 +4,16 @@
     <property key="CreateNewSupplier">
         <value xml:lang="en"> Create New Supplier</value>
     </property>
-    <property key="Phone">
-        <value xml:lang="en">Phone</value>
+    <property key="SupplierPhone">
+        <value xml:lang="en">Phone </value>
     </property>
-    <property key="MailingAddress">
+    <property key="SupplierMailingAddress">
         <value xml:lang="en">Mailing Address</value>
     </property>
-    <property key="RemitAdderess">
+    <property key="SupplierRemitAdderess">
         <value xml:lang="en">Remit-To Address</value>
     </property>
-    <property key="StreetAddress">
+    <property key="SupplierStreetAddress">
         <value xml:lang="en">Street Address</value>
     </property>
     <property key="SameAsMailingAddress">
@@ -22,14 +22,21 @@
     <property key="UseOtherAddress">
         <value xml:lang="en">Use Other Address</value>
     </property>
-    <property key="ContactDetails">
+    <property key="SupplierContactDetails">
         <value xml:lang="en">Contact Details</value>
     </property>
-    <property key="BasicDetails">
+    <property key="SupplierBasicDetails">
         <value xml:lang="en">  Basic Details</value>
+    </property>
+    <property key="supplierOverView">
+        <value xml:lang="en">Supplier OverView Page</value>
+    </property>
+    <property key="Suppliers">
+        <value xml:lang="en">Suppliers</value>
     </property>
 
 
 
 
 </resource>
+
