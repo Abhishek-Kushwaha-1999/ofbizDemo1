@@ -1,7 +1,21 @@
+
 <div class="container-fluid">
   <button class="btn btn-primary pull-right" data-target="#basic-detail-modal" data-toggle="modal" type="button">
     ${uiLabelMap.CreateNewSupplier} +
   </button>
+</div>
+
+<div class="row container"style="margin-top: 20px;" >
+  <div class="col-xs-12">
+    <form action="FindSupplier">
+      <div class="input-group">
+          <input type="text" class="form-control" name="searchField" placeholder="Search for..." value="">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="submit">${uiLabelMap.CommonSearch}</button>
+        </span>
+      </div>
+    </form>
+  </div>
 </div>
 
 <div class="container-fluid" style="margin-top: 20px;">
@@ -40,12 +54,9 @@
         </#list>
         </table>
       <#else>
-        <p>No records found</p>
+        <p>${uiLabelMap.SupplierRecordsNotFound}</p>
       </#if>
     </div>
   </div>
 </div>
 <#include "component://ofbizDemo/templet/supplier/CreateSupplier.ftl">
-
-
-
