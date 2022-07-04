@@ -1,10 +1,23 @@
 import org.apache.ofbiz.entity.condition.EntityCondition
+import org.apache.ofbiz.entity.util.EntityUtilProperties;
 import org.apache.ofbiz.entity.condition.EntityOperator
 import org.apache.ofbiz.entity.util.EntityUtil
-
+//Declare list for supplier records
 supplierList = []
 searchData = parameters.get("searchField")
+//List for create all conditions for EntityQuery
 conditions = [];
+
+viewIndex = Integer.valueOf(parameters.viewIndex ?: 0 );
+viewSize = Integer.valueOf(parameters.viewSize ?: EntityUtilProperties.getPropertyValue("widget.properties", "widget.form.defaultViewSize", delegator));
+lowIndex = viewIndex * viewSize + 1;
+highIndex = (viewIndex + 1) * viewSize
+
+paginationValues  = [:]
+paginationValues."lowIndex" = lowIndex;
+paginationValues."viewIndex" = viewIndex;
+paginationValues."viewSize" = viewSize;
+
 if (searchData) {
     searchCondition = EntityCondition.makeCondition([
             EntityCondition.makeCondition("partyId", EntityOperator.LIKE, ("%" + searchData + "%")),
@@ -12,8 +25,18 @@ if (searchData) {
     conditions.add(searchCondition);
 }
 conditions.add(EntityCondition.makeCondition("roleTypeIdTo", "SUPPLIER"));
-suppliers = select("partyId", "groupName", "description")
-        .from("PartyRelationshipAndDetail").where(conditions).filterByDate().queryList()
+//Fetched records from PartyRelationshipAndDetail according pagination.
+supplierListItr = from("PartyRelationshipAndDetail").where(conditions).maxRows(highIndex).cursorScrollInsensitive().queryIterator();
+listSize = supplierListItr.getResultsSizeAfterPartialList();
+if (highIndex >= listSize) {
+    highIndex = listSize;
+};
+paginationValues."highIndex" = highIndex;
+paginationValues."viewIndexLast" = highIndex;
+if (listSize > 0) {
+    suppliers = supplierListItr.getPartialList(lowIndex, viewSize);
+}
+
 if (suppliers) {
     suppliers.each { supplier ->
         supplierInfo = [:]
@@ -42,6 +65,9 @@ if (suppliers) {
         supplierInfo.put("countyGeoName", primaryPostalContactMechDetail?.countyGeoName)
         supplierList.add(supplierInfo)
     }
-    
     context.supplierList = supplierList
+    context.listSize = listSize;
+    context.viewIndex = viewIndex;
+    context.viewSize = viewSize;
+    context.paginationValues=paginationValues;  
 }

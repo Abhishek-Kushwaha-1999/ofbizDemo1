@@ -1,10 +1,22 @@
-
+<!--macro define for pagination -->
+<#macro paginationTab viewIndex paginationValues listSize>
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+    <li><button type="submit" <#if (viewIndex &gt; 0)>form="previousPaginationForm" name="viewIndex" value="0"<#else>disabled="disabled"</#if>>${uiLabelMap.CommonFirst}</button></li>
+    <li><button type="submit" <#if (viewIndex &gt; 0)>form="previousPaginationForm" name="viewIndex" value="${viewIndex-1}"<#else> disabled="disabled"</#if>>${uiLabelMap.CommonPrevious}</button></li>
+    <span>${paginationValues.lowIndex} - ${paginationValues.highIndex} ${uiLabelMap.CommonOf} ${listSize}</span>
+    <li><button type="submit" <#if (listSize &gt; paginationValues.highIndex)>form="nextPaginationForm" name="viewIndex" value="${viewIndex+1}"<#else>disabled="disabled"</#if>>${uiLabelMap.CommonNext}</button></li>
+    <li><button type="submit" <#if !(viewIndex == paginationValues.viewIndexLast)>form="nextPaginationForm" name="viewIndex" value="${paginationValues.viewIndexLast}"<#else>disabled="disabled"</#if>>${uiLabelMap.CommonLast}</button></li>
+  </ul>
+</nav>
+</#macro>
+<!--button for create new supplier -->
 <div class="container-fluid">
   <button class="btn btn-primary pull-right" data-target="#basic-detail-modal" data-toggle="modal" type="button">
     ${uiLabelMap.CreateNewSupplier} +
   </button>
 </div>
-
+<!--Search field (keyword search)-->
 <div class="row container"style="margin-top: 20px;" >
   <div class="col-xs-12">
     <form action="FindSupplier">
@@ -17,7 +29,7 @@
     </form>
   </div>
 </div>
-
+<!--supplier list -->
 <div class="container-fluid" style="margin-top: 20px;">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -53,10 +65,15 @@
           </tr>
         </#list>
         </table>
+      <form method="get" action="<@ofbizUrl>FindSupplier</@ofbizUrl>" name="nextPaginationForm" id="nextPaginationForm"> </form>
+      <form method="get" action="<@ofbizUrl>FindSupplier</@ofbizUrl>" name="previousPaginationForm" id="previousPaginationForm"></form>
+      <#if PartyRelationshipAndDetail?has_content && PartyRelationshipAndDetail?size gt 0 && listSize gt viewSize > </#if>
+      <@paginationTab viewIndex = viewIndex paginationValues = paginationValues listSize = listSize />
       <#else>
         <p>${uiLabelMap.SupplierRecordsNotFound}</p>
       </#if>
     </div>
   </div>
 </div>
+
 <#include "component://ofbizDemo/templet/supplier/CreateSupplier.ftl">
