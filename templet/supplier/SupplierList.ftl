@@ -10,6 +10,11 @@
   </ul>
 </nav>
 </#macro>
+<!--Macro define for search on column name in ASC or DESC.-->
+<#macro sortByColumnAndOrderBy sortingField sortingOrder columnName>
+  <a href="FindSupplier?searchColumn=${sortingField}&&sortingOrder=${sortingOrder}"> ${columnName}</a>
+</#macro>
+
 <!--button for create new supplier -->
 <div class="container-fluid">
   <button class="btn btn-primary pull-right" data-target="#basic-detail-modal" data-toggle="modal" type="button">
@@ -36,11 +41,17 @@
       <h3 class="panel-title">${uiLabelMap.Suppliers}</h3>
     </div>
     <div class="panel-body">
+      <#assign sortingOrder="${sortingOrder}">
+      <#if sortingOrder != "DESC">
+        <#assign sortingOrder="DESC">
+      <#else>
+        <#assign sortingOrder="ASC">
+      </#if>
       <#if supplierList?has_content>
         <table class="table table-bordered table-striped table-hover fs-5 " style="margin-top: 20px;">
           <tr>
-            <th>${uiLabelMap.CommonPartyId}</th>
-            <th>${uiLabelMap.CommonName}</th>
+            <th><@sortByColumnAndOrderBy sortingField = "partyId" sortingOrder = sortingOrder columnName= uiLabelMap.CommonPartyId/> </th>
+            <th><@sortByColumnAndOrderBy sortingField = "groupName" sortingOrder = sortingOrder columnName= uiLabelMap.CommonName/> </th>
             <th>${uiLabelMap.CommonDescription}</th>
             <th>${uiLabelMap.Phone}</th>
             <th>${uiLabelMap.CommonEmail}</th>
@@ -65,15 +76,20 @@
           </tr>
         </#list>
         </table>
-      <form method="get" action="<@ofbizUrl>FindSupplier</@ofbizUrl>" name="nextPaginationForm" id="nextPaginationForm"> </form>
-      <form method="get" action="<@ofbizUrl>FindSupplier</@ofbizUrl>" name="previousPaginationForm" id="previousPaginationForm"></form>
+      <form method="get" action="<@ofbizUrl>FindSupplier</@ofbizUrl>" name="nextPaginationForm" id="nextPaginationForm">
+        <input type="hidden" name="searchColumn" value="${parameters.searchColumn!}"/>
+        <input type="hidden" name="sortingOrder" value="${parameters.sortingOrder!}"/>
+      </form>
+      <form method="get" action="<@ofbizUrl>FindSupplier</@ofbizUrl>" name="previousPaginationForm" id="previousPaginationForm">
+        <input type="hidden" name="searchColumn" value="${parameters.searchColumn!}"/>
+        <input type="hidden" name="sortingOrder" value="${parameters.sortingOrder!}"/>
+      </form>
       <#if PartyRelationshipAndDetail?has_content && PartyRelationshipAndDetail?size gt 0 && listSize gt viewSize > </#if>
-      <@paginationTab viewIndex = viewIndex paginationValues = paginationValues listSize = listSize />
+        <@paginationTab viewIndex = viewIndex paginationValues = paginationValues listSize = listSize />
       <#else>
         <p>${uiLabelMap.SupplierRecordsNotFound}</p>
       </#if>
     </div>
   </div>
 </div>
-
 <#include "component://ofbizDemo/templet/supplier/CreateSupplier.ftl">

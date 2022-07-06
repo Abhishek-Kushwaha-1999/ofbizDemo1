@@ -4,10 +4,12 @@ import org.apache.ofbiz.entity.condition.EntityOperator
 import org.apache.ofbiz.entity.util.EntityUtil
 //Declare list for supplier records
 supplierList = []
-searchData = parameters.get("searchField")
-//List for create all conditions for EntityQuery
-conditions = [];
+conditions = []
+searchData = parameters.searchField
+sortingField =   parameters.sortingField
+sortingOrder = parameters.sortingOrder
 
+//List for create all conditions for EntityQuery
 viewIndex = Integer.valueOf(parameters.viewIndex ?: 0 );
 viewSize = Integer.valueOf(parameters.viewSize ?: EntityUtilProperties.getPropertyValue("widget.properties", "widget.form.defaultViewSize", delegator));
 lowIndex = viewIndex * viewSize + 1;
@@ -17,7 +19,6 @@ paginationValues  = [:]
 paginationValues."lowIndex" = lowIndex;
 paginationValues."viewIndex" = viewIndex;
 paginationValues."viewSize" = viewSize;
-
 if (searchData) {
     searchCondition = EntityCondition.makeCondition([
             EntityCondition.makeCondition("partyId", EntityOperator.LIKE, ("%" + searchData + "%")),
@@ -26,18 +27,26 @@ if (searchData) {
 }
 conditions.add(EntityCondition.makeCondition("roleTypeIdTo", "SUPPLIER"));
 //Fetched records from PartyRelationshipAndDetail according pagination.
-supplierListItr = from("PartyRelationshipAndDetail").where(conditions).maxRows(highIndex).cursorScrollInsensitive().queryIterator();
+if (sortingOrder == null) {
+    sortingOrder = "ASC"
+}
+sortOrder = []
+if (sortingField == null){
+    sortingField = "partyId"
+}
+sortOrder.add(sortingField+" "+sortingOrder);
+supplierListItr = from("PartyRelationshipAndDetail").where(conditions).maxRows(highIndex).cursorScrollInsensitive().orderBy(sortOrder).queryIterator();
 listSize = supplierListItr.getResultsSizeAfterPartialList();
 if (highIndex >= listSize) {
     highIndex = listSize;
 };
-paginationValues."highIndex" = highIndex;
-paginationValues."viewIndexLast" = highIndex;
+paginationValues.highIndex = highIndex;
+paginationValues.viewIndexLast = highIndex;
 if (listSize > 0) {
     suppliers = supplierListItr.getPartialList(lowIndex, viewSize);
 }
-
 if (suppliers) {
+    println("=============================Supplier" +suppliers)
     suppliers.each { supplier ->
         supplierInfo = [:]
         partyId = supplier.partyId
@@ -50,24 +59,26 @@ if (suppliers) {
         primaryEmailContactMechDetail = EntityUtil.getFirst(EntityUtil.filterByAnd(primaryContactMechDetails, ["contactMechPurposeTypeId": "PRIMARY_EMAIL"]))
         primaryPostalContactMechDetail = EntityUtil.getFirst(EntityUtil.filterByAnd(primaryContactMechDetails, ["contactMechPurposeTypeId": "PRIMARY_LOCATION"]))
 //        put data into supplierInfo Map.
-        supplierInfo.put("partyId", partyId)
-        supplierInfo.put("description", supplier?.description)
-        supplierInfo.put("groupName", supplier?.groupName)
-        supplierInfo.put("phone", primaryPhoneContactMechDetail?.contactNumber)
-        supplierInfo.put("emailAdd", primaryEmailContactMechDetail?.infoString)
-        supplierInfo.put("toName", primaryPostalContactMechDetail?.toName)
-        supplierInfo.put("attnName", primaryPostalContactMechDetail?.attnName)
-        supplierInfo.put("address1", primaryPostalContactMechDetail?.address1)
-        supplierInfo.put("address2", primaryPostalContactMechDetail?.address2)
-        supplierInfo.put("city", primaryPostalContactMechDetail?.city)
-        supplierInfo.put("postalCode", primaryPostalContactMechDetail?.postalCode)
-        supplierInfo.put("stateGeoName", primaryPostalContactMechDetail?.stateGeoName)
-        supplierInfo.put("countyGeoName", primaryPostalContactMechDetail?.countyGeoName)
+        supplierInfo.partyId =  partyId
+        supplierInfo.description = supplier?.description
+        supplierInfo.groupName = supplier?.groupName
+        supplierInfo.phone = primaryPhoneContactMechDetail?.contactNumber
+        supplierInfo.emailAdd = primaryEmailContactMechDetail?.infoString
+        supplierInfo.toName = primaryPostalContactMechDetail?.toName
+        supplierInfo.attnName = primaryPostalContactMechDetail?.attnName
+        supplierInfo.address1 = primaryPostalContactMechDetail?.address1
+        supplierInfo.address2 = primaryPostalContactMechDetail?.address2
+        supplierInfo.city = primaryPostalContactMechDetail?.city
+        supplierInfo.postalCode = primaryPostalContactMechDetail?.postalCode
+        supplierInfo.stateGeoName = primaryPostalContactMechDetail?.stateGeoName
+        supplierInfo.countyGeoName = primaryPostalContactMechDetail?.countyGeoName
         supplierList.add(supplierInfo)
     }
     context.supplierList = supplierList
     context.listSize = listSize;
     context.viewIndex = viewIndex;
     context.viewSize = viewSize;
-    context.paginationValues=paginationValues;  
+    context.paginationValues=paginationValues;
+    context.sortingField = sortingField;
+    context.sortingOrder = sortingOrder;
 }
