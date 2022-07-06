@@ -27,15 +27,29 @@ under the License.
     <!-- place the config directory on the classpath to access configuration files -->
     <classpath type="dir" location="config"/>
     <!-- entity resources: model(s), eca(s), group, and data definitions -->
-    <entity-resource type="model" reader-name="main" loader="main" location="entitydef/entitymodel.xml"/>
-    <!-- <entity-resource type="eca" reader-name="main" loader="main" location="entitydef/eecas.xml"/> -->
-    <entity-resource type="data" reader-name="seed" loader="main" location="data/OfbizDemoTypeData.xml"/>
-    <entity-resource type="data" reader-name="seed" loader="main" location="data/OfbizDemoSecurityPermissionSeedData.xml"/>
-    <entity-resource type="data" reader-name="demo" loader="main" location="data/OfbizDemoSecurityGroupDemoData.xml"/>
-    <entity-resource type="data" reader-name="demo" loader="main" location="data/OfbizDemoDemoData.xml"/>
+        <entity-resource type="model" reader-name="main" loader="main" location="entitydef/entitymodel.xml"/>
+<!--    &lt;!&ndash; <entity-resource type="eca" reader-name="main" loader="main" location="entitydef/eecas.xml"/> &ndash;&gt;-->
+        <entity-resource type="data" reader-name="seed" loader="main" location="data/OfbizDemoTypeData.xml"/>
+        <entity-resource type="data" reader-name="seed" loader="main" location="data/OfbizDemoSecurityPermissionSeedData.xml"/>
+        <entity-resource type="data" reader-name="demo" loader="main" location="data/OfbizDemoSecurityGroupDemoData.xml"/>
+        <entity-resource type="data" reader-name="demo" loader="main" location="data/OfbizDemoDemoData.xml"/>
+        <entity-resource type="data" reader-name="demo" loader="main" location="data/p2p/DemoSupplierData.xml"/>
+        <entity-resource type="data" reader-name="demo" loader="main" location="data/p2p/DemoPartyData.xml"/>
+        <entity-resource type="data" reader-name="demo" loader="main" location="data/p2p/DemoAgreementData.xml"/>
+        <entity-resource type="data" reader-name="demo" loader="main" location="data/p2p/DemoCustomerData.xml"/>
+        <entity-resource type="data" reader-name="demo" loader="main" location="data/p2p/DemoFacilityData.xml"/>
+        <entity-resource type="data" reader-name="demo" loader="main" location="data/p2p/DemoCatalogAndCategoriesData.xml"/>
+        <entity-resource type="data" reader-name="demo" loader="main" location="data/p2p/DemoProductData.xml"/>
+        <entity-resource type="data" reader-name="demo" loader="main" location="data/p2p/DemoSupplierProductData.xml"/>
+        <entity-resource type="data" reader-name="demo" loader="main" location="data/p2p/DemoProductFeatureData.xml"/>
+        <entity-resource type="data" reader-name="demo" loader="main" location="data/p2p/DemoPurchaseOrderData.xml"/>
+        <entity-resource type="data" reader-name="demo" loader="main" location="data/p2p/DemoSalesOrderData.xml"/>
+
 
     <!-- service resources: model(s), eca(s) and group definitions -->
     <service-resource type="model" loader="main" location="servicedef/services.xml"/>
+    <service-resource type="model" loader="main" location="servicedef/supplier_services.xml"/>
+
     <!--
     <service-resource type="eca" loader="main" location="servicedef/secas.xml"/>
     <service-resource type="group" loader="main" location="servicedef/groups.xml"/>

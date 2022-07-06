@@ -20,7 +20,7 @@ under the License.
 
 <entity-engine-xml>
     <OfbizDemo ofbizDemoId="SAMPLE_DEMO_1" ofbizDemoTypeId="DEMO1" firstName="First name 1" lastName="Sample Last 1" comments="This is test comment for first record."/>
-    <OfbizDemo ofbizDemoId="SAMPLE_DEMO_2" ofbizDemoTypeId="DEMO2" firstName="First name 2" lastName="Sample last 2" comments="This is test comment for second record."/>
+    <OfbizDemo ofbizDemoId="SAMPLE_DEMO_2" ofbizDemoTypeId="DEMO2" firstName="  First name 2" lastName="Sample last 2" comments="This is test comment for second record."/>
     <OfbizDemo ofbizDemoId="SAMPLE_DEMO_3" ofbizDemoTypeId="DEMO2" firstName="First name 3" lastName="Sample last 3" comments="This is test comment for third record."/>
     <OfbizDemo ofbizDemoId="SAMPLE_DEMO_4" ofbizDemoTypeId="DEMO1" firstName="first name 4" lastName="Sample last 4" comments="This is test comment for fourth record."/>
 

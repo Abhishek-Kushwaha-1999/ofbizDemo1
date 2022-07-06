@@ -1,0 +1,107 @@
+<entity-engine-xml>
+<!--FEATURES OF PRODUCT-->
+    <ProductFeature productFeatureId="COLOR_BLUE" productFeatureTypeId="COLOR" description="Blue"/>
+    <ProductFeature productFeatureId="COLOR_RED" productFeatureTypeId="COLOR" description="Red" />
+    <ProductFeature productFeatureId="SIZE_S" productFeatureTypeId="SIZE"  description="S" />
+    <ProductFeature productFeatureId="SIZE_M" productFeatureTypeId="SIZE" description="M" />
+    <ProductFeature productFeatureId="SIZE_L" productFeatureTypeId="SIZE" description="L" />
+
+<!--PRODUCT FEATURE APPL-->
+    <ProductFeatureAppl productId="PROD_SHIRT_04" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_04" productFeatureId="COLOR_RED" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_04" productFeatureId="SIZE_S" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="3"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_04" productFeatureId="SIZE_M" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="4"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_04" productFeatureId="SIZE_L" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="5"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_04_RED_S" productFeatureId="COLOR_RED" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_04_RED_S" productFeatureId="SIZE_S" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_04_RED_M" productFeatureId="COLOR_RED" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_04_RED_M" productFeatureId="SIZE_M" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_04_RED_L" productFeatureId="COLOR_RED" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_04_RED_L" productFeatureId="SIZE_L" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_04_BLUE_S" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_04_BLUE_S" productFeatureId="SIZE_S" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_04_BLUE_M" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_04_BLUE_M" productFeatureId="SIZE_M" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_O4_BLUE_L" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_O4_BLUE_L" productFeatureId="SIZE_L" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+
+    <ProductFeatureAppl productId="PROD_SHIRT_05" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_05" productFeatureId="COLOR_RED" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_05" productFeatureId="SIZE_S" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="3"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_05" productFeatureId="SIZE_M" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="4"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_05" productFeatureId="SIZE_L" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="5"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_05_RED_S" productFeatureId="COLOR_RED" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_05_RED_S" productFeatureId="SIZE_S" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_05_RED_M" productFeatureId="COLOR_RED" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_05_RED_M" productFeatureId="SIZE_M" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_05_RED_L" productFeatureId="COLOR_RED" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_05_RED_L" productFeatureId="SIZE_L" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_05_BLUE_S" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_05_BLUE_S" productFeatureId="SIZE_S" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_05_BLUE_M" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_05_BLUE_M" productFeatureId="SIZE_M" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_O5_BLUE_L" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHIRT_O5_BLUE_L" productFeatureId="SIZE_L" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+
+    <ProductFeatureAppl productId="PROD_T-SHIRT_04" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_T-SHIRT_04" productFeatureId="COLOR_RED" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_T-SHIRT_04" productFeatureId="SIZE_S" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="3"/>
+    <ProductFeatureAppl productId="PROD_T-SHIRT_04" productFeatureId="SIZE_M" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="4"/>
+    <ProductFeatureAppl productId="PROD_T-SHIRT_04" productFeatureId="SIZE_L" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="5"/>
+    <ProductFeatureAppl productId="T-SHIRT_04_RED_S" productFeatureId="COLOR_RED" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="T-SHIRT_04_RED_S" productFeatureId="SIZE_S" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="T-SHIRT_04_RED_M" productFeatureId="COLOR_RED" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="T-SHIRT_04_RED_M" productFeatureId="SIZE_M" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="T-SHIRT_04_RED_L" productFeatureId="COLOR_RED" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="T-SHIRT_04_RED_L" productFeatureId="SIZE_L" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="T-SHIRT_04_BLUE_S" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="T-SHIRT_04_BLUE_S" productFeatureId="SIZE_S" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="T-SHIRT_04_BLUE_M" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="T-SHIRT_04_BLUE_M" productFeatureId="SIZE_M" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="T-SHIRT_O4_BLUE_L" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="T-SHIRT_O4_BLUE_L" productFeatureId="SIZE_L" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+
+    <ProductFeatureAppl productId="PROD_SHORTS_04" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_SHORTS_04" productFeatureId="COLOR_RED" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_SHORTS_04" productFeatureId="SIZE_S" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="3"/>
+    <ProductFeatureAppl productId="PROD_SHORTS_04" productFeatureId="SIZE_M" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="4"/>
+    <ProductFeatureAppl productId="PROD_SHORTS_04" productFeatureId="SIZE_L" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="5"/>
+    <ProductFeatureAppl productId="SHORTS_04_RED_S" productFeatureId="COLOR_RED" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="SHORTS_04_RED_S" productFeatureId="SIZE_S" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="SHORTS_04_RED_M" productFeatureId="COLOR_RED" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="SHORTS_04_RED_M" productFeatureId="SIZE_M" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="SHORTS_04_RED_L" productFeatureId="COLOR_RED" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="SHORTS_04_RED_L" productFeatureId="SIZE_L" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="SHORTS_04_BLUE_S" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="SHORTS_04_BLUE_S" productFeatureId="SIZE_S" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="SHORTS_04_BLUE_M" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="SHORTS_04_BLUE_M" productFeatureId="SIZE_M" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="SHORTS_O4_BLUE_L" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="SHORTS_O4_BLUE_L" productFeatureId="SIZE_L" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+
+    <ProductFeatureAppl productId="PROD_JEANS_04" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="PROD_JEANS_04" productFeatureId="COLOR_RED" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="PROD_JEANS_04" productFeatureId="SIZE_S" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="3"/>
+    <ProductFeatureAppl productId="PROD_JEANS_04" productFeatureId="SIZE_M" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="4"/>
+    <ProductFeatureAppl productId="PROD_JEANS_04" productFeatureId="SIZE_L" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="5"/>
+    <ProductFeatureAppl productId="JEANS_04_RED_S" productFeatureId="COLOR_RED" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="JEANS_04_RED_S" productFeatureId="SIZE_S" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="JEANS_04_RED_M" productFeatureId="COLOR_RED" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="JEANS_04_RED_M" productFeatureId="SIZE_M" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="JEANS_04_RED_L" productFeatureId="COLOR_RED" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="JEANS_04_RED_L" productFeatureId="SIZE_L" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="JEANS_04_BLUE_S" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="JEANS_04_BLUE_S" productFeatureId="SIZE_S" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="JEANS_04_BLUE_M" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="JEANS_04_BLUE_M" productFeatureId="SIZE_M" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="JEANS_O4_BLUE_L" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="JEANS_O4_BLUE_L" productFeatureId="SIZE_L" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+
+    <ProductFeatureAppl productId="SCARF" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="SCARF" productFeatureId="COLOR_RED" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+    <ProductFeatureAppl productId="SCARF_BLUE" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="SCARF_RED" productFeatureId="COLOR_RED" productFeatureApplTypeId="STANDARD_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+
+    <ProductFeatureAppl productId="SCARF_BLUE" productFeatureId="COLOR_BLUE" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="1"/>
+    <ProductFeatureAppl productId="SCARF_RED" productFeatureId="COLOR_RED" productFeatureApplTypeId="SELECTABLE_FEATURE" fromDate="2022-05-25 12:00:00.0" sequenceNum="2"/>
+</entity-engine-xml>

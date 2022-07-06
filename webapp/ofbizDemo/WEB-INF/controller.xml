@@ -24,6 +24,7 @@ under the License.
          can be found in the following xml file. A component can override the
          elements found in the common-controller.xml file. -->
     <include location="component://common/webcommon/WEB-INF/common-controller.xml"/>
+    <include location="component://ofbizDemo/webapp/ofbizDemo/WEB-INF/Supplier-controller.xml"/>
 
     <description>OfbizDemo Component Site Configuration File</description>
 
@@ -63,19 +64,26 @@ under the License.
         <event type="service" invoke="createOfbizDemoByGroovyService"/>
         <response name="success" type="view" value="main"/>
     </request-map>
-
+//event for java
     <request-map uri="createOfbizDemoEvent">
         <security https="true" auth="true"/>
         <event type="java" path="com.companyname.ofbizdemo.events.OfbizDemoEvents" invoke="createOfbizDemoEvent"/>
         <response name="success" type="view" value="main"/>
         <response name="error" type="view" value="main"/>
     </request-map>
-
+// event for ftl
+    <request-map uri="createOfbizDemoEventFtl">
+        <security https="true" auth="true"/>
+        <event type="java" path="com.companyname.ofbizdemo.events.OfbizDemoEvents"  invoke="createOfbizDemoEvent"/>
+        <response name="success" type="view" value="AddOfbizDemoFtl"/>
+        <response name="error" type="view" value="main"/>
+    </request-map>
 
     <request-map uri="AddOfbizDemoFtl">
         <security https="true" auth="true"/>
         <response name="success" type="view" value="AddOfbizDemoFtl"/>
     </request-map>
+
 
 
     <!-- View Mappings -->
