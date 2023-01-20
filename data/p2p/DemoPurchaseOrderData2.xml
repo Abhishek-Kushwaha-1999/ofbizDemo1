@@ -1,0 +1,165 @@
+<entity-enine-xml>
+
+    <!--Create purchase order-->
+    <OrderHeader orderId="PO_1000" orderTypeId="PURCHASE_ORDER" orderName="Demo Purchase Order"
+                 orderDate="2023-01-18 13:27:07.024" entryDate="2023-01-18 13:27:07.024" statusId="ORDER_CREATED"
+                 currencyUom="USD" remainingSubTotal="3000.00" grandTotal="3000.00"/>
+    <OrderItem orderId="PO_1000" orderItemSeqId="00001" orderItemTypeId="PRODUCT_ORDER_ITEM" productId="BOARD"
+               isPromo="N" quantity="100" isModifiedPrice="N" itemDescription="Board" statusId="ITEM_CREATED"
+               unitPrice="10"/>
+    <OrderItem orderId="PO_1000" orderItemSeqId="00002" orderItemTypeId="PRODUCT_ORDER_ITEM" productId="WHEEL"
+               isPromo="N" quantity="100" isModifiedPrice="N" itemDescription="Wheel" statusId="ITEM_CREATED"
+               unitPrice="15"/>
+    <OrderItem orderId="PO_1000" orderItemSeqId="00003" orderItemTypeId="PRODUCT_ORDER_ITEM" productId="STICKER"
+               isPromo="N" quantity="100" isModifiedPrice="N" itemDescription="Sticker" statusId="ITEM_CREATED"
+               unitPrice="5"/>
+
+    <OrderItemPriceInfo orderItemPriceInfoId="OPI_1000" orderId="PO_1000" orderItemSeqId="00001"
+                        description="SupplierProduct [minimumOrderQuantity:0, lastUnitPrice: 10.00]"/>
+    <OrderItemPriceInfo orderItemPriceInfoId="OPI_1001" orderId="PO_1000" orderItemSeqId="00002"
+                        description="SupplierProduct [minimumOrderQuantity:0, lastUnitPrice: 15.00]"/>
+    <OrderItemPriceInfo orderItemPriceInfoId="OPI_1002" orderId="PO_1000" orderItemSeqId="00003"
+                        description="SupplierProduct [minimumOrderQuantity:0, lastUnitPrice: 5.00]"/>
+
+    <OrderRole orderId="PO_1000" partyId="Company" roleTypeId="BILL_TO_CUSTOMER"/>
+    <OrderRole orderId="PO_1000" partyId="Company" roleTypeId="SHIP_TO_CUSTOMER"/>
+    <OrderRole orderId="PO_1000" partyId="BigSupplier" roleTypeId="BILL_FROM_VENDOR"/>
+    <OrderRole orderId="PO_1000" partyId="BigSupplier" roleTypeId="SHIP_FROM_VENDOR"/>
+
+    <OrderContactMech orderId="PO_1000" contactMechPurposeTypeId="BILLING_LOCATION" contactMechId="9002"/>
+    <OrderContactMech orderId="PO_1000" contactMechPurposeTypeId="SHIPPING_LOCATION" contactMechId="9000"/>
+    <OrderContactMech orderId="PO_1000" contactMechPurposeTypeId="PUR_RET_LOCATION" contactMechId="9002"/>
+
+    <OrderStatus orderStatusId="PO_OS_1000" statusId="ORDER_CREATED" orderId="DEMO_1003"
+                 statusDatetime="2023-01-18 00:00:00.000"/>
+    <OrderStatus orderStatusId="PO_OS_1001" statusId="ITEM_CREATED" orderId="DEMO_1003" orderItemSeqId="00001"
+                 statusDatetime="2023-01-18 00:00:00.000"/>
+    <OrderStatus orderStatusId="PO_OS_1002" statusId="ITEM_CREATED" orderId="DEMO_1003" orderItemSeqId="00002"
+                 statusDatetime="2023-01-18 00:00:00.000"/>
+    <OrderStatus orderStatusId="PO_OS_1003" statusId="ITEM_CREATED" orderId="DEMO_1003" orderItemSeqId="00003"
+                 statusDatetime="2023-01-18 00:00:00.000"/>
+
+    <!--Create ship group-->
+    <OrderItemShipGroup orderId="PO_1000" shipGroupSeqId="00001" carrierPartyId="FEDEX" carrierRoleTypeId="CARRIER"
+                        contactMechId="" maySplit="N" isGift="N"/>
+    <OrderItemShipGroupAssoc orderId="PO_1000" orderItemSeqId="00001" shipGroupSeqId="00001" quantity="100"/>
+    <OrderItemShipGroupAssoc orderId="PO_1000" orderItemSeqId="00002" shipGroupSeqId="00001" quantity="100"/>
+    <OrderItemShipGroupAssoc orderId="PO_1000" orderItemSeqId="00003" shipGroupSeqId="00001" quantity="100"/>
+
+    <!--    Update PO from created _=> Approved-->
+    <OrderHeader orderId="PO_1000" statusId="ORDER_APPROVED"/>
+    <OrderItem orderId="PO_1000" orderItemSeqId="00001" statusId="ITEM_APPROVED"/>
+    <OrderItem orderId="PO_1000" orderItemSeqId="00002" statusId="ITEM_APPROVED"/>
+    <OrderItem orderId="PO_1000" orderItemSeqId="00003" statusId="ITEM_APPROVED"/>
+
+    <OrderStatus orderStatusId="PO_OS_1007" statusId="ORDER_APPROVED" orderId="PO_1000"
+                 statusDatetime="2023-01-18 00:00:00.000" statusUserLogin="admin"/>
+    <OrderStatus orderStatusId="PO_OS_1004" statusId="ITEM_APPROVED" orderId="PO_1000" orderItemSeqId="00001"
+                 statusDatetime="2023-01-18 00:00:00.000" statusUserLogin="admin"/>
+    <OrderStatus orderStatusId="PO_OS_1005" statusId="ITEM_APPROVED" orderId="PO_1000" orderItemSeqId="00002"
+                 statusDatetime="2023-01-18 00:00:00.000" statusUserLogin="admin"/>
+    <OrderStatus orderStatusId="PO_OS_1006" statusId="ITEM_APPROVED" orderId="PO_1000" orderItemSeqId="00003"
+                 statusDatetime="2023-01-18 00:00:00.000" statusUserLogin="admin"/>
+
+    <!-- Create Shipment -->
+    <Shipment shipmentId="SHIP_PO_1000" shipmentTypeId="PURCHASE_SHIPMENT" statusId="PURCH_SHIP_CREATED"
+              primaryOrderId="PO_1000" primaryShipGroupSeqId="00001" estimatedShipCost="500.00"
+              originContactMechId="9002" originFacilityId="" destinationFacilityId="WebStoreWarehouse"
+              destinationContactMechId="9200" partyIdTo="Company" partyIdFrom="BigSupplier"
+              createdDate="2023-01-18 00:00:00.000"/>
+    <ShipmentItem shipmentId="SHIP_PO_1000" shipmentItemSeqId="00001" productId="BOARD" quantity="100"/>
+    <ShipmentItem shipmentId="SHIP_PO_1000" shipmentItemSeqId="00002" productId="WHEEL" quantity="100"/>
+    <ShipmentItem shipmentId="SHIP_PO_1000" shipmentItemSeqId="00002" productId="STICKER" quantity="100"/>
+
+    <Shipment shipmentId="SHIP_PO_1000" statusId="PURCH_SHIP_SHIPPED"/>
+    <Shipment shipmentId="SHIP_PO_1000" statusId="PURCH_SHIP_RECEIVED"/>
+    <ShipmentStatus statusId="PURCH_SHIP_CREATED" shipmentId="SHIP_PO_1000" statusDate="2023-01-18 00:00:00.000"/>
+    <ShipmentStatus statusId="PURCH_SHIP_SHIPPED" shipmentId="SHIP_PO_1000" statusDate="2023-01-18 00:00:00.000"/>
+    <ShipmentStatus statusId="PURCH_SHIP_RECEIVED" shipmentId="SHIP_PO_1000" statusDate="2023-01-18 00:00:00.000"/>
+
+    <OrderShipment orderId="PO_1000" orderItemSeqId="00001" shipmentId="SHIP_PO_1000" shipmentItemSeqId="00001"
+                   quantity="100" shipGroupSeqId="00001"/>
+    <OrderShipment orderId="PO_1000" orderItemSeqId="00002" shipmentId="SHIP_PO_1000" shipmentItemSeqId="00002"
+                   quantity="100" shipGroupSeqId="00001"/>
+    <OrderShipment orderId="PO_1000" orderItemSeqId="00003" shipmentId="SHIP_PO_1000" shipmentItemSeqId="00003"
+                   quantity="100" shipGroupSeqId="00001"/>
+
+    <!-- Create Inventory Item and Details -->
+    <InventoryItem inventoryItemId="PO_INV_1001" inventoryItemTypeId="NON_SERIAL_INV_ITEM" productId="BOARD"
+                   ownerPartyId="Company" datetimeReceived="2023-01-18 00:00:00.000" facilityId="WebStoreWarehouse"
+                   quantityOnHandTotal="100" availableToPromiseTotal="100" accountingQuantityTotal="100"
+                   currencyUomId="USD"/>
+    <ShipmentReceipt receiptId="RECEIPT_101" inventoryItemId="PO_INV_1001" productId="BOARD" shipmentId="SHIP_1002"
+                     shipmentItemSeqId="00001" orderId="DEMO_1003" orderItemSeqId="00001" quantityAccepted="100"
+                     datetimeReceived="2023-01-18 00:00:00.000"/>
+    <InventoryItemDetail inventoryItemId="PO_INV_1001" inventoryItemDetailSeqId="INV_DETAIL_1001"
+                         effectiveDate="2023-01-18 00:00:00.000" quantityOnHandDiff="100" availableToPromiseDiff="100"
+                         accountingQuantityDiff="0" receiptId="RECEIPT_101"/>
+    <InventoryItemDetail inventoryItemId="PO_INV_1001" inventoryItemDetailSeqId="INV_DETAIL_1002"
+                         effectiveDate="2023-01-18 00:00:00.000" quantityOnHandDiff="00" availableToPromiseDiff="00"
+                         accountingQuantityDiff="100"/>
+
+    <InventoryItem inventoryItemId="PO_INV_1002" inventoryItemTypeId="NON_SERIAL_INV_ITEM" productId="WHEEL"
+                   ownerPartyId="Company" datetimeReceived="2023-01-18 00:00:00.000" facilityId="WebStoreWarehouse"
+                   quantityOnHandTotal="100" availableToPromiseTotal="100" accountingQuantityTotal="100"
+                   currencyUomId="USD"/>
+    <ShipmentReceipt receiptId="RECEIPT_102" inventoryItemId="PO_INV_1002" productId="WHEEL" shipmentId="SHIP_1002"
+                     shipmentItemSeqId="00001" orderId="DEMO_1003" orderItemSeqId="00002" quantityAccepted="100"
+                     datetimeReceived="2023-01-18 00:00:00.000"/>
+    <InventoryItemDetail inventoryItemId="PO_INV_1002" inventoryItemDetailSeqId="INV_DETAIL_1001"
+                         effectiveDate="2023-01-18 00:00:00.000" quantityOnHandDiff="100" availableToPromiseDiff="100"
+                         accountingQuantityDiff="0" receiptId="RECEIPT_102"/>
+    <InventoryItemDetail inventoryItemId="PO_INV_1002" inventoryItemDetailSeqId="INV_DETAIL_1002"
+                         effectiveDate="2023-01-18 00:00:00.000" quantityOnHandDiff="00" availableToPromiseDiff="00"
+                         accountingQuantityDiff="100"/>
+
+    <InventoryItem inventoryItemId="PO_INV_1003" inventoryItemTypeId="NON_SERIAL_INV_ITEM" productId="STICKER"
+                   ownerPartyId="Company" datetimeReceived="2022-05-11 13:27:07.024" facilityId="WebStoreWarehouse"
+                   quantityOnHandTotal="100" availableToPromiseTotal="100" accountingQuantityTotal="100"
+                   currencyUomId="USD"/>
+    <ShipmentReceipt receiptId="RECEIPT_103" inventoryItemId="PO_INV_1003" productId="STICKER" shipmentId="SHIP_1002"
+                     shipmentItemSeqId="00001" orderId="DEMO_1003" orderItemSeqId="00002" quantityAccepted="100"
+                     datetimeReceived="2023-01-18 00:00:00.000"/>
+    <InventoryItemDetail inventoryItemId="PO_INV_1003" inventoryItemDetailSeqId="INV_DETAIL_1001"
+                         effectiveDate="2023-01-18 00:00:00.000" quantityOnHandDiff="100" availableToPromiseDiff="100"
+                         accountingQuantityDiff="0" receiptId="RECEIPT_103"/>
+    <InventoryItemDetail inventoryItemId="PO_INV_1003" inventoryItemDetailSeqId="INV_DETAIL_1002"
+                         effectiveDate="2023-01-18 00:00:00.000" quantityOnHandDiff="00" availableToPromiseDiff="00"
+                         accountingQuantityDiff="100"/>
+
+    <!--Update PO Approved => Completed-->
+    <OrderHeader orderId="PO_1000" statusId="ORDER_COMPLETED"/>
+    <OrderItem orderId="PO_1000" orderItemSeqId="00001" statusId="ITEM_COMPLETED"/>
+    <OrderItem orderId="PO_1000" orderItemSeqId="00002" statusId="ITEM_COMPLETED"/>
+    <OrderItem orderId="PO_1000" orderItemSeqId="00003" statusId="ITEM_COMPLETED"/>
+    <OrderStatus orderStatusId="PO_OS_1007" statusId="ORDER_COMPLETED" orderId="PO_1000"
+                 statusDatetime="2023-01-18 00:00:00.000"/>
+    <OrderStatus orderStatusId="PO_OS_1004" statusId="ITEM_COMPLETED" orderId="PO_1000" orderItemSeqId="00001"
+                 statusDatetime="2023-01-18 00:00:00.000"/>
+    <OrderStatus orderStatusId="PO_OS_1005" statusId="ITEM_COMPLETED" orderId="PO_1000" orderItemSeqId="00002"
+                 statusDatetime="2023-01-18 00:00:00.000"/>
+    <OrderStatus orderStatusId="PO_OS_1006" statusId="ITEM_COMPLETED" orderId="PO_1000" orderItemSeqId="00003"
+                 statusDatetime="2023-01-18 00:00:00.000"/>
+
+    <!--Create invoice -->
+    <Invoice invoiceId="INV_1001" invoiceTypeId="PURCHASE_INVOICE" partyIdFrom="" partyId="Company"
+             statusId="INVOICE_PAID" invoiceDate="2023-01-18 00:00:00.000" paidDate="2023-01-18 00:00:00.000"
+             currencyUomId="USD"/>
+    <InvoiceItem invoiceId="INV_1001" invoiceItemSeqId="00001" invoiceItemTypeId="INV_FPROD_ITEM" overrideGlAccountId=""
+                 productId="BOARD" parentInvoiceId="" parentInvoiceItemSeqId="00001" quantity="100" amount="100.00"
+                 description="Board"/>
+    <InvoiceItem invoiceId="INV_1001" invoiceItemSeqId="00002" invoiceItemTypeId="INV_FPROD_ITEM" overrideGlAccountId=""
+                 productId="WHEEL" parentInvoiceId="" parentInvoiceItemSeqId="00001" quantity="100" amount="1500.00"
+                 description="Wheel"/>
+    <InvoiceItem invoiceId="INV_1001" invoiceItemSeqId="00003" invoiceItemTypeId="INV_FPROD_ITEM" overrideGlAccountId=""
+                 productId="STICKER" parentInvoiceId="" parentInvoiceItemSeqId="00001" quantity="100" amount="500.00"
+                 description="Sticker"/>
+
+    <OrderItemBilling orderId="PO_1000" orderItemSeqId="00001" invoiceId="INV_1001" invoiceItemSeqId="00001"
+                      itemIssuanceId="" shipmentReceiptId="RECEIPT_101" quantity="100" amount="100.00"/>
+    <OrderItemBilling orderId="PO_1000" orderItemSeqId="00002" invoiceId="INV_1001" invoiceItemSeqId="00002"
+                      itemIssuanceId="" shipmentReceiptId="RECEIPT_102" quantity="100" amount="1500.00"/>
+    <OrderItemBilling orderId="PO_1000" orderItemSeqId="00003" invoiceId="INV_1001" invoiceItemSeqId="00003"
+                      itemIssuanceId="" shipmentReceiptId="RECEIPT_103" quantity="100" amount="500.00"/>
+
+</entity-enine-xml>

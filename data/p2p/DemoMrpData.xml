@@ -1,0 +1,157 @@
+<entity-engine-xml>
+    <RuntimeData runtimeDataId="RUN_DATA_1000">
+        <runtimeInfo>
+            <?xml version="1.0" encoding="UTF-8"?>
+            <ofbiz-ser>
+                <map-HashMap>
+                    <map-Entry>
+                        <map-Key>
+                            <std-String value="userLogin"/>
+                        </map-Key>
+                        <map-Value>
+                            <eeval-UserLogin createdStamp="2022-08-19 13:34:50.875" createdTxStamp="2022-08-19 13:34:50.872" currentPassword="{SHA}47b56994cbc2b6d10aa1be30f70165adb305a41a" enabled="Y" hasLoggedOut="N" lastTimeZone="Asia/Calcutta" lastUpdatedStamp="2023-01-17 10:58:57.869" lastUpdatedTxStamp="2023-01-17 10:58:57.869" partyId="admin" successiveFailedLogins="0" userLoginId="admin"/>
+                        </map-Value>
+                    </map-Entry>
+                    <map-Entry>
+                        <map-Key> <std-String value="visualTheme"/> </map-Key>
+                        <map-Value>  </map-Value>
+                    </map-Entry>
+                    <map-Entry>
+                        <map-Key> <std-String value="facilityId"/> </map-Key>
+                        <map-Value> <std-String value="WebStoreWarehouse"/> </map-Value>
+                    </map-Entry>
+                    <map-Entry>
+                        <map-Key> <std-String value="defaultYearsOffset"/> </map-Key>
+                        <map-Value> <std-Integer value="1"/> </map-Value>
+                    </map-Entry>
+                    <map-Entry>
+                        <map-Key> <std-String value="facilityGroupId"/></map-Key>
+                        <map-Value> <null xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/> </map-Value>
+                    </map-Entry>
+                    <map-Entry> <map-Key> <std-String value="mrpName"/> </map-Key>
+                        <map-Value> <std-String value="MRP_RUN_02"/> </map-Value>
+                    </map-Entry>
+                    <map-Entry>
+                        <map-Key> <std-String value="timeZone"/> </map-Key>
+                        <map-Value> </map-Value>
+                    </map-Entry>
+                    <map-Entry>
+                        <map-Key> <std-String value="locale"/> </map-Key>
+                        <map-Value> <std-Locale value="en_GB"/></map-Value>
+                    </map-Entry>
+                </map-HashMap>
+            </ofbiz-ser>
+        </runtimeInfo>
+    </RuntimeData>
+
+    <JobSandbox jobId="Job_1001" jobName="execute mrp event job " statusId="SERVICE_PENDING" runTime="2023-01-18 09:00:00.000" priority="50" poolId="pool" serviceName="executeMrp" loaderName="manufacturing" runtimeDataId="RUN_DATA_1000"/>
+    <JobSandbox jobId="Job_1001" statusId="SERVICE_FINISHED	" runByInstanceId="ofbiz1" startDataTime="2023-01-18 09:49:15.028" finishDateTime="2023-01-18 09:49:16.135"/>
+
+    <!--Loads All the approved sales order items -->
+    <MrpEvent  mrpId="10031" mrpEventTypeId="SALES_ORDER_SHIP" productId="GZ-2644" eventName="DEMO10090-00001, WSCO10030-00001"
+               eventDate="2024-01-18" facilityId="null" isLate="N" quantity="-4.0" />
+
+    <!--Loads all the approved product requirement -->
+    <MrpEvent  mrpId="10031" mrpEventTypeId="PROD_REQ_RECP" productId="VARNISH" eventName="10007" eventDate="2024-01-18"
+               facilityId="null" isLate="N" quantity="20.0" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="PROD_REQ_RECP" productId="WOOD" eventName="10014" eventDate="2024-01-18"
+               facilityId="null" isLate="N" quantity="100.0" />
+
+<!--Loads all approved Purchase order Items-->
+
+
+<!-- Production run: Component get already consumed inventory / manufacturing requirement -->
+    <MrpEvent  mrpId="10031" mrpEventTypeId="MANUF_ORDER_REQ" productId="NAIL" eventName="10010-10011" eventDate="2024-01-18"
+               facilityId="null" isLate="N" quantity="-2.0" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="MANUF_ORDER_REQ" productId="VARNISH" eventName="10010-10011" eventDate="2024-01-18"
+               facilityId="null" isLate="N" quantity="-2.0" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="MANUF_ORDER_REQ" productId="WOOD" eventName="10010-10011" eventDate="2024-01-18"
+               facilityId="null" isLate="N" quantity="-2.0" />
+
+    <MrpEvent  mrpId="10031" mrpEventTypeId="MANUF_ORDER_REQ" productId="NAIL" eventName="10015-10016" eventDate="2024-01-18"
+               facilityId="null" isLate="N" quantity="-2.0" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="MANUF_ORDER_REQ" productId="VARNISH" eventName="10015-10016" eventDate="2024-01-18"
+               facilityId="null" isLate="N" quantity="-2.0" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="MANUF_ORDER_REQ" productId="WOOD" eventName="10015-10016" eventDate="2024-01-18"
+               facilityId="null" isLate="N" quantity="-2.0" />
+
+<!--PRODUCTION RUN: product produced -->
+<!--Fetch records for the product from the view WorkEffortAndGoods-->
+<!--if estimated date for the same product is different then separate records will be created for the same product -->
+    <MrpEvent  mrpId="10031" mrpEventTypeId="MANUF_ORDER_RECP" productId="TABLE" eventName="10010, 10015" eventDate="2024-01-11"
+               facilityId="null" isLate="N" quantity="4.0" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="MANUF_ORDER_RECP" productId="SKATEBOARD" eventName="10040" eventDate="2024-01-11"
+               facilityId="null" isLate="N" quantity="3.0" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="MANUF_ORDER_RECP" productId="SKATEBOARD" eventName="10055" eventDate="2024-01-12"
+               facilityId="null" isLate="N" quantity="1.0" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="MANUF_ORDER_RECP" productId="SKATEBOARD" eventName="10085" eventDate="2024-01-17"
+               facilityId="null" isLate="N" quantity="3.0" />
+
+<!-- Products without upcoming events but that are already under minimum quantity in warehouse-->
+
+    <MrpEvent  mrpId="10031" mrpEventTypeId="REQUIRED_MRP" productId="BOARD" eventName="" eventDate="2024-01-17"
+               facilityId="null" isLate="N" quantity="0" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="REQUIRED_MRP" productId="WHEEL" eventName="" eventDate="2024-01-17"
+               facilityId="null" isLate="N" quantity="0" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="REQUIRED_MRP" productId="STICKER" eventName="" eventDate="2024-01-17"
+               facilityId="null" isLate="N" quantity="0" />
+
+<!--Initial quantity on hand records -->
+    <MrpEvent  mrpId="10031" mrpEventTypeId="INITIAL_QOH" productId="SKATEBOARD" eventName="" eventDate="2024-01-17"
+               facilityId="WebStoreWarehouse" isLate="N" quantity="0" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="INITIAL_QOH" productId="TABLE" eventName="" eventDate="2024-01-17"
+               facilityId="WebStoreWarehouse" isLate="N" quantity="0" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="INITIAL_QOH" productId="BOARD" eventName="" eventDate="2024-01-17"
+               facilityId="WebStoreWarehouse" isLate="N" quantity="-3" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="INITIAL_QOH" productId="NAIL" eventName="" eventDate="2024-01-17"
+               facilityId="WebStoreWarehouse" isLate="N" quantity="0" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="INITIAL_QOH" productId="STICKER" eventName="" eventDate="2024-01-17"
+               facilityId="WebStoreWarehouse" isLate="N" quantity="-6" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="INITIAL_QOH" productId="VARNISH" eventName="" eventDate="2024-01-17"
+               facilityId="WebStoreWarehouse" isLate="N" quantity="0" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="INITIAL_QOH" productId="WHEEL" eventName="" eventDate="2024-01-17"
+               facilityId="WebStoreWarehouse" isLate="N" quantity="-12" />
+
+<!-- Create proposed order -->
+    <Requirement requirementId="REQ_1001" requirementTypeId="PRODUCT_REQUIREMENT" facilityId="WebStoreWarehouse"
+                 productId="VARNISH" statusId="REQ_APPROVED" Description="" requirementStartDate="2023-01-09 00:00:00.000"
+                 requeriredByDate="2023-01-09 00:00:00.000" quantity="20"/>
+    <Requirement requirementId="REQ_1002" requirementTypeId="PRODUCT_REQUIREMENT" facilityId="WebStoreWarehouse"
+                 productId="WOOD" statusId="REQ_APPROVED" Description="" requirementStartDate="2023-01-09 00:00:00.000"
+                 requeriredByDate="2023-01-09 00:00:00.000" quantity="100"/>
+    <Requirement requirementId="REQ_1003" requirementTypeId="PRODUCT_REQUIREMENT" facilityId="WebStoreWarehouse"
+                 productId="BOARD" statusId="REQ_APPROVED" Description="" requirementStartDate="2023-01-09 00:00:00.000"
+                 requeriredByDate="2023-01-09 00:00:00.000" quantity="50"/>
+    <Requirement requirementId="REQ_1004" requirementTypeId="PRODUCT_REQUIREMENT" facilityId="WebStoreWarehouse"
+                 productId="NAIL" statusId="REQ_APPROVED" Description="" requirementStartDate="2023-01-09 00:00:00.000"
+                 requeriredByDate="2023-01-09 00:00:00.000" quantity="500"/>
+    <Requirement requirementId="REQ_1005" requirementTypeId="PRODUCT_REQUIREMENT" facilityId="WebStoreWarehouse"
+                 productId="STICKER" statusId="REQ_APPROVED" Description="" requirementStartDate="2023-01-09 00:00:00.000"
+                 requeriredByDate="2023-01-09 00:00:00.000" quantity="100"/>
+    <Requirement requirementId="REQ_1006" requirementTypeId="PRODUCT_REQUIREMENT" facilityId="WebStoreWarehouse"
+                 productId="WHEEL" statusId="REQ_APPROVED" Description="" requirementStartDate="2023-01-09 00:00:00.000"
+                 requeriredByDate="2023-01-09 00:00:00.000" quantity="200"/>
+
+    <Requirement requirementId="REQ_1006" requirementTypeId="INTERNAL_REQUIREMENT" facilityId="WebStoreWarehouse"
+                 productId="SKATEBOARD" statusId="REQ_APPROVED" Description="MRP_MRP_RUN_04" requirementStartDate="2023-01-09 00:00:00.000"
+                 requeriredByDate="2023-01-09 00:00:00.000" quantity="5"/>
+    <Requirement requirementId="REQ_1006" requirementTypeId="INTERNAL_REQUIREMENT" facilityId="WebStoreWarehouse"
+                 productId="TABLE" statusId="REQ_APPROVED" Description="MRP_MRP_RUN_05" requirementStartDate="2023-01-09 00:00:00.000"
+                 requeriredByDate="2023-01-09 00:00:00.000" quantity="1"/>
+
+
+    <MrpEvent  mrpId="10031" mrpEventTypeId="PROP_MANUF_O_RECP" productId="TABLE" eventName="PROP_MANUF_O_RECP" eventDate="2024-01-17"
+               facilityId="WebStoreWarehouse" isLate="Y" quantity="1" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="INITIAL_QOH" productId="WHEEL" eventName="" eventDate="2024-01-17"
+               facilityId="WebStoreWarehouse" isLate="N" quantity="-12" />
+
+    <MrpEvent  mrpId="10031" mrpEventTypeId="PROP_PUR_O_RECP" productId="BOARD" eventName="*10122 (2023-01-18 17:56:34.157)*"
+               eventDate="2024-01-17" facilityId="" isLate="N" quantity="50" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="PROP_PUR_O_RECP" productId="NAIL" eventName="*10123 (2023-01-10 18:10:04.999)*"
+               eventDate="2024-01-17" facilityId="" isLate="N" quantity="500" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="PROP_PUR_O_RECP" productId="STICKER" eventName="*10124 (2023-01-18 17:56:34.157)*"
+               eventDate="2024-01-17" facilityId="" isLate="N" quantity="100" />
+    <MrpEvent  mrpId="10031" mrpEventTypeId="PROP_PUR_O_RECP" productId="WHEEL" eventName="*10125 (2023-01-18 17:56:34.157)*"
+               eventDate="2024-01-17" facilityId="" isLate="N" quantity="200" />
+
+</entity-engine-xml>
