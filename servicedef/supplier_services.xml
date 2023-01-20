@@ -1,0 +1,36 @@
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="https://ofbiz.apache.org/dtds/services.xsd">
+    <description>Supplier services</description>
+    <vendor></vendor>
+    <version>1.0</version>
+    <service name="createSupplier" engine="java" auth="true"
+             location="com.companyname.ofbizdemo.supplier.SupplierServices" invoke="createSupplier">
+        <attribute name="groupName" type="String" mode="IN" optional="true"/>
+        <attribute name="description" type="String" mode="IN" optional="true"/>
+        <attribute name="email" type="String" mode="IN" optional="true"/>
+        <attribute name="contactNumber" type="String" mode="IN" optional="true"/>
+        <attribute name="mailingAddress" type="Map" mode="IN" optional="true"/>
+        <attribute name="remitAddress" type="Map" mode="IN" optional="true"/>
+        <attribute name="streetAddress" type="Map" mode="IN" optional="true"/>
+        <attribute name="partyId" type="String" mode="OUT" optional="true"/>
+    </service>
+
+    <service name="updateSupplier" engine="java" auth="true"
+             location="com.companyname.ofbizdemo.supplier.SupplierServices" invoke="updateSupplier">
+        <attribute name="partyId" type="String" mode="IN" optional="false"/>
+        <attribute name="phoneContactMechId" type="String" mode="IN" optional="true"/>
+        <attribute name="emailContactMechId" type="String" mode="IN" optional="true"/>
+        <attribute name="groupName" type="String" mode="IN" optional="true"/>
+        <attribute name="description" type="String" mode="IN" optional="true"/>
+        <attribute name="emailAddress" type="String" mode="IN" optional="true"/>
+        <attribute name="contactNumber" type="String" mode="IN" optional="true"/>
+    </service>
+
+    <service name="updateSupplierContactDetail" engine="java" auth="true"
+             location="com.companyname.ofbizdemo.supplier.SupplierServices" invoke="updateSupplierContactDetail">
+        <attribute name="partyId" type="String" mode="IN" optional="false"/>
+        <attribute name="mailingAddress" type="Map" mode="IN" string-map-prefix="mailing_" optional="true"/>
+        <attribute name="remitAddress" type="Map" mode="IN" string-map-prefix="remit_" optional="true"/>
+        <attribute name="streetAddress" type="Map" mode="IN" string-map-prefix="street_" optional="true"/>
+    </service>
+</services>

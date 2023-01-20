@@ -24,6 +24,7 @@ under the License.
          can be found in the following xml file. A component can override the
          elements found in the common-controller.xml file. -->
     <include location="component://common/webcommon/WEB-INF/common-controller.xml"/>
+    <include location="component://ofbizDemo/webapp/ofbizDemo/WEB-INF/Supplier-controller.xml"/>
 
     <description>OfbizDemo Component Site Configuration File</description>
 
